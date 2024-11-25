@@ -13,3 +13,19 @@ p{
 h2{
     padding-left: 30px;
 }
+.mission{
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.hidden{
+    display: none;
+}
+.missionbtn{
+    margin-left: 30px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border:none;
+}
