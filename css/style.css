@@ -158,3 +158,52 @@ li{
     font-size: 17px;
     line-height: 1.4;
 }
+
+.purpose{
+    width: 80%;
+    margin: 60px auto;
+    height: auto;
+}
+.purpose .heading{
+    margin-top: 250px;
+    margin-bottom: 20px;
+}
+.purpose-des{
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.purpose-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.purpose-card{
+    height: 400px;
+    width: 280px;
+}
+.purpose-card img{
+    width: 280px;
+    height: 170px;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+.purpose-card h2{
+    margin: 10px 0;
+    font-size: 21px;
+}
+.purpose-card p{
+    line-height: 1.4;
+    font-size: 17px;
+}
+
+.stories{
+    width: 80%;
+    margin: 60px auto;
+    height: auto;
+}
+.stories .heading{
+    margin-top: 250px;
+    margin-bottom: 20px;
+}
