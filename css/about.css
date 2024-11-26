@@ -1,6 +1,7 @@
 .heading-font{
-   padding-left: 30px;
-  font-size: 40px;;
+  padding-left: 30px;
+  font-size: 40px;
+  font-family: "Merriweather", serif;
 }
 
 p{
@@ -13,7 +14,7 @@ p{
 h2{
     padding-left: 30px;
 }
-.mission{
+.mission,.team{
     background: #ffffff;
     padding: 30px;
     border-radius: 5px;
@@ -23,9 +24,13 @@ h2{
 .hidden{
     display: none;
 }
-.missionbtn{
+.missionbtn ,.team-button{
     margin-left: 30px;
     padding: 5px 10px;
     border-radius: 20px;
     border:none;
+}
+.team-member{
+    font-size:15px;
+    
 }

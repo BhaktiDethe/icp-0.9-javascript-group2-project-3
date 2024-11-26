@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href= "./../css/style.css">
     <link rel="stylesheet" href="./../css/about.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bokor&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 <body>
     <section class="main">
@@ -43,27 +46,77 @@
 
       <div class="mission">
         <h2>Our Mission</h2>
-        <button class="missionbtn" id="missionbtn">Show mission</button>
+        <button class="missionbtn" id="button" onclick="buttonShow()"> Show Mission</button>
 
-        <span class="hidden">
+        <span class="hidden" id="missionInfo">
             <p>Our mission is to inspire and empower travelers to explore the world, create unforgettable memories, and discover the beauty of different cultures.</p>
             <p>At <b>Travel Explorer</b>, our mission is to inspire and empower travelers to explore the world and create unforgettable memories. We believe that travel enriches lives, broadens perspectives, and fosters a deeper understanding of diverse cultures. Our commitment is to provide personalized travel experiences that cater to the unique preferences of each traveler.</p>
         <h3>Key Elements of Our Mission:</h3>
     <ul>
         <li><b>Inspiration:</b> We aim to ignite a passion for exploration by providing curated travel content, stunning visuals, and engaging stories.</li>
-        <li><strong>Empowerment:</strong> We equip travelers with the tools, resources, and knowledge they need to navigate their journeys confidently.</li>
-        <li><strong>Personalization:</strong> We offer tailored travel plans that reflect individual interests, whether it's adventure, relaxation, or culture.</li>
-        <li><strong>Sustainability:</strong> We promote sustainable travel practices that respect local communities and the environment.</li>
-        <li><strong>Community:</strong> We foster a network of travelers who share their experiences, tips, and recommendations.</li>
-        <li><strong>Excellence:</strong> We strive for excellence in everything we do, ensuring customer satisfaction.</li>
+        <li><b>Empowerment:</b> We equip travelers with the tools, resources, and knowledge they need to navigate their journeys confidently.</li>
+        <li><b>Personalization:</b> We offer tailored travel plans that reflect individual interests, whether it's adventure, relaxation, or culture.</li>
+        <li><b>Sustainability:</b> We promote sustainable travel practices that respect local communities and the environment.</li>
+        <li><b>Community:</b> We foster a network of travelers who share their experiences, tips, and recommendations.</li>
+        <li><b>Excellence:</b> We strive for excellence in everything we do, ensuring customer satisfaction.</li>
         
-    </ul>
-</span>
+  </ul>
+  </span>
+    </div>
 
-      </div>
+    
+      <div class="team">
+        <h2>Meet Our Team</h2>
+    <button id="teamBtn" class="team-button" onclick="teamShow()">Show Team</button>
+    <span id="teamInfo" class="">
+        <div class="team-member">
+            <h3>John Smith - Founder & CEO</h3>
+            <p><b>Background:</b> With over 15 years in the travel industry, John has traveled to over 50 countries and is passionate about adventure travel.</p>
+            <p><b>Expertise:</b> John specializes in crafting unique travel itineraries that cater to individual preferences and interests.</p>
+            <p><b>Fun Fact:</b> John once hiked the Inca Trail to Machu Picchu and has a goal to visit every continent.</p>
+        </div>
+        <div class="team-member">
+            <h3>Emily Johnson - Travel Consultant</h3>
+            <p><b>Background:</b> Emily has a background in hospitality and tourism, with 10 years of experience in travel planning.</p>
+            <p><b>Expertise:</b> She focuses on family travel and luxury vacations, ensuring that every detail is taken care of.</p>
+            <p><b>Fun Fact:</b> Emily is a certified scuba diver and loves exploring underwater ecosystems.</p>
+        </div>
+        <div class="team-member">
+            <h3>Michael Lee - Adventure Specialist</h3>
+            <p><b>Background:</b> Michael is an outdoor enthusiast with a degree in environmental science and a passion for sustainable travel.</p>
+            <p><b>Expertise:</b> He specializes in adventure travel, including hiking, biking, and eco-tourism.</p>
+            <p><b>Fun Fact:</b> Michael has summited several peaks in the Himalayas and is a certified mountain guide.</p>
+        </div>
+        <div class="team-member">
+            <h3>Sophia Martinez - Marketing Manager</h3>
+            <p><b>Background:</b> Sophia has a degree in marketing and over 8 years of experience in the travel industry.</p>
+            <p><b>Expertise:</b> She is responsible for creating engaging content and promoting travel experiences through social media.</p>
+            <p><b>Fun Fact:</b> Sophia has a travel blog where she shares tips and stories from her journeys around the world.</p>
+        </div>
+            </span>
+    </div>
+    </section>
 
-      </div>
-        </section>
+
+    <script>
+       function buttonShow(){
+       const missionInfo = document.getElementById('missionInfo');
+       const button= document.getElementById('button');
+       if(missionInfo.classList.contains('hidden'))
+       {
+       missionInfo.classList.remove('hidden');
+       button.textContent ='Mission';
+       }
+       else
+       {
+       missionInfo.classList.add('hidden');
+       button.textContent ='Show Mission';
+       }
+      }
+
+    
+
+    </script>   
     
 </body>
 </html>
