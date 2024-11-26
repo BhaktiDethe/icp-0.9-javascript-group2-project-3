@@ -44,10 +44,12 @@ h2{
     margin-top:10px;
     margin-bottom: 10px;
 }
-.team-member{
-    font-size:15px;
-    
+.missionbtn ,.team-button:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 10px 15px;
 }
+
 
 .about-main{
     width: 100%;
@@ -56,10 +58,30 @@ h2{
 .red-color{
     color: red;
 }
-.mission-font{
+.red-color:hover{
+    text-decoration: underline;
+}
+.mission-font,.team-member{
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
     padding:0 40px 0 40px;
-
+    
 }
-
+.team-member-card{
+    flex-direction: row;
+    width: 300px;
+    background-color:rgb(249, 236, 222);
+    margin: 15px;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;   
+}
+.team-member-card:hover{
+    box-shadow: 0 0 10px 2px  rgba(0, 0, 0, 0.1);
+    transition: 2s;
+}
+.team-member-container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
