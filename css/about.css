@@ -24,22 +24,25 @@ h2{
     padding-left: 30px;
 }
 .mission,.team{
-    background: rgb(253, 245, 234) ;
-    padding: 30px;
+    background: rgb(251, 245, 238);
+    padding: 0px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    box-shadow: 2px 5px  7px 5px rgba(0, 0, 0, 0.1);
+    margin: 30px;
 }
 .hidden{
     display: none;
 }
 .missionbtn ,.team-button{
     margin-left: 30px;
-    padding: 5px 10px;
+    padding: 7px 10px;
     border-radius: 20px;
     border:none;
     color: #fff;
     background-color: black;
+    margin-left:40px;
+    margin-top:10px;
+    margin-bottom: 10px;
 }
 .team-member{
     font-size:15px;
@@ -53,3 +56,10 @@ h2{
 .red-color{
     color: red;
 }
+.mission-font{
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    padding:0 40px 0 40px;
+
+}
+
