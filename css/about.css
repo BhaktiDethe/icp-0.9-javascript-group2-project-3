@@ -93,7 +93,7 @@ h2{
     height: 400px;
 }
 .red-color{
-    color: red;
+    color: rgb(196, 60, 60);;
 }
 .red-color:hover{
     text-decoration: underline;
