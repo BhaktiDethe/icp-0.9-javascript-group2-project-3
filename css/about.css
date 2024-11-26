@@ -4,6 +4,31 @@
 body{
     background-color: rgb(253, 245, 234);
 }
+.aboutus-img{
+        background-image: url('./../images/aboutpage-img.jpeg');
+        background-size: cover;  
+        border-radius: 25px;  
+        width: 100%;
+        padding:20px 10px;
+        height:500px;
+}
+.aboutus{
+    height: 150px;
+    width: 500px;
+    background-color:rgba(226, 222, 222, 0.7);
+    border-radius: 15px;
+    text-align: center; 
+    padding: 40px; 
+    margin-top:12%;
+    margin-left:25%;
+    align-items:center; 
+}
+.aboutus p{
+    font-size: 85px;
+    font-weight: 600;
+    color: rgb(32, 32, 32);
+    background-color: transparent;
+}
 .heading-font{
   padding-left: 40px;
   font-size: 30px;
@@ -22,6 +47,11 @@ body{
 }
 h2{
     padding-left: 30px;
+}
+.heading-name{
+    padding-left: 40px;
+    font-family: "Merriweather", serif;
+    margin: 20px 0px 10px 0px;
 }
 .mission,.team{
     background: rgb(251, 245, 238);
@@ -106,7 +136,4 @@ position: relative;
     background-color:rgb(46, 44, 44);
     border: none;
     color: #fff;
-
-
-
 }
