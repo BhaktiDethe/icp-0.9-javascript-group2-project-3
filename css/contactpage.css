@@ -35,6 +35,8 @@ padding: 5px 20px;
     margin: 20px auto;
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    margin-top: 70px;
+    width: 160px;
 }
 .btn:hover{
     cursor: pointer;
