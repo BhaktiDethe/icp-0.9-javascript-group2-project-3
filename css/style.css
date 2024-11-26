@@ -207,3 +207,57 @@ li{
     margin-top: 250px;
     margin-bottom: 20px;
 }
+.stories-container{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+.stories-card{
+    margin-bottom: 20px;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    height: 190px;
+}
+.stories-card img{
+    height: 180px;
+    width: 400px;
+    border-radius: 10px;
+}
+.stories-card h2{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.stories-card p{
+    margin-bottom: 35px;
+    font-size: 17px;
+    line-height: 1.4;
+}
+.stories-card a{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 30px;
+    border: 1px solid rgb(207, 92, 92);
+    color: rgb(207, 92, 92);
+    border-radius: 15px;
+    font-weight: 700;
+}
+
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(32, 32, 32);
+}
+.footer-container{
+    display: flex;
+    gap: 80px;
+    width: 80%;
+    margin: 0px auto;
+    padding: 120px 0px 100px 0px;
+    height: auto;
+}
+.footer-sec img{
+    height: 45px;
+    margin-bottom: 25px
+}
