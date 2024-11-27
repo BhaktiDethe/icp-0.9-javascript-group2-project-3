@@ -66,7 +66,53 @@
     font-size: 18px;
     background-color: transparent;
 }
-
+.nav-list .nav-item:hover{
+    color: rgb(207, 92, 92);
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+.arrow i{
+    font-size: 15px;
+}
+.destination-click{
+    display: flex;
+    position: fixed;
+    top: 90px;
+    width: 80%;
+    height: 300px;
+    background-color: rgba(32, 32, 32,0.8);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    visibility: hidden;
+}
+.area{
+    width: 98%;
+    display: flex;
+}
+.featured-destination{
+    box-sizing: border-box;
+    width: 500px;
+    padding: 10px;
+    margin-left: 70px;
+}
+.featured-destination p{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+.featured-destination ul{
+    margin-top: 30px;
+    line-height: 1.7;
+}
+.featured-destination li{
+    line-height: 2.2;
+    color: #fff;
+    font-size: 18px;
+}
 .text-container{
     height: 250px;
     width: 500px;
