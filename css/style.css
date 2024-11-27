@@ -113,6 +113,57 @@
     color: #fff;
     font-size: 18px;
 }
+.next-adrenaline{
+    margin-right: 100px;
+    padding: 10px;
+}
+.next-adrenaline p{
+    margin-right: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+.close{
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-align: right;
+}
+.trip-click {
+    position: fixed;
+    top: 90px;
+    width: 80%;
+    height: 80px;
+    background-color: rgba(32, 32, 32, 0.8);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    visibility: hidden;         
+}
+.trip-plan-div{
+    width: 95%;
+    height: 80px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    gap: 150px; 
+}
+.trip-item {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.trip-item:hover{
+    background-color: rgb(207, 92, 92);
+    border-radius: 5px;
+}
+.close-mark{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    font-size: 18px;
+}
 .text-container{
     height: 250px;
     width: 500px;
