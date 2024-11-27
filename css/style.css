@@ -5,35 +5,36 @@
 .main{
     width: 100%;
     height: 100vh;
-    background-image: url("../images/bg1.jpg");
+    background-image: url("../images/index_page/bg1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    animation: changeBackground 10s infinite;
+    animation: changeBackground 5s infinite;
 }
 @keyframes changeBackground {
     0% {
-        background-image: url("../images/bg2.jpg");
+        background-image: url("../images/index_page/bg2.jpg");
     }
     50% {
-        background-image: url("../images/bg3.jpg");
+        background-image: url("../images/index_page/bg3.jpg");
     }
     100% {
-        background-image: url("../images/bg4.jpg");
+        background-image: url("../images/index_page/bg4.jpg");
     }
 }
 .navbar {
     position: fixed;
-    top: 20px; /* Keep it fixed 20px from the top */
-    left: 50%; /* Position it at the horizontal center */
-    transform: translateX(-50%); /* Offset its width by 50% to center */
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
     margin: 0 auto;
     width: 80%;
     height: 70px;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: rgb(32, 32, 32);
+    transition: border-radius 0.3s ease-in-out;
 }
 .navbar-container{
     display: flex;
@@ -46,17 +47,26 @@
     height: 45px;
     background-color: transparent;
 }
-.nav-list{
+.menubar{
+    display: none;
+}
+#close-nav{
+    display: none;
+}
+.nav-list-container{
+    justify-content: center;
+    align-items: center;
     display: flex;
     gap: 30px;
     background-color: transparent;
 }
-.nav-list a{
+.nav-list .nav-item{
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     background-color: transparent;
 }
+
 .text-container{
     height: 250px;
     width: 500px;
@@ -99,12 +109,13 @@
 .feature-card-container{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 .feature-card{
     height: 400px;
-    width: 450px;
+    width: 400px;
 }
 .feature-card img{
     width: 400px;
@@ -177,6 +188,7 @@ li{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 }
 .purpose-card{
@@ -224,6 +236,10 @@ li{
     width: 400px;
     border-radius: 10px;
 }
+.stories-card img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
 .stories-card h2{
     margin-bottom: 20px;
     font-size: 28px;
@@ -242,6 +258,9 @@ li{
     border-radius: 15px;
     font-weight: 700;
 }
+.stories-card a:hover{
+    background-color: antiquewhite;
+}
 
 footer{
     margin-top: 100px;
@@ -252,7 +271,7 @@ footer{
 .footer-container{
     display: flex;
     gap: 80px;
-    width: 80%;
+    width: 85%;
     margin: 0px auto;
     padding: 120px 0px 100px 0px;
     height: auto;
