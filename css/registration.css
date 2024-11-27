@@ -1,0 +1,25 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.bg-img{
+   position: fixed;
+   width:100%;
+   height: max-content;
+   object-fit: cover;
+   filter: brightness(60%);
+}
+.reg-container{
+    position: fixed;
+}
+.logo{
+    align-items: center;
+    position:fixed;
+    top: 20%;
+    left: 45%;
+}
+.heading{
+    font-size:150px;
+    color: white;
+  
+}
