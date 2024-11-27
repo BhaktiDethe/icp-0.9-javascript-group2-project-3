@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/about.css">
+    
+</head>
+<body>
+      <section class=" about-main">
+        <navbar class="navbar" id="navbar">
+          <div class="navbar-container">
+              <a href="" class="logo"><img src="./../images/index_page/logo.png" alt=""></a>
+              <i class="fa-solid fa-bars menubar" id="menu" onclick="openSidebar()"></i>
+              <div class="nav-list" id="nav-list">
+                  <i class="fa-solid fa-xmark" id="close-nav" onclick="closeSidebar()"></i>
+                  <div class="nav-list-container">
+                      <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
+                      <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
+                      <a href="" class="nav-item">About</a>
+                      <a href="./contact.html" class="nav-item">Contact</a>
+                      <a href="" class="nav-item">Login</a>
+                  </div>
+              </div>
+          </div>
+      </navbar>
+        <div class="aboutus-img">
+          <div class="aboutus">
+           <p>About Us</p>
+        </div>
+        </div>
+
+      <div class="about-information">
+      <div>
+        <h2 class="heading-name">Welcome to Adventure.Travel, The Global Sustainable Adventure Travel Storytelling Ecosystem</h2>
+        <span class="heading-font">Adventure.Travel is for Travelers</span>
+        <p class="about-paragraph">Adventure.Travel makes dreaming and planning for travel better. By sharing stories from real-life travel professionals, we aim to making travel planning easier by telling the stories of places that are actually good to travel. So many times we have found that flipping through social media showcases places that are fundamentally not good to travel to — because of overtourism, lack of infrastructure, or just pure quality. So we firmly believe that by sourcing stories from tour operators, travel writers, and the travel community, that it will lead to a better trip for you. How can we do that? It's because we are powered by the ATTA, the hub of the adventure travel industry. We hope you enjoy your stay. If you like what you see, would you consider signing up for our newsletter or following on social?</p>
+      </div>
+
+      <div>
+        <span class="heading-font">Adventure.Travel is for Travel Companies</span>
+        <p class="about-paragraph">On Adventure.Travel, we showcase sustainable travel companies to travelers. Adventure.Travel features stories and media from travel professionals and helps inspire travelers to pack their bags and head on their next adventure. If you company aims to connect with travelers on the Adventure.Travel ecosystem, the <span class="red-color">ATTA membership </span> program is your first stop. We hope to see you soon.</p>
+      </div>
+
+      <div>
+        <span class="heading-font">Adventure.Travel is for Destinations</span>
+        <p class="about-paragraph">Simply put, without adventure travel destinations, there is no adventure travel. Connecting travelers with the perfect destinations is a passion of ours, and we are thrilled to work with the world's best adventure travel destinations. If you're interested, we have information on our<span class="red-color"> consumer marketing programs</span> or you can contact us to inquire about promotional opportunities.</p>
+      </div>
+
+      <div>
+        <span class="heading-font">Adventure.Travel is Powered by ATTA</span>
+        <p class="about-paragraph">The <span class="red-color">Adventure Travel Trade Association (ATTA)</span> is a vital leadership voice and partner for the adventure travel industry around the world. Established in 1990, the Adventure Travel Trade Association is the largest global network of adventure travel leaders. Our community is made up of 30,000 individual guides, tour operators, lodges, travel advisors, tourism boards, destination marketing and management organizations, outdoor educators, gear companies and travel media who share a belief and commitment to sustainable tourism. The connections and creativity of this vibrant community come together both virtually and in person to create and deliver the solutions that propel our businesses and our communities toward a responsible and profitable future.</p>
+      </div>
+      </div>
+
+      
+
+      <div class="mission">
+        <h2 class="heading-font">Our Mission</h2>
+        <button class="missionbtn" id="button" onclick="buttonShow()"> Show Mission</button>
+
+        <span class="hidden" id="missionInfo">
+          <div class="mission-font">
+            <p>Our mission is to inspire and empower travelers to explore the world, create unforgettable memories, and discover the beauty of different cultures.</p>
+            <p>At <b>Travel Explorer</b>, our mission is to inspire and empower travelers to explore the world and create unforgettable memories. We believe that travel enriches lives, broadens perspectives, and fosters a deeper understanding of diverse cultures. Our commitment is to provide personalized travel experiences that cater to the unique preferences of each traveler.</p>
+            
+        <h3>Key Elements of Our Mission:</h3>
+    <ul>
+        <li><b>Inspiration:</b> We aim to ignite a passion for exploration by providing curated travel content, stunning visuals, and engaging stories.</li>
+        <li><b>Empowerment:</b> We equip travelers with the tools, resources, and knowledge they need to navigate their journeys confidently.</li>
+        <li><b>Personalization:</b> We offer tailored travel plans that reflect individual interests, whether it's adventure, relaxation, or culture.</li>
+        <li><b>Sustainability:</b> We promote sustainable travel practices that respect local communities and the environment.</li>
+        <li><b>Community:</b> We foster a network of travelers who share their experiences, tips, and recommendations.</li>
+        <li><b>Excellence:</b> We strive for excellence in everything we do, ensuring customer satisfaction.</li >   
+      </ul>
+  </div>
+  </span>
+    </div>
+
+    
+      <div class="team">
+      <h2 class="heading-font">Meet Our Team</h2>
+    <button id="teamBtn" class="team-button" onclick="teamShow()">Show Team</button>
+    <span id="teamInfo" class="hidden" >
+        <div class="team-member-container">
+       <div class="team-member-card">
+            <button class="btn">JS</button>
+            <h3 class="red-color">John Smith - Founder & CEO</h3>
+            <p><b>Background:</b> With over 15 years in the travel industry, John has traveled to over 50 countries and is passionate about adventure travel.</p>
+            <p><b>Expertise:</b> John specializes in crafting unique travel itineraries that cater to individual preferences and interests.</p>
+            <p><b>Fun Fact:</b> John once hiked the Inca Trail to Machu Picchu and has a goal to visit every continent.</p>
+        </div>
+        
+        <div class="team-member-card">
+          <button class="btn">EJ</button>
+            <h3 class="red-color">Emily Johnson - Travel Consultant</h3>
+            <p><b>Background:</b> Emily has a background in hospitality and tourism, with 10 years of experience in travel planning.</p>
+            <p><b>Expertise:</b> She focuses on family travel and luxury vacations, ensuring that every detail is taken care of.</p>
+            <p><b>Fun Fact:</b> Emily is a certified scuba diver and loves exploring underwater ecosystems.</p>
+        </div>
+        <div class="team-member-card">
+          <button class="btn">ML</button>
+            <h3 class="red-color">Michael Lee - Adventure Specialist</h3>
+            <p><b>Background:</b> Michael is an outdoor enthusiast with a degree in environmental science and a passion for sustainable travel.</p>
+            <p><b>Expertise:</b> He specializes in adventure travel, including hiking, biking, and eco-tourism.</p>
+            <p><b>Fun Fact:</b> Michael has summited several peaks in the Himalayas and is a certified mountain guide.</p>
+        </div>
+     
+        <div class="team-member-card">
+          <button class="btn">SM</button>
+            <h3 class="red-color">Sophia Martinez - Marketing Manager</h3>
+            <p><b>Background:</b> Sophia has a degree in marketing and over 8 years of experience in the travel industry.</p>
+            <p><b>Expertise:</b> She is responsible for creating engaging content and promoting travel experiences through social media.</p>
+            <p><b>Fun Fact:</b> Sophia has a travel blog where she shares tips and stories from her journeys around the world.</p>
+        </div>
+        </div>
+      </span>
+    </div>
+  </section>
+    <script src="./../js/about.js"></script>
+    <script src="./../js/script.js"></script>
+</body>
+</html>
