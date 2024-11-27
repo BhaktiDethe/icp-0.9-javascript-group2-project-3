@@ -1,0 +1,247 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f9;
+}
+
+.header {
+    height: 100vh; /* Full viewport height */
+    background: url('/imges.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Section Titles */
+h1, h2 {
+    text-align: center;
+    color: #444;
+}
+
+/* Styling for the transparent white box */
+.transparent-box {
+    width: 100%; /* Adjust width as needed */
+    margin: 20px auto; /* Center the box vertically and horizontally */
+    padding: 20px; /* Add padding inside the box */
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center-align the content */
+}
+
+/* Styling the title */
+.box-title {
+    font-size: 2rem; /* Font size of the title */
+    color: #333; /* Dark text color for readability */
+    font-weight: bold; /* Make the title bold */
+    margin: 0; /* Remove default margin */
+}
+
+/* Content Styling */
+.Tunisia, .region, .map-section, .gallery {
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.9); /* Transparent white for readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.video-info-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.video-info-container:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.video-container {
+    flex: 1; /* Adjusts the width based on available space */
+    min-width: 300px; /* Ensures it doesn’t shrink too small */
+}
+
+iframe {
+    width: 100%; /* Ensures the video takes full width of its container */
+    height: 315px; /* Default YouTube video height */
+    border-radius: 10px; /* Rounded corners for the video */
+    border: 2px solid #ddd; /* Thin border for a clean look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth to the video */
+}
+
+.info-container {
+    flex: 1;
+    min-width: 300px; /* Ensures the text area stays readable on smaller screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically aligns text */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.info-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video-info-container {
+        flex-direction: column; /* Stacks video and text vertically */
+        gap: 20px;
+    }
+
+    iframe {
+        height: 250px; /* Adjusts video height for smaller screens */
+    }
+
+    .info-container {
+        text-align: center; /* Centers the text for smaller screens */
+        padding: 15px;
+    }
+}
+
+/* Regions */
+.region .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.region .image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.region .text {
+    flex: 1;
+}
+.media-gallery {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.media-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.media-item {
+    flex: 0 0 auto;
+    width: 30%;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.media-item img,
+.media-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#load-more-btn {
+    margin: 20px auto;
+    display: block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#load-more-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Map Section */
+.map-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.map-section img {
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+/* Discover Section */
+.discover .link a {
+    display: inline-block;
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.discover .link a:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+}
