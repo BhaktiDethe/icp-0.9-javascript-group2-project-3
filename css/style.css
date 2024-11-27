@@ -443,4 +443,61 @@ footer{
         border-bottom-left-radius: 10px;
         visibility: hidden;
     }
+    .nav-list-container{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    #close-nav{
+        display: block;
+        position: fixed;
+        right: 5px;
+        padding: 10px;
+        font-size: 18px;
+        color: #fff;
+    }
+    .nav-item{
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .heading{
+        font-size: 48px;
+    }
+    .feature-card-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .adventure-container{
+        gap: 40px;
+    }
+    .adventure-container img{
+        height: 350px;
+        width: 350px;
+    }
+    .adventure-info{
+        text-align: justify;
+        font-size: 16px;
+    }
+    .purpose .heading{
+        margin-top: 150px;
+    }
+    .purpose-des{
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+    .purpose-container{
+        justify-content: center;
+    }
+    
+    .purpose-card p{
+        text-align: justify;
+        font-size: 17px;
+    }
 }
