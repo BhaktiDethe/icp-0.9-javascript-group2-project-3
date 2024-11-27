@@ -1,4 +1,4 @@
-/* General Reset */
+
 body {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@ body {
 }
 
 .header {
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     background: url('/imges.png') no-repeat center center;
     background-size: cover;
     display: flex;
