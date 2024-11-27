@@ -12,4 +12,17 @@ function buttonShow(){
     button.textContent ='Show Mission';
     }
    }
-   
+function teamShow(){
+ const teamInfo = document.getElementById('teamInfo');
+ const teamBtn = document.getElementById('teamBtn');
+ if( teamInfo.classList.contains('hidden'))
+ {
+    teamInfo.classList.remove('hidden');
+    teamBtn.textContent = 'Team';
+ }
+ else{
+    teamInfo.classList.add('hidden');
+    teamBtn.textContent = 'show Team';
+ }
+
+ }
