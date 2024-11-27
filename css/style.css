@@ -5,23 +5,36 @@
 .main{
     width: 100%;
     height: 100vh;
-    background-image: url("../images/bg1.jpg");
+    background-image: url("../images/index_page/bg1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex; 
     justify-content: center; 
     align-items: center; 
+    animation: changeBackground 5s infinite;
+}
+@keyframes changeBackground {
+    0% {
+        background-image: url("../images/index_page/bg2.jpg");
+    }
+    50% {
+        background-image: url("../images/index_page/bg3.jpg");
+    }
+    100% {
+        background-image: url("../images/index_page/bg4.jpg");
+    }
 }
 .navbar {
     position: fixed;
-    top: 20px; /* Keep it fixed 20px from the top */
-    left: 50%; /* Position it at the horizontal center */
-    transform: translateX(-50%); /* Offset its width by 50% to center */
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
     margin: 0 auto;
     width: 80%;
     height: 70px;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: rgb(32, 32, 32);
+    transition: border-radius 0.3s ease-in-out;
 }
 .navbar-container{
     display: flex;
@@ -34,16 +47,122 @@
     height: 45px;
     background-color: transparent;
 }
-.nav-list{
+.menubar{
+    display: none;
+}
+#close-nav{
+    display: none;
+}
+.nav-list-container{
+    justify-content: center;
+    align-items: center;
     display: flex;
     gap: 30px;
     background-color: transparent;
 }
-.nav-list a{
+.nav-list .nav-item{
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     background-color: transparent;
+}
+.nav-list .nav-item:hover{
+    color: rgb(207, 92, 92);
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+.arrow i{
+    font-size: 15px;
+}
+.destination-click{
+    display: flex;
+    position: fixed;
+    top: 90px;
+    width: 80%;
+    height: 300px;
+    background-color: rgba(32, 32, 32,0.8);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    visibility: hidden;
+}
+.area{
+    width: 98%;
+    display: flex;
+}
+.featured-destination{
+    box-sizing: border-box;
+    width: 500px;
+    padding: 10px;
+    margin-left: 70px;
+}
+.featured-destination p{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+.featured-destination ul{
+    margin-top: 30px;
+    line-height: 1.7;
+}
+.featured-destination li{
+    line-height: 2.2;
+    color: #fff;
+    font-size: 18px;
+}
+.next-adrenaline{
+    margin-right: 100px;
+    padding: 10px;
+}
+.next-adrenaline p{
+    margin-right: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+.close{
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-align: right;
+}
+.trip-click {
+    position: fixed;
+    top: 90px;
+    width: 80%;
+    height: 80px;
+    background-color: rgba(32, 32, 32, 0.8);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    visibility: hidden;         
+}
+.trip-plan-div{
+    width: 95%;
+    height: 80px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    gap: 150px; 
+}
+.trip-item {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.trip-item:hover{
+    background-color: rgb(207, 92, 92);
+    border-radius: 5px;
+}
+.close-mark{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    font-size: 18px;
 }
 .text-container{
     height: 250px;
@@ -51,7 +170,7 @@
     background-color:rgba(226, 222, 222, 0.7);
     border-radius: 15px;
     text-align: center; /* Optional: Centers text inside the box */
-    padding: 20px; 
+    padding: 40px; 
 }
 .text-container p{
     font-size: 55px;
@@ -60,9 +179,23 @@
     background-color: transparent;
 }
 
+.main-container{
+    background-color: rgb(253, 245, 234);
+    padding-top: 60px;
+    position: relative;
+}
+.top-arrow i{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: rgb(207, 92, 92);
+    padding: 10px 12px;
+    border: 1px solid rgb(207, 92, 92);
+    border-radius: 50%;
+}
 .featured-des{
     width: 80%;
-    margin: 60px auto;
+    margin: 0px auto;
     height: auto;
 }
 .heading{
@@ -73,12 +206,13 @@
 .feature-card-container{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 .feature-card{
     height: 400px;
-    width: 450px;
+    width: 400px;
 }
 .feature-card img{
     width: 400px;
@@ -94,4 +228,328 @@
 .feature-info{
     line-height: 1.4;
     font-size: 17px;
+}
+
+.region{
+    width: 80%;
+    margin: 60px auto;
+    height: auto;
+}
+ul{
+    padding-left: 20px;
+}
+li{
+    list-style: none;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.adventure-sec{
+    width: 80%;
+    margin: 60px auto;
+    height: auto;
+}
+.adventure-container{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.adventure-container img{
+    height: 450px;
+    width: 450px;
+    border-radius: 10px;
+}
+.adventure-container .heading{
+    margin-bottom: 10px;
+}
+.adventure-info{
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.purpose{
+    width: 80%;
+    margin: 60px auto;
+    height: auto;
+}
+.purpose .heading{
+    margin-top: 250px;
+    margin-bottom: 20px;
+}
+.purpose-des{
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.purpose-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.purpose-card{
+    height: 400px;
+    width: 280px;
+}
+.purpose-card img{
+    width: 280px;
+    height: 170px;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+.purpose-card h2{
+    margin: 10px 0;
+    font-size: 21px;
+}
+.purpose-card p{
+    line-height: 1.4;
+    font-size: 17px;
+}
+
+.stories{
+    width: 80%;
+    margin: 60px auto;
+    height: auto;
+}
+.stories .heading{
+    margin-top: 250px;
+    margin-bottom: 20px;
+}
+.stories-container{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+.stories-card{
+    margin-bottom: 20px;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    height: 190px;
+}
+.stories-card img{
+    height: 180px;
+    width: 400px;
+    border-radius: 10px;
+}
+.stories-card img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.stories-card h2{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.stories-card p{
+    margin-bottom: 35px;
+    font-size: 17px;
+    line-height: 1.4;
+}
+.stories-card a{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 30px;
+    border: 1px solid rgb(207, 92, 92);
+    color: rgb(207, 92, 92);
+    border-radius: 15px;
+    font-weight: 700;
+}
+.stories-card a:hover{
+    background-color: antiquewhite;
+}
+
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(32, 32, 32);
+}
+.footer-container{
+    display: flex;
+    gap: 80px;
+    width: 85%;
+    margin: 0px auto;
+    padding: 120px 0px 100px 0px;
+    height: auto;
+}
+.footer-sec img{
+    height: 45px;
+    margin-bottom: 25px
+}
+.footer-info{
+    color: rgb(170, 168, 168);
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 35px;
+}
+.icon-container{
+    display: flex;
+    gap: 25px;
+}
+.icon-container i{
+    color: rgb(170, 168, 168);
+    font-size: 20px;
+}
+.footer-heading{
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-list a{
+    text-decoration: none;
+    color: rgb(170, 168, 168);
+}
+.footer-list a:hover{
+    text-decoration: underline;
+}
+.copyright{
+    padding: 20px;
+    text-align: center;
+    color: rgb(170, 168, 168);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1000px){
+    .navbar {
+        width: 100%;
+        background-color:transparent;
+    }
+    .logo img{
+        height: 40px;
+    }
+    .menubar{
+        color: rgb(207, 92, 92);
+        font-size: 25px;
+        display: block;
+    }
+    .nav-list{
+        position: fixed;
+        top: 0;
+        gap: 5px;
+        right: 0px;
+        background-color: rgba(32, 32, 32, 0.8);
+        width: 180px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        visibility: hidden;
+    }
+    .nav-list-container{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    #close-nav{
+        display: block;
+        position: fixed;
+        right: 5px;
+        padding: 10px;
+        font-size: 18px;
+        color: #fff;
+    }
+    .nav-item{
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .heading{
+        font-size: 48px;
+    }
+    .feature-card-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .adventure-container{
+        gap: 40px;
+    }
+    .adventure-container img{
+        height: 350px;
+        width: 350px;
+    }
+    .adventure-info{
+        text-align: justify;
+        font-size: 16px;
+    }
+    .purpose .heading{
+        margin-top: 150px;
+    }
+    .purpose-des{
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+    .purpose-container{
+        justify-content: center;
+    }
+    
+    .purpose-card p{
+        text-align: justify;
+        font-size: 17px;
+    }
+    .stories .heading{
+        margin-top: 130px;
+    }
+    .stories-card{
+        gap: 20px;
+        height: 220px;
+    }
+    .stories-card img{
+        height: 180px;
+        width: 350px;
+    }
+    .stories-card h2{
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    .stories-card p{
+        margin-bottom: 25px;
+        font-size: 16px;
+        text-align: justify;
+    }
+    .footer-container{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .main{
+        margin: 0px auto;
+    }
+    .text-container {
+        height: auto;
+        width: 90%;
+        padding: 30px;
+        margin-left: 20px;
+        margin: 0px 20px;
+    }
+    .text-container p{
+        font-size: 45px;
+    }
+    .heading{
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    .feature-card{
+        height: 350px;
+        width: 400px;
+    }
+    .adventure-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 }
