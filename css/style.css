@@ -500,4 +500,56 @@ footer{
         text-align: justify;
         font-size: 17px;
     }
+    .stories .heading{
+        margin-top: 130px;
+    }
+    .stories-card{
+        gap: 20px;
+        height: 220px;
+    }
+    .stories-card img{
+        height: 180px;
+        width: 350px;
+    }
+    .stories-card h2{
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    .stories-card p{
+        margin-bottom: 25px;
+        font-size: 16px;
+        text-align: justify;
+    }
+    .footer-container{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .main{
+        margin: 0px auto;
+    }
+    .text-container {
+        height: auto;
+        width: 90%;
+        padding: 30px;
+        margin-left: 20px;
+        margin: 0px 20px;
+    }
+    .text-container p{
+        font-size: 45px;
+    }
+    .heading{
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    .feature-card{
+        height: 350px;
+        width: 400px;
+    }
+    .adventure-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 }
