@@ -25,7 +25,7 @@ body{
 }
 .box{
     background-color:#ffb380;
-    height:5000px;
+    height:7000px;
     width: 50%;
     margin-left: 25%;
     position: relative;
@@ -99,4 +99,21 @@ body{
 .destination{
     margin-left: 17%;
     margin-top:3%;
+}
+.from{
+   margin-left: 17%;
+   margin-top: 2%;
+}
+.fromname{
+    font-size: 90px;
+    margin-left: 17%;
+    margin-top:5%;
+}
+.to{
+    margin-left: 60%;
+    margin-top: -300px;
+}
+.toip{
+    margin-left: 60%;
+    margin-top: 45px;
 }
