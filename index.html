@@ -7,7 +7,7 @@
     <title>Travel And tourisam</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body id="body">
     <section class="main">
         <navbar class="navbar" id="navbar">
             <div class="navbar-container">
@@ -18,9 +18,15 @@
                     <div class="nav-list-container">
                         <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
                         <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
-                        <a href="" class="nav-item">About</a>
-                        <a href="" class="nav-item">Contact</a>
+                        <a href="./pages/about.html" class="nav-item">About</a>
+                        <a href="./pages/contact.html" class="nav-item">Contact</a>
                         <a href="" class="nav-item">Login</a>
+                        <div id="theam-btn-container">
+                            <label class="switch">
+                                <input type="checkbox" id="checkValue">
+                                <span class="slider round"></span>
+                              </label>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -54,9 +60,14 @@
         </div>
         <div class="text-container">
             <p>Your Adventure Awaits. Where Will Your Curiosity Take You?</p>
+            <a href="./pages/booking.html" class="book-now" id="book-now">Book Now</a>
+        </div>
+        <div class="controls">
+            <i id="prev" class="fas fa-chevron-left"></i>
+            <i id="next" class="fas fa-chevron-right"></i>
         </div>
     </section>
-    <div class="main-container">
+    <div class="main-container" id="pages">
         <a href="" class="top-arrow"><i class="fa-solid fa-arrow-up"></i></a>
         <section class="featured-des">
             <h1 class="heading">Explore Our Featured Destinations</h1>

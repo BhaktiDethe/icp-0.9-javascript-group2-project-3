@@ -38,3 +38,44 @@ function closeSidebar(){
     menuEle.style.visibility = "visible"
 }
 
+let images = [
+    "images/index_page/bg1.jpg",
+    "images/index_page/bg2.jpg",
+    "images/index_page/bg3.jpg",
+    "images/index_page/bg4.jpg"
+];
+
+let currentIndex = 0;
+let mainElement = document.querySelector('.main');
+let interval;
+
+function changeBackgroundImage(index) {
+    mainElement.style.backgroundImage = `url(${images[index]})`;
+}
+
+function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length; 
+    changeBackgroundImage(currentIndex);
+    resetAutoSlide(); 
+}
+
+function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length; 
+    changeBackgroundImage(currentIndex);
+    resetAutoSlide(); 
+}
+
+function startAutoSlide() {
+    interval = setInterval(nextImage, 3000); 
+}
+
+function resetAutoSlide() {
+    clearInterval(interval); 
+    startAutoSlide(); 
+}
+
+document.getElementById('next').addEventListener('click', nextImage);
+document.getElementById('prev').addEventListener('click', prevImage);
+
+changeBackgroundImage(currentIndex);
+startAutoSlide();
