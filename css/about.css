@@ -58,7 +58,7 @@ h2{
     font-family: "Merriweather", serif;
     margin: 20px 0px 10px 0px;
     font-size: 30px;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 .mission,.team,.history{
     background: rgb(251, 245, 238);
@@ -183,3 +183,185 @@ ul {
  margin-top: 10px;
  
 }
+
+/* Media Queries */
+@media screen and (max-width: 1000px){
+    .navbar {
+        width: 100%;
+        background-color:transparent;
+    }
+    .logo img{
+        height: 40px;
+    }
+    .menubar{
+        color: rgb(207, 92, 92);
+        font-size: 25px;
+        display: block;
+    }
+    .nav-list{
+        position: fixed;
+        top: 0;
+        gap: 5px;
+        right: 0px;
+        background-color: rgba(32, 32, 32, 0.8);
+        width: 180px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        visibility: hidden;
+    }
+    .nav-list-container{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    #close-nav{
+        display: block;
+        position: fixed;
+        right: 5px;
+        padding: 10px;
+        font-size: 18px;
+        color: #fff;
+    }
+    .nav-item{
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .team-member-card{
+        width: 220px;
+    
+    }
+    .footer-container{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 800px){
+    .about-main{
+        margin: 0px auto;
+    }
+    .footer-container{
+        gap: 60px;
+        width: 90%;
+        padding: 90px 0px 80px 0px;
+    }
+    .footer-sec img{
+        height: 40px;
+    }
+    .footer-info{
+        margin-bottom: 30px;
+    }
+    .icon-container{
+        gap: 20px;
+    }
+    .icon-container i{
+        color: rgb(170, 168, 168);
+        font-size: 20px;
+    }
+    .footer-list{
+        gap: 15px;
+    }
+    .copyright{
+        padding: 15px;
+    }
+    .aboutus p{
+        font-size: 85px;
+    }
+    .about-paragraph{  
+        font-size: 20px;
+    }
+    h2{
+        padding-left: 30px;
+    }
+    .heading-name{
+        font-size: 40px;
+        
+    }
+    .missionbtn ,.team-button,.history-button
+{   font-size: 20px;
+
+}
+.mission-font,.team-member{
+    font-size:20px;
+    
+}
+
+.mission ul{
+    font-size:20px;
+}
+}
+ @media screen and (max-width: 450px){
+    .aboutus p{
+        font-size:40px;
+}
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(32, 32, 32);
+}
+.footer-container{
+    gap: 50px;
+    width: 90%;
+    padding: 70px 0px 60px 0px;
+}
+.footer-sec img{
+    height: 40px;
+    margin-bottom: 20px
+}
+.footer-info{
+    margin-bottom: 25px;
+}
+.icon-container{
+    gap: 20px;
+}
+.icon-container i{
+    font-size: 18px;
+}
+.footer-heading{
+    margin-bottom: 20px;
+}
+.footer-list{
+    gap: 10px;
+}
+.copyright{
+    padding: 10px;
+}
+.aboutus{
+    height: 80px;
+    width: 300px;
+    
+}
+.heading-font{
+    font-size: 20px;
+    
+  }
+  
+  .about-paragraph{
+      font-size: 16px;  
+  }
+  h2{
+      padding-left: 30px;
+  }
+  .heading-name{
+    font-size:25px;
+    
+ }
+ .missionbtn ,.team-button,.history-button{
+   font-size: 13px;
+    
+}
+.missionbtn ,.team-button,.history-button
+{   font-size: 16px;
+
+}
+.mission-font,.team-member{
+    font-size:16px;
+    
+}
+ }
