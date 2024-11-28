@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <title>Travel Advisors</title>
-    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="../css/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bokor&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         
@@ -12,10 +14,8 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            
-                
-            
-        }
+            }
+
         .go-top{
         position:fixed;
         bottom:0;
@@ -26,13 +26,15 @@
 
         .advisors-section{
             width: 100%;
-            height: 100vh;
-            padding: 0px 150px;
+           
+            
+            
             
         
             }
 
         .advisors-heading{
+            padding: 0px 150px;
             margin-top: 200px;
             font-size: 60px;
             font-family: "Merriweather", serif;
@@ -45,12 +47,14 @@
         .advisors-para{
             margin-top: 15px;
             font-size: 20px;
+            padding: 0px 150px;
             font-family: "Montserrat", sans-serif;
 }
              
         .advisors-main-section{
-            width: 100%;
-          
+            padding: 0px 150px;
+            
+            
             display: flex;
             justify-content: space-between;
             text-align: center;
@@ -84,21 +88,26 @@
             color: rgb(109, 107, 107);
             cursor: pointer;
         }
+        
     </style>
 </head>
 <body>
 
     <a href="#top"><img src="../images/travel_advisors/up-arrow.png" class="go-top"/></a>
 
-    <navbar class="navbar">
+    <navbar class="navbar" id="navbar">
         <div class="navbar-container">
-            <a href="" class="logo"><img src="/images/logo.png" alt=""></a>
-            <div class="nav-list">
-                <a href="">Destination</a>
-                <a href="">Plan A Trip</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
-                <a href="">Login</a>
+            <a href="" class="logo"><img src="../images/index_page/logo.png" alt=""></a>
+            <i class="fa-solid fa-bars menubar" id="menu" onclick="openSidebar()"></i>
+            <div class="nav-list" id="nav-list">
+                <i class="fa-solid fa-xmark" id="close-nav" onclick="closeSidebar()"></i>
+                <div class="nav-list-container">
+                    <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
+                    <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
+                    <a href="" class="nav-item">About</a>
+                    <a href="" class="nav-item">Contact</a>
+                    <a href="" class="nav-item">Login</a>
+                </div>
             </div>
         </div>
     </navbar>
@@ -178,13 +187,70 @@
                     <p class="name-para">Worldwide Experiences. Small Town Service
                     </p>
                 </div>
-                
+
+             </div>
+
+             <div>
+
+             <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-sec">
+                        <a href=""><img src="../images/index_page/logo.png" alt=""></a>
+                        <p class="footer-info">The Global Sustainable Adventure Travel Storytelling Ecosystem</p>
+                        <div class="icon-container">
+                            <a href=""><img src="" alt=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><img src="" alt=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><img src="" alt=""><i class="fa-regular fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-sec">
+                        <p class="footer-heading">Destinations</p>
+                        <div class="footer-list">
+                            <a href="">Hokkaido</a>
+                            <a href="">Tunisia</a>
+                            <a href="">Korea</a>
+                            <a href="">Spain</a>
+                        </div>
+                    </div>
+                    <div class="footer-sec">
+                        <p class="footer-heading">Planning</p>
+                        <div class="footer-list">
+                            <a href="">Find Your Adventure</a>
+                            <a href="">Tour Operators</a>
+                            <a href="">Travel Advisors</a>
+                        </div>
+                    </div>
+                    <div class="footer-sec">
+                        <p class="footer-heading">Sharing</p>
+                        <div class="footer-list">
+                            <a href="">Share Stories</a>
+                            <a href="">Add Your Company Listing</a>
+                            <a href="">Feature Your Destination</a>
+                        </div>  
+                    </div>
+                    <div class="footer-sec">
+                        <p class="footer-heading">Adventure.Travel</p>
+                        <div class="footer-list">
+                            <a href="">About Us</a>
+                            <a href="">Contact Us</a>
+                        </div>
+                    </div>
                 </div>
+                <hr>
+                <p class="copyright">© 2024 All rights reserved</p>
+            </footer>
+            </div>
+            
+    
+
+            </section>
 
         
-        </section>
+
+        
+        
 
     
-    
+            
 </body>
 </html>
