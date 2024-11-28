@@ -145,4 +145,22 @@ position: relative;
 .history ul{
     font-family: "Montserrat", sans-serif;
 } 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li{
+    background:rgb(249, 236, 222);
+    margin: 15px 10px; 
+    padding: 20px; 
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 5px solid #35424a; 
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 
