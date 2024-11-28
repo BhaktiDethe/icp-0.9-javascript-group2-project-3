@@ -8,26 +8,34 @@
 </head>
 <body>
    <div>
+    <img src="./../images/registrationpage/homelogo-removebg-preview.png" alt="" class="homelogo">
      <img src="./../images/registrationpage/logo1-removebg-preview.png" alt="" class="logo">
+
      <div class="box">
      <p class="heading">Travel Registration Form</p>
+     
      <p class="text2">Please fill out the form below to register for the upcoming travel event.</p>
-     <div class="info-box">
-     <p class="name-font name">Full Name</p>
-     <input type="text" name="" id="" placeholder="Your Name" class="ip-box box1">
+     <div>
 
-     <p class="name-font email">Email</p>
-     <input type="text" name="" id="" placeholder="Your Email Address" class="ip-box box1">
+      <div class="nameflexbox">
+        <div class="name-font">Full Name<br>
+          <input type="text" placeholder="Your name"  class="ip-box">
+        </div>
 
-     <p class="name-font phone">Phone Number</p>
-     <input type="text" name="" id="" placeholder="Your Phone Number" class="ip-box box1">
+        <div class="name-font">Email<br>
+          <input type="text" placeholder="Your name"  class="ip-box">
+        </div><br><br>
 
-     <p class="name-font address">Address</p>
-     <input type="text" name="" id="" placeholder="Your Address" class="ip-box box1">
+        <div class="name-font">Phone Number<br>
+          <input type="text" placeholder="Your name"  class="ip-box">
+        </div>
 
-     <div class="city-container">
-      <div>
-        <input list="Cities" class="city" placeholder="City">
+        <div class="name-font">Address<br>
+          <input type="text" placeholder="Your name"  class="ip-box">
+        </div>
+
+        <div class="name-font">City<br>
+        <input list="Cities" class="ip-box" placeholder="City">
         <datalist id="Cities">
          <option>Kolkata</option>
          <option>Mumbai</option>
@@ -44,8 +52,8 @@
          <option>Kachha</option>
          <option>Somnath</option></datalist></div>
 
-      <div>
-          <input list="Cities" class="city state" placeholder="State">
+      <div class="name-font">State<br>
+          <input list="Cities" class="ip-box" placeholder="State">
           <datalist id="Cities">
          <option>Maharastra</option>
          <option>Gujarat</option>
@@ -61,19 +69,22 @@
          <option>Arunachal Pradesh</option>
          <option>Chhattisgarh</option>
          <option>Andhra Pradesh</option></datalist></div>
+      </div>
     </div>
     
-    <p class="name-font address">Emergency Contact Information</p>
+    <p class="fontsize fix"><u>Emergency Contact Information</u></p>
     <p class="subline">(Please provide the name and phone number of an emergency contact person.)</p>
-     <input type="text" name="" id="" placeholder="Enter Name " class="ip-box box1">
-     <input type="text" name="" id="" placeholder="Enter Phone Number " class="ip-box box1">
+    <div class="nameflexbox">
+    <input type="text" placeholder="Your Name"  class="ip-box fix-2 ">
+    <input type="text" placeholder="Your Number"  class="ip-box fix-2">
+    </div>
 
-     <p class="name-font address">Travel Preferences</p>
+    <p class="fontsize fix"><u>Travel preferences</u></p>
      <p class="subline">(Please indicate your travel preferences below.)</p>
 
-     <p class="name-font address">Preferred Travel Destination</p>
+     <p class="fontsize fix">Preferred Travel Destination</p>
      <div>
-      <input list="Cities" class="city state destination" placeholder="Destination">
+      <input list="Cities" class="ip-box fix-3" placeholder="Destination">
       <datalist id="Cities">
      <option>Maharastra</option>
      <option>Gujarat</option>
@@ -90,11 +101,25 @@
      <option>Chhattisgarh</option>
      <option>Andhra Pradesh</option></datalist></div>
 
-     <div for="to" class="fromname">Preferred Travel Date:<br> <br>From:</div>
-     <input type="date" id="" class="city state from">
+     <div class="nameflexbox fix-4">
+      <div class="name-font">From:<br>
+        <input type="date" placeholder="Your name"  class="ip-box">
+      </div><br><br>
 
-     <div class="fromname to">To:</div>
-     <input type="date" id="" class="city state toip">
+      <div class="name-font">To:<br>
+        <input type="date" placeholder="Your name"  class="ip-box">
+      </div><br><br>
+     </div>
+      
+     <p class="fontsize fix"><u>Health and Safety</u></p>
+     <p class="subline">(Please answer the following health and safety question.)</p>
+
+     <p class="fontsize fix">Do you have any medical conditions or allergies?</p>
+     <div class="nameflexbox">
+     <div class="checktext"><input type="radio"/>Yes</div>
+     <div class="checktext"><input type="radio"/>No</div> 
+     </div>
+    
 
      </div>
    </div>

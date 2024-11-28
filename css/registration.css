@@ -6,114 +6,99 @@ body{
     background-image: url("./../images/registrationpage/bg-5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+   
 }
 .logo{
-    margin-left: 45%;
-    margin-top: 5%;
+    margin-left:45%;
+    margin-top: 2%;
+    height: 150px;
+    width: 150px;
 }
-.heading{
-    text-align: center;
-    font-size: 200px;
-    color: white;
-    padding: 40px 0;
-    padding-top: 150px;
-}
-.text2{
-    font-size: 60px;
-    text-align: center;
-    margin-top: 20px;
+.homelogo{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 90%;
+    background-size: cover;
+    margin-left: 1%;
 }
 .box{
     background-color:#ffb380;
-    height:7000px;
-    width: 50%;
-    margin-left: 25%;
     position: relative;
+    height:2000px;
+    width:900px;
+    margin-left:23%;
+    position:sticky;
     border-radius: 50px;
+    opacity: 90%;
 }
-.ip-box{
-    height: 140px;
-    width: 2000px;
+.heading{
+    text-align: center;
     font-size: 50px;
-    padding-left: 30px;
-    background-color:white;
-    border: none;
-    margin-left:17%;
-    margin-top: 50px;
+    color: white;
+    padding: 40px 0;
+    padding-top:40px;
+}
+.text2{
+    font-size: 20px;
+    text-align: center;
+    margin-top:-30px;
+}
+.nameflexbox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto 40px;
 }
 .name-font{
-    font-size:90px;
-    margin-left:17%;
-}
-.box1{
-    border: none;
-    border-bottom:2px solid black ;
-    background-color:#ffb380;
-    margin-top:2%;
-    font-size: 60px;
-}
-.box1:hover{
-    border: none;
-    border-color: #ffb380;
-    border-bottom:2px solid black ;
-}
-.name{
+    font-size:25px;
+    margin-left:10%;
     margin-top:8%;
 }
-.email{
-    margin-top:4%;
-}
-.phone{
-    margin-top: 4%;
-}
-.address{
-    margin-top: 4%;
-}
-.city-container{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 400px;
-    align-items: center;
-    margin-left: -5%;
-}
-.city{
-    height:70px;
-    width:500px;
-    border-radius:20px;
+.ip-box{
+    height: 20px;
+    width: 250px;
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px;
     border: none;
-    font-size: 60px;
-    padding:40px;
+    border-radius: 8px;
+    border-bottom:2px solid black ;
+    background-color:white;
+    border: none;
+    margin-left: 0px;
 }
-.city-name{
-    font-size: 90px;
-    margin-left: 10%;
-    margin-top: 10%;
+.fontsize{
+    font-size: 27px;
+}
+.fix{
+    margin-left: 14%;
+    margin-top: 5%;
 }
 .subline{
-    font-size: 60px;
-    margin-top: 40px;
-    margin-left: 17%;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 14%;
     color: grey;
 }
-.destination{
-    margin-left: 17%;
-    margin-top:3%;
+.fix-2{
+    margin-left:10%;
+    margin-top:5%; 
 }
-.from{
-   margin-left: 17%;
-   margin-top: 2%;
+.fix-3{
+    margin-left: 14%;
+    margin-top:2%;
 }
-.fromname{
-    font-size: 90px;
-    margin-left: 17%;
-    margin-top:5%;
+.fix-4{
+    margin-top: -40px;
 }
-.to{
-    margin-left: 60%;
-    margin-top: -300px;
+.checktext{
+    font-size: 25px;
+    margin-left:11%;
+    margin-top: 20px;
+    width: fit-content;
 }
-.toip{
-    margin-left: 60%;
-    margin-top: 45px;
-}
+
+
+
