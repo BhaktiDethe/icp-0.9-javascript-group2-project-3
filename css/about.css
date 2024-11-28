@@ -40,7 +40,7 @@ body{
     padding-left: 40px;
     margin: 0%;
     padding-right: 40px;
-    font-size: 21px;
+    font-size: 19px;
     margin-bottom: 20px;
     font-family: "Montserrat", sans-serif;
     
@@ -53,7 +53,7 @@ h2{
     font-family: "Merriweather", serif;
     margin: 20px 0px 10px 0px;
 }
-.mission,.team{
+.mission,.team,.history{
     background: rgb(251, 245, 238);
     padding: 0px;
     border-radius: 5px;
@@ -63,7 +63,7 @@ h2{
 .hidden{
     display: none;
 }
-.missionbtn ,.team-button{
+.missionbtn ,.team-button,.history-button{
     margin-left: 30px;
     padding: 7px 10px;
     border-radius: 20px;
@@ -82,12 +82,17 @@ h2{
   padding: 10px 15px;
 }
 .missionbtn:hover{
-    transition: 2s;
+  transition: 2s;
   cursor: pointer;
   text-decoration: underline;
   padding: 10px 15px;
 }
-
+.history-button:hover{
+    transition: 2s;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 10px 15px;
+}
 .about-main{
     width: 100%;
     height: 400px;
@@ -99,7 +104,7 @@ h2{
     text-decoration: underline;
 }
 .mission-font,.team-member{
-    font-size: 20px;
+    font-size:19px;
     font-family: "Montserrat", sans-serif;
     padding:0 40px 0 40px;
     
@@ -136,5 +141,26 @@ position: relative;
     background-color:rgb(46, 44, 44);
     border: none;
     color: #fff;
+}
+.history ul{
+    font-family: "Montserrat", sans-serif;
+} 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li{
+    background:rgb(249, 236, 222);
+    margin: 15px 10px; 
+    padding: 20px; 
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 5px solid #35424a; 
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
