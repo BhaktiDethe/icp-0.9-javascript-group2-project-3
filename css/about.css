@@ -1,33 +1,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bokor&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+*{
+   padding: 0px;
+   margin: 0%;
+}
 body{
     background-color: rgb(253, 245, 234);
+    width: 100%;
 }
 .aboutus-img{
         background-image: url('./../images/aboutpage/aboutpage-img.jpeg');
         background-size: cover;  
-        border-radius: 25px;  
         width: 100%;
-        padding:20px 10px;
         height:500px;
+        display: flex;
+        justify-content: center;
+        
 }
 .aboutus{
     height: 150px;
     width: 500px;
     background-color:rgba(226, 222, 222, 0.7);
     border-radius: 15px;
-    text-align: center; 
-    padding: 40px; 
-    margin-top:12%;
-    margin-left:25%;
-    align-items:center; 
+    text-align: center;
+    padding: 40px;
+    margin-top:150px;
+    
 }
 .aboutus p{
     font-size: 85px;
     font-weight: 600;
     color: rgb(32, 32, 32);
     background-color: transparent;
+
 }
 .heading-font{
   padding-left: 40px;
@@ -52,10 +57,12 @@ h2{
     padding-left: 40px;
     font-family: "Merriweather", serif;
     margin: 20px 0px 10px 0px;
+    font-size: 30px;
+    padding-top: 20px;
 }
 .mission,.team,.history{
     background: rgb(251, 245, 238);
-    padding: 0px;
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 2px 5px  7px 5px rgba(0, 0, 0, 0.1);
     margin: 30px;
@@ -80,25 +87,28 @@ h2{
   cursor: pointer;
   text-decoration: underline;
   padding: 10px 15px;
+  color: rgb(207, 92, 92);
 }
 .missionbtn:hover{
   transition: 2s;
   cursor: pointer;
   text-decoration: underline;
   padding: 10px 15px;
+  color: rgb(207, 92, 92);;
 }
 .history-button:hover{
     transition: 2s;
     cursor: pointer;
     text-decoration: underline;
     padding: 10px 15px;
+    color: rgb(207, 92, 92);
 }
 .about-main{
     width: 100%;
     height: 400px;
 }
 .red-color{
-    color: rgb(196, 60, 60);;
+    color: rgb(196, 60, 60);
 }
 .red-color:hover{
     text-decoration: underline;
@@ -110,13 +120,15 @@ h2{
     
 }
 .team-member-card{
-    flex-direction: row;
-    width: 300px;
+    width: 190px;
     background-color:rgb(249, 236, 222);
-    margin: 15px;
+    margin: 10px;
     border-radius: 20px;
-    padding: 20px;
-    font-family: "Montserrat", sans-serif;   
+    padding: 10px;
+    font-family: "Montserrat", sans-serif; 
+    text-align: center;
+    align-items: center;
+
 }
 .team-member-card:hover{
     box-shadow: 0 0 10px 2px  rgba(0, 0, 0, 0.1);
@@ -125,19 +137,16 @@ h2{
 .team-member-container{
 display: flex;
 flex-direction: row;
-justify-content: space-between;
-position: relative;
+flex-wrap: wrap;
+justify-content: space-around;
 
 }
 .btn{
-    position: absolute;
+    width: 70px;
+    height: 60px;
     border-radius: 50%;
-    padding: 10px;
-    margin-top: 5px;
-    justify-content: center;
-    top:-7px;
-    margin-left: 80px;
-    margin-bottom: 40px;
+    padding: 0px;
+    margin-bottom: 20px;
     background-color:rgb(46, 44, 44);
     border: none;
     color: #fff;
@@ -150,7 +159,7 @@ ul {
     padding: 0;
 }
 
-ul li{
+.ul-container{
     background:rgb(249, 236, 222);
     margin: 15px 10px; 
     padding: 20px; 
@@ -159,8 +168,18 @@ ul li{
     border-left: 5px solid #35424a; 
 }
 
-ul li:hover {
+.ul-container:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.about-information{
+    width: 100%;
+    padding-top: 150px;
+}
+.sizeicon i{
+ margin-left: 7px;
+ font-size: 20px;
+ margin-top: 10px;
+ 
+}
