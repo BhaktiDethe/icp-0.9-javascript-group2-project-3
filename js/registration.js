@@ -15,6 +15,3 @@ addname();
     name.value="";
     addname();
   }
-
-  
- 

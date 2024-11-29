@@ -2,167 +2,124 @@
     padding: 0%;
     margin: 0%;
 }
-body{
-    background-image: url("./../images/registrationpage/reg_background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-   
-}
-.logo{
-    margin-left:45%;
-    margin-top: 2%;
-    height: 150px;
-    width: 150px;
-}
-.homelogo{
-    height: 50px;
-    width: 50px;
-    position: fixed;
-    bottom: 90%;
-    background-size: cover;
-    margin-left: 1%;
-}
-.box{
-    background-color:rgb(207, 92, 92);;
-    position: relative;
-    height:2300px;
-    width:900px;
-    margin-left:23%;
-    position:sticky;
-    border-radius: 50px;
-    opacity: 85%;
-    margin-bottom: 100px;
-}
-.heading{
-    text-align: center;
-    font-size: 50px;
-    color: white;
-    padding: 40px 0;
-    padding-top:40px;
-}
-.text2{
-    font-size: 20px;
-    text-align: center;
-    margin-top:-30px;
-}
-.nameflexbox{
+.container{
+    height: 500px;
+    width: 820px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    margin: auto 40px;
+    margin-top: 7%;
+    margin-left:25%;
 }
-.name-font{
-    font-size:25px;
-    margin-left:10%;
-    margin-top:8%;
+.slideimg-container{
+    height: 500px;
+    width: 410px;
+    border-radius: 15px 0 0 15px;
+    background-color: tomato;
 }
-.ip-box{
-    height: 20px;
-    width: 250px;
-    font-size: 15px;
-    margin: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    border-bottom:2px solid black ;
-    background-color:white;
-    border: none;
-    margin-left: 0px;
+.form-container{
+    height: 500px;
+    width: 410px;
+    background-color:#ffbf80;
+    opacity: 70%;
+    border-radius: 0 15px 15px 0;
+    overflow: scroll;
 }
-.fontsize{
-    font-size: 27px;
+.text-center{
+    text-align: center;
 }
-.fix{
-    margin-left: 14%;
-    margin-top: 5%;
+.font-style{
+    font-family:Arial, Helvetica, sans-serif
 }
-.subline{
-    font-size: 16px;
-    margin-top: 10px;
-    margin-left: 14%;
-    color:black;
-}
-.fix-2{
-    margin-left:10%;
-    margin-top:5%; 
-}
-.fix-3{
-    margin-left: 14%;
-    margin-top:2%;
-}
-.fix-4{
-    margin-top: -40px;
-}
-.checktext{
+.font-size{
     font-size: 20px;
-    margin-left:11%;
+}
+.reg-heading{
     margin-top: 20px;
-    width: fit-content;
+}  
+.input-box{
+    width: 310px;
+    height: 20px;
+    padding: 10px;
+    align-items: center;
+    border: none;
+    background-color:white;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+    margin-top: 30px;
+}
+.flexbox{
+    display: flex;
+    justify-content: row;
+}
+.ip-box-citystate{
+    width: 120px;
+    height: 15px;
+    margin-left: 32px;
+    margin-top: 15px;
+}
+.fromto-text{
+    margin: auto 35px;
+    margin-top: 5px;
+}
+.marginfromto{
+    margin-top: 5px;
+}
+.que-margin{
+    margin-left: 33px;
+    margin-top: 8px;
+}
+.space{
+    margin-top:5px;
+}
+.condition-margin{
+    margin: auto 10px;
 }
 .specify-box{
-    margin-left: 14%;
-    width: 500px;
-    height: 70px;
+    margin-top: 15px;
 }
-.add-box{
-    height:19px;
+.travellers{
+    margin-left: 33px;
+    margin-top: 20px;
+}
+.add-btn{
     width: 100px;
-    margin:20px 40px;
-    margin-left:125px;
-    text-align: center;
-    border-radius: 7px;
-    padding: 10px;
-    background-color:#ffcc80;
-    color:black;
-    cursor: pointer;
-}
-.add-box-number{
-    margin-top:-60px;
-    margin-left: 260px;
-}
-.submit{
-    height: 40px;
-    width: 150px;
-    border-radius: 10px;
-    margin-left: 370px;
-    margin-top: 40px;
-    background-color: white;
+    height: 25px;
     border: none;
-    font-size: 15px;
+    border-radius: 3px;
+    margin-left: 33px;
+    margin-top: 7px;
     cursor: pointer;
-}
-.submit:hover{
-    box-shadow: 5px 5px 6px 3px  black;
 }
 .takename{
-    width:200px;
-    height:15px;
-    margin-left:123px;
-    border: none;
-    padding: 10px;
-    font-size:15px;
-    border-radius: 8px;
-    background-color: white;
+    padding-left: 10px;
+    width: 250px;
+    height: 30px;
 }
 .add-name{
-   height:15px;
-   width: 200px;
-   border: none;
-   margin-left:27%;
-   margin-top: 20px;
-   padding: 10px;
-   font-size:15px;
-   border-radius: 8px;
-   background-color: white;
+    width: 200px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 33px;
+    margin-top: 10px;
+    padding: 10px;
+    display:inline-block;
 }
-.fix-6{
-    margin-left: 95px;
+.submit-btn{
+    width: 150px;
+    height: 30px;
+    padding:10px auto;
+    margin: 20px 28%;
+    background-color:#ff8c1a; 
 }
-.addcontainer{
+.submit-btn:hover{
+    background-color: white;
+    border: solid 1px #e67300;
+    box-shadow: 0px 0px 7px 0.5px #e67300;
+}
+.flexbox-addname{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-direction:column;
-    margin: auto 40px;
-    width: 300px;
 }
