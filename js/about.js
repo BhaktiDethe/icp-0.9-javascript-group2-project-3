@@ -26,3 +26,19 @@ function teamShow(){
  }
 
  }
+ function showHistory(){
+ const historyInfo = document.getElementById('historyInfo');
+ const historyBtn = document.getElementById('historyBtn');
+ if( historyInfo.classList.contains('hidden'))
+   {
+      historyInfo.classList.remove('hidden');
+      historyBtn.textContent = 'history';
+   }
+   else{
+      historyInfo.classList.add('hidden');
+      historyBtn.textContent = 'show history';
+   }
+ 
+ }
+
+ 

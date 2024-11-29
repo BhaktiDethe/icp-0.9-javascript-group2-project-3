@@ -7,7 +7,7 @@
     <title>Travel And tourisam</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body id="body">
     <section class="main">
         <navbar class="navbar" id="navbar">
             <div class="navbar-container">
@@ -18,9 +18,15 @@
                     <div class="nav-list-container">
                         <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
                         <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
-                        <a href="" class="nav-item">About</a>
-                        <a href="" class="nav-item">Contact</a>
+                        <a href="./pages/about.html" class="nav-item">About</a>
+                        <a href="./pages/contact.html" class="nav-item">Contact</a>
                         <a href="" class="nav-item">Login</a>
+                        <div id="theam-btn-container" class="toggle-btn">
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox" class="toggle-label">
+                                <span class="toggle-ball"></span>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -30,10 +36,10 @@
                 <div class="featured-destination">
                     <p>Featured Destinations</p>
                     <ul>
-                        <li>Korea</li>
-                        <li>Hokkaido</li>    
-                        <li>Tunisia</li>    
-                        <li>Japan</li>    
+                        <li>Kerala</li>
+                        <li>Rajasthan</li>    
+                        <li>Goa</li>    
+                        <li>Kashmir</li>     
                     </ul>
                 </div>
                 <div class="next-adrenaline">
@@ -48,53 +54,39 @@
             <diV class="trip-plan-div">
                 <a href="" class="trip-item">Adventure Activities</a>
                 <a href="" class="trip-item">Tour Operators</a>
-                <a href="" class="trip-item">Travel Advisors</a>
+                <a href="./pages/travel_advisors.html" class="trip-item">Travel Advisors</a>
             </diV>
             <i class="fa-solid fa-xmark close-mark" id="close1" onclick="closetripplan()"></i>
         </div>
         <div class="text-container">
             <p>Your Adventure Awaits. Where Will Your Curiosity Take You?</p>
+            <a href="./pages/booking.html" class="book-now" id="book-now">Book Now</a>
+        </div>
+        <div class="controls">
+            <i id="prev" class="fas fa-chevron-left"></i>
+            <i id="next" class="fas fa-chevron-right"></i>
         </div>
     </section>
-    <div class="main-container">
+    <div class="main-container" id="pages">
         <a href="" class="top-arrow"><i class="fa-solid fa-arrow-up"></i></a>
         <section class="featured-des">
             <h1 class="heading">Explore Our Featured Destinations</h1>
             <div class="feature-card-container">
                 <div class="feature-card">
                     <img src="./images/index_page/korea.jpg" alt="">
-                    <h2 class="feature-heading">Korea</h2>
-                    <p class="feature-info">South Korea blends ancient traditions with modern vibrancy, offering immersive cultural experiences, scenic hikes, and culinary adventures that showcase the country's rich heritage and stunning landscapes.</p>
+                    <h2 class="feature-heading">Kerala</h2>
+                    <p class="feature-info">Kerala, God's Own Country, is a tropical paradise famous for its serene beaches, tranquil backwaters, lush green landscapes, and vibrant culture. Enjoy a rejuvenating experience amidst nature and explore the local wildlife, temples, and rich heritage.</p>
                 </div>
                 <div class="feature-card">
                     <img src="./images/index_page/hokkaido.webp" alt="">
-                    <h2 class="feature-heading">Hokkaido</h2>
-                    <p class="feature-info">Located in the northernmost reaches of Japan, surrounded by abundant oceans on every side, Hokkaido is home to a unique range of flora and fauna. Blessed with nature, the particular ecosystems that have formed here are distinct from those of Japan’s main island of Honshu.</p>
+                    <h2 class="feature-heading">Rajasthan</h2>
+                    <p class="feature-info">Rajasthan, the land of kings, offers majestic palaces, forts, deserts, and vibrant culture. From the golden sands of Jaisalmer to the palaces of Jaipur, this region offers an unforgettable glimpse into India's royal past.</p>
                 </div>
                 <div class="feature-card">
                     <img src="./images/index_page/tunisia.webp" alt="">
-                    <h2 class="feature-heading">Tunisia</h2>
-                    <p class="feature-info">In Tunisia, we spotlight small, eco-friendly companies that offer immersive adventures, from exploring ancient caves and mountain trails to discovering hidden desert oases and engaging with local artisans. These experiences are crafted to take travelers off the beaten path and into the heart of Tunisia's rich cultural and natural landscapes.</p>
+                    <h2 class="feature-heading">Goa</h2>
+                    <p class="feature-info">Goa is renowned for its golden beaches, vibrant nightlife, Portuguese heritage, and delicious seafood. A popular destination for relaxation and adventure, it offers a blend of beautiful landscapes and cultural experiences.</p>
                 </div>
-            </div>
-        </section>
-        <section class="region">
-            <h1 class="heading">Explore by Region</h1>
-            <div>
-                <ul>
-                    <li>Africa</li>
-                    <li>Asia</li>
-                    <li>Central America / Caribbean</li>
-                    <li>Europe</li>
-                    <li>Middle East</li>
-                    <li>North America</li>
-                    <li>Pacific</li>
-                    <li>Polar</li>
-                    <li>South America</li>
-                </ul>
-            </div>
-            <div>
-    
             </div>
         </section>
         <section class="adventure-sec">
@@ -127,48 +119,7 @@
         <section class="purpose">
             <h1 class="heading">Travel with Purpose</h1>
             <p class="purpose-des">Dive into adventures that truly make a difference. From hands-on volunteer projects and sustainable travel to immersive cultural experiences, explore ways to travel with purpose. Connect with local communities and ecosystems, and make a positive impact while discovering the heart of each destination.</p>
-            <div class="purpose-container">
-                <div class="purpose-card">
-                    <img src="./images/index_page/purpose1.webp" alt="">
-                    <h2>How ConservationVIP is Preserving Torres Del Paine</h2>
-                    <p>ConservationVIP connects volunteers with local efforts worldwide, including Torres Del Paine, to preserve natural and social treasures through hands-on work.</p>
-                </div>
-                <div class="purpose-card">
-                    <img src="./images/index_page/purpose2.jpg" alt="">
-                    <h2>How Mountain Lodges of Peru is Helping Children</h2>
-                    <p>Discover how Mountain Lodges of Peru and Trekking for Kids are building a ceramics workshop to empower local children with trade skills and preserve traditional crafts in Huacahuasi.</p>
-                </div>
-                <div class="purpose-card">
-                    <img src="./images/index_page/purpose3.webp" alt="">
-                    <h2>How to Protect Indigenous Culture in Panama </h2>
-                    <p>Explore authentic community tourism with Vapues Travel, where you can immerse yourself in the rich cultures of indigenous tribes and rural villages, creating unforgettable memories.</p>
-                </div>
-                <div class="purpose-card">
-                    <img src="./images/index_page/purpose4.webp" alt="">
-                    <h2>How Slow Travel Can Build Global Communities</h2>
-                    <p>Experience tourism like never before with slow travel, which fosters deep connections with local communities and nature while supporting sustainable practices.</p>
-                </div>
-                <div class="purpose-card">
-                    <img src="./images/index_page/purpose5.webp" alt="">
-                    <h2>How One Bike Shop is Transforming Tanzania</h2>
-                    <p>Discover One Bike Shop, Tanzania’s top spot for bike lovers, offering premium cycling services and exceptional coffee. See how they're empowering the community and promoting sustainable tourism through innovative initiatives.</p>
-                </div>
-                <div class="purpose-card">
-                    <img src="./images/index_page/purpose6.webp" alt="">
-                    <h2>How Local Initiatives Give Back to Host Communities </h2>
-                    <p>Discover Volcanoes Safaris' latest initiatives: a tree nursery to restore local ecosystems and a vibrant Women's Day celebration promoting health and empowerment in Uganda.</p>
-                </div>
-                <div class="purpose-card">
-                    <img src="./images/index_page/purpose7.jpg" alt="">
-                    <h2>How Zegrahm Expeditions Trips Protect Gorillas</h2>
-                    <p>Join Zegrahm Expeditions to not only explore new destinations but also support local communities and wildlife conservation, like their recent donation to the Sepilok Orangutan Rehabilitation Center.</p>
-                </div>
-                <div class="purpose-card">
-                    <img src="./images/index_page/purpose8.jpg" alt="">
-                    <h2>How ConservationVIP is Supporting the Yosemite Valley</h2>
-                    <p>With 100 trips and 50,000 volunteer hours, ConservationVIP enhances stunning landscapes and cultural sites worldwide. Join their legacy of volunteerism with a special Yosemite trip offer.</p>
-                </div>
-            </div>
+            <div class="purpose-container" id="purpose-container"></div>
         </section>
         <section class="stories">
             <h1 class="heading">Stories That Inspire</h1>

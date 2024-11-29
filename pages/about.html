@@ -6,32 +6,68 @@
     <title>About Page</title>
     <link rel="stylesheet" href="./../css/style.css">
     <link rel="stylesheet" href="./../css/about.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     
 </head>
 <body>
       <section class=" about-main">
-        <navbar class="navbar" id="navbar">
-          <div class="navbar-container">
-              <a href="" class="logo"><img src="./../images/index_page/logo.png" alt=""></a>
-              <i class="fa-solid fa-bars menubar" id="menu" onclick="openSidebar()"></i>
-              <div class="nav-list" id="nav-list">
-                  <i class="fa-solid fa-xmark" id="close-nav" onclick="closeSidebar()"></i>
-                  <div class="nav-list-container">
-                      <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
-                      <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
-                      <a href="" class="nav-item">About</a>
-                      <a href="./contact.html" class="nav-item">Contact</a>
-                      <a href="" class="nav-item">Login</a>
-                  </div>
-              </div>
-          </div>
-      </navbar>
+
+         <navbar class="navbar" id="navbar">
+            <div class="navbar-container">
+                <a href="" class="logo"><img src="./../images/index_page/logo.png" alt=""></a>
+                <i class="fa-solid fa-bars menubar" id="menu" onclick="openSidebar()"></i>
+                <div class="nav-list" id="nav-list">
+                    <i class="fa-solid fa-xmark" id="close-nav" onclick="closeSidebar()"></i>
+                    <div class="nav-list-container">
+                        <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
+                        <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
+                        <a href="./about.html" class="nav-item">About</a>
+                        <a href="./../pages/contact.html" class="nav-item">Contact</a>
+                        <a href="" class="nav-item">Login</a>
+                        <div id="theam-btn-container">
+                            <label class="switch">
+                                <input type="checkbox" id="checkValue">
+                                <span class="slider round"></span>
+                              </label>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </navbar>
+        <div class="destination-click" id="destination-click">
+            <div class="area">
+                <div class="featured-destination">
+                    <p>Featured Destinations</p>
+                    <ul>
+                        <li>Korea</li>
+                        <li>Hokkaido</li>    
+                        <li>Tunisia</li>    
+                        <li>Japan</li>    
+                    </ul>
+                </div>
+                <div class="next-adrenaline">
+                    <p>Find Your Next Adventure</p>
+                </div>
+            </div>
+            <div onclick="closeDesblock()">
+                <i class="fa-solid fa-xmark close" id="close"></i>
+            </div>
+        </div>
+        <div class="trip-click" id="trip-click">
+            <diV class="trip-plan-div">
+                <a href="" class="trip-item">Adventure Activities</a>
+                <a href="" class="trip-item">Tour Operators</a>
+                <a href="" class="trip-item">Travel Advisors</a>
+            </diV>
+            <i class="fa-solid fa-xmark close-mark" id="close1" onclick="closetripplan()"></i>
+        </div>
+        
         <div class="aboutus-img">
           <div class="aboutus">
            <p>About Us</p>
         </div>
         </div>
-
+</section>
       <div class="about-information">
       <div>
         <h2 class="heading-name">Welcome to Adventure.Travel, The Global Sustainable Adventure Travel Storytelling Ecosystem</h2>
@@ -67,13 +103,13 @@
             <p>At <b>Travel Explorer</b>, our mission is to inspire and empower travelers to explore the world and create unforgettable memories. We believe that travel enriches lives, broadens perspectives, and fosters a deeper understanding of diverse cultures. Our commitment is to provide personalized travel experiences that cater to the unique preferences of each traveler.</p>
             
         <h3>Key Elements of Our Mission:</h3>
-    <ul>
-        <li><b>Inspiration:</b> We aim to ignite a passion for exploration by providing curated travel content, stunning visuals, and engaging stories.</li>
-        <li><b>Empowerment:</b> We equip travelers with the tools, resources, and knowledge they need to navigate their journeys confidently.</li>
-        <li><b>Personalization:</b> We offer tailored travel plans that reflect individual interests, whether it's adventure, relaxation, or culture.</li>
-        <li><b>Sustainability:</b> We promote sustainable travel practices that respect local communities and the environment.</li>
-        <li><b>Community:</b> We foster a network of travelers who share their experiences, tips, and recommendations.</li>
-        <li><b>Excellence:</b> We strive for excellence in everything we do, ensuring customer satisfaction.</li >   
+    <ul >
+        <li class="ul-container"><b>Inspiration:</b> We aim to ignite a passion for exploration by providing curated travel content, stunning visuals, and engaging stories.</li>
+        <li class="ul-container"><b>Empowerment:</b> We equip travelers with the tools, resources, and knowledge they need to navigate their journeys confidently.</li>
+        <li class="ul-container"><b>Personalization:</b> We offer tailored travel plans that reflect individual interests, whether it's adventure, relaxation, or culture.</li>
+        <li class="ul-container"><b>Sustainability:</b> We promote sustainable travel practices that respect local communities and the environment.</li>
+        <li class="ul-container"><b>Community:</b> We foster a network of travelers who share their experiences, tips, and recommendations.</li>
+        <li class="ul-container"><b>Excellence:</b> We strive for excellence in everything we do, ensuring customer satisfaction.</li >   
       </ul>
   </div>
   </span>
@@ -86,39 +122,176 @@
     <span id="teamInfo" class="hidden" >
         <div class="team-member-container">
        <div class="team-member-card">
-            <button class="btn">JS</button>
-            <h3 class="red-color">John Smith - Founder & CEO</h3>
-            <p><b>Background:</b> With over 15 years in the travel industry, John has traveled to over 50 countries and is passionate about adventure travel.</p>
-            <p><b>Expertise:</b> John specializes in crafting unique travel itineraries that cater to individual preferences and interests.</p>
-            <p><b>Fun Fact:</b> John once hiked the Inca Trail to Machu Picchu and has a goal to visit every continent.</p>
+            <img src="./../images/aboutpage/person-icon.png"  class="btn">
+            <h3 class="red-color">Vrushali Chaube</h3>
+            <p>Group Leader</p>
+            <div class="sizeicon">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-regular fa-envelope"></i></a>
+            </div>
         </div>
         
         <div class="team-member-card">
-          <button class="btn">EJ</button>
-            <h3 class="red-color">Emily Johnson - Travel Consultant</h3>
-            <p><b>Background:</b> Emily has a background in hospitality and tourism, with 10 years of experience in travel planning.</p>
-            <p><b>Expertise:</b> She focuses on family travel and luxury vacations, ensuring that every detail is taken care of.</p>
-            <p><b>Fun Fact:</b> Emily is a certified scuba diver and loves exploring underwater ecosystems.</p>
+          <img src="./../images/aboutpage/person-icon.png"  class="btn">
+            <h3 class="red-color">Dipali Shinde</h3>
+            <p>Group Member</p>
+            <div class="sizeicon">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-regular fa-envelope"></i></a>
+            </div>
         </div>
         <div class="team-member-card">
-          <button class="btn">ML</button>
-            <h3 class="red-color">Michael Lee - Adventure Specialist</h3>
-            <p><b>Background:</b> Michael is an outdoor enthusiast with a degree in environmental science and a passion for sustainable travel.</p>
-            <p><b>Expertise:</b> He specializes in adventure travel, including hiking, biking, and eco-tourism.</p>
-            <p><b>Fun Fact:</b> Michael has summited several peaks in the Himalayas and is a certified mountain guide.</p>
+          <img src="./../images/aboutpage/person-icon.png"  class="btn">
+            <h3 class="red-color">Mansi</h3>
+            <p>Group Member</p>
+            <div class="sizeicon">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-regular fa-envelope"></i></a>
+            </div>
         </div>
      
         <div class="team-member-card">
-          <button class="btn">SM</button>
-            <h3 class="red-color">Sophia Martinez - Marketing Manager</h3>
-            <p><b>Background:</b> Sophia has a degree in marketing and over 8 years of experience in the travel industry.</p>
-            <p><b>Expertise:</b> She is responsible for creating engaging content and promoting travel experiences through social media.</p>
-            <p><b>Fun Fact:</b> Sophia has a travel blog where she shares tips and stories from her journeys around the world.</p>
+          <img src="./../images/aboutpage/person-icon.png"  class="btn">
+            <h3 class="red-color">Apurva Moon</h3>
+            <p>Group  Member</p>
+            <div class="sizeicon">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-regular fa-envelope"></i></a>
+            </div>
         </div>
+        <div class="team-member-card">
+          <img src="./../images/aboutpage/person-icon.png"  class="btn">
+            <h3 class="red-color">Vaishnavi khalkar</h3>
+            <p>Group Member</p>
+            <div class="sizeicon">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="team-member-card">
+          <img src="./../images/aboutpage/person-icon.png"  class="btn">
+            <h3 class="red-color">Pooja Dumal</h3>
+            <p>Group  Member</p>
+            <div class="sizeicon">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="team-member-card">
+          <img src="./../images/aboutpage/person-icon.png"  class="btn">
+            <h3 class="red-color">Ritiksha Ingle</h3>
+            <p>Group Member</p>
+            <div class="sizeicon">
+            <a href=""><img src="" alt="" ><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><img src="" alt=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><img src="" alt=""><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="team-member-card">
+          <img src="./../images/aboutpage/person-icon.png"  class="btn">
+            <h3 class="red-color">Vaishnavi Bhawar</h3>
+            <p>Group Member</p>
+            <div class="sizeicon">
+            <a href=""><img src="" alt="" ><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><img src="" alt=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><img src="" alt=""><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="team-member-card">
+          <img src="./../images/aboutpage/person-icon.png"  class="btn">
+            <h3 class="red-color">Sujit</h3>
+            <p>Group Member</p>
+            <div class="sizeicon">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="team-member-card">
+          <img src="./../images/aboutpage/person-icon.png"  class="btn">
+            <h3 class="red-color">Bhakti</h3>
+            <p>Group Member</p>
+            <div class="sizeicon">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+
+
+
+
+
         </div>
       </span>
     </div>
-  </section>
+    <div class="history">
+    <h2 class="heading-font"> Travel History</h2>
+            <button id="historyBtn" class="history-button" onclick="showHistory()">Show History</button>
+            <div id="historyInfo" class="hidden">
+                <ul>
+                    <li class="ul-container"><b>2010:Foundation of Travel Explorer</b></br><span class="history-information">Description:</span>Travel Explorer was founded with a mission to make travel accessible to everyone. The founders recognized the need for a travel service that catered to diverse needs and budgets, aiming to inspire and empower travelers to explore the world.</li>
+                    <li class="ul-container"><b>2012:Launch of the First Website</b></br><span class="history-information">Description:</span>The company launched its first website, marking a significant step in its digital presence. This platform allowed customers to browse and book customized travel packages tailored to their preferences, making the travel planning process more convenient.</li>
+                    <li class="ul-container"><b>2015:Introduction of Eco-Friendly Travel Options</b></br><span class="history-information">Description:</span>In response to growing environmental concerns, Travel Explorer expanded its services to include eco-friendly travel options. This initiative aimed to promote sustainable tourism practices, encouraging travelers to make environmentally conscious choices while exploring new destinations.
+                    </li>
+                    <li class="ul-container"><b>2018: <span>Partnership with Local Guides</span> </b></br><span class="history-information">Description:</span>Travel Explorer partnered with local guides in over 30 countries to enhance travel experiences. This collaboration allowed travelers to gain authentic insights into local cultures, traditions, and hidden gems, enriching their journeys and supporting local economies.</li>
+                    <li class="ul-container"><b>2020:Virtual Travel Experiences</b> <span class="history-information">Description:</span>During the COVID-19 pandemic, Travel Explorer adapted to the changing landscape of travel by introducing virtual travel experiences. These online offerings allowed customers to explore destinations from the comfort of their homes, providing a unique way to experience travel during challenging times.</li>
+                </ul>
+      </div>
+      </div>
+      <footer>
+        <div class="footer-container">
+            <div class="footer-sec">
+                <a href=""><img src="./../images/index_page/logo.png" alt=""></a>
+                <p class="footer-info">The Global Sustainable Adventure Travel Storytelling Ecosystem</p>
+                <div class="icon-container">
+                    <a href=""><img src="" alt=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><img src="" alt=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><img src="" alt=""><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-sec">
+                <p class="footer-heading">Destinations</p>
+                <div class="footer-list">
+                    <a href="">Hokkaido</a>
+                    <a href="">Tunisia</a>
+                    <a href="">Korea</a>
+                    <a href="">Spain</a>
+                </div>
+            </div>
+            <div class="footer-sec">
+                <p class="footer-heading">Planning</p>
+                <div class="footer-list">
+                    <a href="">Find Your Adventure</a>
+                    <a href="">Tour Operators</a>
+                    <a href="">Travel Advisors</a>
+                </div>
+            </div>
+            <div class="footer-sec">
+                <p class="footer-heading">Sharing</p>
+                <div class="footer-list">
+                    <a href="">Share Stories</a>
+                    <a href="">Add Your Company Listing</a>
+                    <a href="">Feature Your Destination</a>
+                </div>  
+            </div>
+            <div class="footer-sec">
+                <p class="footer-heading">Adventure.Travel</p>
+                <div class="footer-list">
+                    <a href="">About Us</a>
+                    <a href="">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2024 All rights reserved</p>
+    </footer>
     <script src="./../js/about.js"></script>
     <script src="./../js/script.js"></script>
 </body>
