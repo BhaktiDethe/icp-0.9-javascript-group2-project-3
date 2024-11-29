@@ -1,33 +1,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bokor&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+*{
+   padding: 0px;
+   margin: 0%;
+}
 body{
     background-color: rgb(253, 245, 234);
+    width: 100%;
 }
 .aboutus-img{
         background-image: url('./../images/aboutpage/aboutpage-img.jpeg');
         background-size: cover;  
-        border-radius: 25px;  
         width: 100%;
-        padding:20px 10px;
         height:500px;
+        display: flex;
+        justify-content: center;
+        
 }
 .aboutus{
     height: 150px;
     width: 500px;
     background-color:rgba(226, 222, 222, 0.7);
     border-radius: 15px;
-    text-align: center; 
-    padding: 40px; 
-    margin-top:12%;
-    margin-left:25%;
-    align-items:center; 
+    text-align: center;
+    padding: 40px;
+    margin-top:150px;
+    
 }
 .aboutus p{
     font-size: 85px;
     font-weight: 600;
     color: rgb(32, 32, 32);
     background-color: transparent;
+
 }
 .heading-font{
   padding-left: 40px;
@@ -52,10 +57,12 @@ h2{
     padding-left: 40px;
     font-family: "Merriweather", serif;
     margin: 20px 0px 10px 0px;
+    font-size: 30px;
+    padding-top: 0px;
 }
 .mission,.team,.history{
     background: rgb(251, 245, 238);
-    padding: 0px;
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 2px 5px  7px 5px rgba(0, 0, 0, 0.1);
     margin: 30px;
@@ -80,25 +87,28 @@ h2{
   cursor: pointer;
   text-decoration: underline;
   padding: 10px 15px;
+  color: rgb(207, 92, 92);
 }
 .missionbtn:hover{
   transition: 2s;
   cursor: pointer;
   text-decoration: underline;
   padding: 10px 15px;
+  color: rgb(207, 92, 92);;
 }
 .history-button:hover{
     transition: 2s;
     cursor: pointer;
     text-decoration: underline;
     padding: 10px 15px;
+    color: rgb(207, 92, 92);
 }
 .about-main{
     width: 100%;
     height: 400px;
 }
 .red-color{
-    color: rgb(196, 60, 60);;
+    color: rgb(196, 60, 60);
 }
 .red-color:hover{
     text-decoration: underline;
@@ -110,13 +120,15 @@ h2{
     
 }
 .team-member-card{
-    flex-direction: row;
-    width: 300px;
+    width: 190px;
     background-color:rgb(249, 236, 222);
-    margin: 15px;
+    margin: 10px;
     border-radius: 20px;
-    padding: 20px;
-    font-family: "Montserrat", sans-serif;   
+    padding: 10px;
+    font-family: "Montserrat", sans-serif; 
+    text-align: center;
+    align-items: center;
+
 }
 .team-member-card:hover{
     box-shadow: 0 0 10px 2px  rgba(0, 0, 0, 0.1);
@@ -125,19 +137,16 @@ h2{
 .team-member-container{
 display: flex;
 flex-direction: row;
-justify-content: space-between;
-position: relative;
+flex-wrap: wrap;
+justify-content: space-around;
 
 }
 .btn{
-    position: absolute;
+    width: 70px;
+    height: 60px;
     border-radius: 50%;
-    padding: 10px;
-    margin-top: 5px;
-    justify-content: center;
-    top:-7px;
-    margin-left: 80px;
-    margin-bottom: 40px;
+    padding: 0px;
+    margin-bottom: 20px;
     background-color:rgb(46, 44, 44);
     border: none;
     color: #fff;
@@ -150,7 +159,7 @@ ul {
     padding: 0;
 }
 
-ul li{
+.ul-container{
     background:rgb(249, 236, 222);
     margin: 15px 10px; 
     padding: 20px; 
@@ -159,8 +168,258 @@ ul li{
     border-left: 5px solid #35424a; 
 }
 
-ul li:hover {
+.ul-container:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.about-information{
+    width: 100%;
+    padding-top: 150px;
+}
+.sizeicon i{
+ margin-left: 7px;
+ font-size: 20px;
+ margin-top: 10px;
+ color: black;
+ 
+}
+.margin-space{
+    margin-left: 140px;
+}
+.input-section {
+    width: 100%;
+    margin:0px;
+    padding: 0%;
+}
+.input-booking {
+    background-color:rgb(253, 245, 234);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin: 30px; 
+}
+label {
+    margin: 10px  ;
+    display: block;
+    font-weight: 800;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color:rgb(249, 236, 222) ;  
+}
+
+.input-button {
+    background-color:black;
+    color:#fff;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 30px;
+}
+.hidden-message {
+    display: none;
+}
+#confirmation-message {
+    margin-top: 15px;
+    color:black;
+}
+.close-menu i{
+    margin-left:95%;
+    color: black;
+    font-size:20px;
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1000px){
+    .navbar {
+        width: 100%;
+        background-color:transparent;
+    }
+    .logo img{
+        height: 40px;
+    }
+    .menubar{
+        color: rgb(207, 92, 92);
+        font-size: 25px;
+        display: block;
+    }
+    .nav-list{
+        position: fixed;
+        top: 0;
+        gap: 5px;
+        right: 0px;
+        background-color: rgba(32, 32, 32, 0.8);
+        width: 180px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        visibility: hidden;
+    }
+    .nav-list-container{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    #close-nav{
+        display: block;
+        position: fixed;
+        right: 5px;
+        padding: 10px;
+        font-size: 18px;
+        color: #fff;
+    }
+    .nav-item{
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .team-member-card{
+        width: 220px;
+    
+    }
+    .footer-container{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 800px){
+    .about-main{
+        margin: 0px auto;
+    }
+    .footer-container{
+        gap: 60px;
+        width: 90%;
+        padding: 90px 0px 80px 0px;
+    }
+    .footer-sec img{
+        height: 40px;
+    }
+    .footer-info{
+        margin-bottom: 30px;
+    }
+    .icon-container{
+        gap: 20px;
+    }
+    .icon-container i{
+        color: rgb(170, 168, 168);
+        font-size: 20px;
+    }
+    .footer-list{
+        gap: 15px;
+    }
+    .copyright{
+        padding: 15px;
+    }
+    .aboutus p{
+        font-size: 85px;
+    }
+    .about-paragraph{  
+        font-size: 20px;
+    }
+    h2{
+        padding-left: 30px;
+    }
+    .heading-name{
+        font-size: 40px;
+        
+    }
+    .missionbtn ,.team-button,.history-button
+{   font-size: 20px;
+
+}
+.mission-font,.team-member{
+    font-size:20px;
+    
+}
+
+.mission ul{
+    font-size:20px;
+}
+}
+ @media screen and (max-width: 450px){
+    .aboutus p{
+        font-size:40px;
+}
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(32, 32, 32);
+}
+.footer-container{
+    gap: 50px;
+    width: 90%;
+    padding: 70px 0px 60px 0px;
+}
+.footer-sec img{
+    height: 40px;
+    margin-bottom: 20px
+}
+.footer-info{
+    margin-bottom: 25px;
+}
+.icon-container{
+    gap: 20px;
+}
+.icon-container i{
+    font-size: 18px;
+}
+.footer-heading{
+    margin-bottom: 20px;
+}
+.footer-list{
+    gap: 10px;
+}
+.copyright{
+    padding: 10px;
+}
+.aboutus{
+    height: 80px;
+    width: 300px;
+    
+}
+.heading-font{
+    font-size: 20px;
+    
+  }
+  
+  .about-paragraph{
+      font-size: 16px;  
+  }
+  h2{
+      padding-left: 30px;
+  }
+  .heading-name{
+    font-size:25px;
+    
+ }
+ .missionbtn ,.team-button,.history-button{
+   font-size: 13px;
+    
+}
+.missionbtn ,.team-button,.history-button
+{   font-size: 16px;
+
+}
+.mission-font,.team-member{
+    font-size:16px;
+    
+}
+ }

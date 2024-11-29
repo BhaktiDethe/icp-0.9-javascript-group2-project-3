@@ -1,0 +1,168 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-image: url("./../images/registrationpage/reg_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+.logo{
+    margin-left:45%;
+    margin-top: 2%;
+    height: 150px;
+    width: 150px;
+}
+.homelogo{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 90%;
+    background-size: cover;
+    margin-left: 1%;
+}
+.box{
+    background-color:rgb(207, 92, 92);;
+    position: relative;
+    height:2300px;
+    width:900px;
+    margin-left:23%;
+    position:sticky;
+    border-radius: 50px;
+    opacity: 85%;
+    margin-bottom: 100px;
+}
+.heading{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding: 40px 0;
+    padding-top:40px;
+}
+.text2{
+    font-size: 20px;
+    text-align: center;
+    margin-top:-30px;
+}
+.nameflexbox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto 40px;
+}
+.name-font{
+    font-size:25px;
+    margin-left:10%;
+    margin-top:8%;
+}
+.ip-box{
+    height: 20px;
+    width: 250px;
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    border-bottom:2px solid black ;
+    background-color:white;
+    border: none;
+    margin-left: 0px;
+}
+.fontsize{
+    font-size: 27px;
+}
+.fix{
+    margin-left: 14%;
+    margin-top: 5%;
+}
+.subline{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 14%;
+    color:black;
+}
+.fix-2{
+    margin-left:10%;
+    margin-top:5%; 
+}
+.fix-3{
+    margin-left: 14%;
+    margin-top:2%;
+}
+.fix-4{
+    margin-top: -40px;
+}
+.checktext{
+    font-size: 20px;
+    margin-left:11%;
+    margin-top: 20px;
+    width: fit-content;
+}
+.specify-box{
+    margin-left: 14%;
+    width: 500px;
+    height: 70px;
+}
+.add-box{
+    height:19px;
+    width: 100px;
+    margin:20px 40px;
+    margin-left:125px;
+    text-align: center;
+    border-radius: 7px;
+    padding: 10px;
+    background-color:#ffcc80;
+    color:black;
+    cursor: pointer;
+}
+.add-box-number{
+    margin-top:-60px;
+    margin-left: 260px;
+}
+.submit{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    margin-left: 370px;
+    margin-top: 40px;
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.submit:hover{
+    box-shadow: 5px 5px 6px 3px  black;
+}
+.takename{
+    width:200px;
+    height:15px;
+    margin-left:123px;
+    border: none;
+    padding: 10px;
+    font-size:15px;
+    border-radius: 8px;
+    background-color: white;
+}
+.add-name{
+   height:15px;
+   width: 200px;
+   border: none;
+   margin-left:27%;
+   margin-top: 20px;
+   padding: 10px;
+   font-size:15px;
+   border-radius: 8px;
+   background-color: white;
+}
+.fix-6{
+    margin-left: 95px;
+}
+.addcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    margin: auto 40px;
+    width: 300px;
+}

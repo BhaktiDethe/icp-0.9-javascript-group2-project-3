@@ -11,7 +11,20 @@ function buttonShow(){
     missionInfo.classList.add('hidden');
     button.textContent ='Show Mission';
     }
-   }
+}
+function closeMission() {
+   const missionInfo = document.getElementById('missionInfo');
+   missionInfo.classList.add('hidden');
+}
+function closeTeam() {
+   const teamInfo = document.getElementById('teamInfo');
+   teamInfo.classList.add('hidden');
+}
+function closehistory() {
+   const historyInfo = document.getElementById('historyInfo');
+   historyInfo.classList.add('hidden');
+}
+ 
 function teamShow(){
  const teamInfo = document.getElementById('teamInfo');
  const teamBtn = document.getElementById('teamBtn');
@@ -40,3 +53,21 @@ function teamShow(){
    }
  
  }
+
+ document.getElementById('booking-form').addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   
+   const destination = document.getElementById('destination').value;
+   const checkIn = document.getElementById('check-in').value;
+   const checkOut = document.getElementById('check-out').value;
+   const member = document.getElementById('member').value;
+
+   
+   const confirmationMessage = document.getElementById('confirmation-message');
+   confirmationMessage.classList.remove('hidden-message');
+   confirmationMessage.innerHTML = `Thank you for booking your trip to ${destination}!<br>Check-in: ${checkIn}<br>Check-out: ${checkOut}<br>Member: ${member}`;
+   
+   
+   document.getElementById('booking-form').reset();
+});
