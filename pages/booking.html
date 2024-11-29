@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/booking.css">
+</head>
+<body>
+    <div class="booking-bg"></div>
+    <section class="search-main">
+        <navbar class="navbar" id="navbar">
+            <div class="navbar-container">
+                <a href="../index.html" class="logo"><img src="../images/index_page/logo.png" alt=""></a>
+                <i class="fa-solid fa-bars menubar" id="menu" onclick="openSidebar()"></i>
+                <div class="nav-list" id="nav-list">
+                    <i class="fa-solid fa-xmark" id="close-nav" onclick="closeSidebar()"></i>
+                    <div class="nav-list-container">
+                        <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
+                        <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
+                        <a href="./pages/about.html" class="nav-item">About</a>
+                        <a href="./pages/contact.html" class="nav-item">Contact</a>
+                        <a href="" class="nav-item">Login</a>
+                    </div>
+                </div>
+            </div>
+        </navbar>
+        <div class="destination-click" id="destination-click">
+            <div class="area">
+                <div class="featured-destination">
+                    <p>Featured Destinations</p>
+                    <ul>
+                        <li>Korea</li>
+                        <li>Hokkaido</li>    
+                        <li>Tunisia</li>    
+                        <li>Japan</li>    
+                    </ul>
+                </div>
+                <div class="next-adrenaline">
+                    <p>Find Your Next Adventure</p>
+                </div>
+            </div>
+            <div onclick="closeDesblock()">
+                <i class="fa-solid fa-xmark close" id="close"></i>
+            </div>
+        </div>
+        <div class="trip-click" id="trip-click">
+            <diV class="trip-plan-div">
+                <a href="" class="trip-item">Adventure Activities</a>
+                <a href="" class="trip-item">Tour Operators</a>
+                <a href="" class="trip-item">Travel Advisors</a>
+            </diV>
+            <i class="fa-solid fa-xmark close-mark" id="close1" onclick="closetripplan()"></i>
+        </div>
+    
+    <div class="search-container">
+        <div class="labels">
+            <label for="destination">Destination:</label>
+            <select id="destination-input" class="input-box">
+                <option value="" disabled selected>Select Your Destination</option>
+                <option value="Goa">Goa</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Agra">Agra</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Manali">Mathura</option>
+                <option value="Shimla">Shimla</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Delhi">Delhi</option>
+            </select>
+        </div>        
+
+        <div class="labels">
+            <label>Adventure Begins :</label>
+            <input type="date" id="check-in-date" class="input-box">
+        </div>
+        
+        <div class="labels">
+            <label>Adventure Ends :</label>
+            <input type="date" id="check-out-date" class="input-box">
+        </div>
+
+        <div class="guest-dropdown-container">
+            <div class="labels">
+                <label>Members :</label>
+                <button id="guest-dropdown-btn" class="input-box">1 adult · 1 child · 1 room</button>
+            </div>
+            <div id="guest-dropdown" class="guest-dropdown">
+                <div class="guest-item">
+                    <span>Adults</span>
+                    <div class="guest-control">
+                        <button onclick="updateGuestCount('adults', -1)">-</button>
+                        <span id="adults-count">1</span>
+                        <button onclick="updateGuestCount('adults', 1)">+</button>
+                    </div>
+                </div>
+                <div class="guest-item">
+                    <span>Children</span>
+                    <div class="guest-control">
+                        <button onclick="updateGuestCount('children', -1)">-</button>
+                        <span id="children-count">1</span>
+                        <button onclick="updateGuestCount('children', 1)">+</button>
+                    </div>
+                </div>
+                <div class="guest-item">
+                    <span>Rooms</span>
+                    <div class="guest-control">
+                        <button onclick="updateGuestCount('rooms', -1)">-</button>
+                        <span id="rooms-count">1</span>
+                        <button onclick="updateGuestCount('rooms', 1)">+</button>
+                    </div>
+                </div>
+                <button onclick="closeGuestDropdown()" class="done-btn">Done</button>
+            </div>
+        </div>
+
+        <button id="search-btn" class="search-btn">Search</button>
+    </div>
+    <section class="best-offer-section">
+        <h1>Best Selling India Holiday Packages</h1>
+        <div class="best-offer-container" id="best-offer-container">
+            
+        </div>
+    </section>
+
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-sec">
+            <a href=""><img src="../images/index_page/logo.png" alt=""></a>
+            <p class="footer-info">The Global Sustainable Adventure Travel Storytelling Ecosystem</p>
+            <div class="icon-container">
+                <a href=""><img src="" alt=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><img src="" alt=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><img src="" alt=""><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-sec">
+            <p class="footer-heading">Destinations</p>
+            <div class="footer-list">
+                <a href="">Hokkaido</a>
+                <a href="">Tunisia</a>
+                <a href="">Korea</a>
+                <a href="">Spain</a>
+            </div>
+        </div>
+        <div class="footer-sec">
+            <p class="footer-heading">Planning</p>
+            <div class="footer-list">
+                <a href="">Find Your Adventure</a>
+                <a href="">Tour Operators</a>
+                <a href="">Travel Advisors</a>
+            </div>
+        </div>
+        <div class="footer-sec">
+            <p class="footer-heading">Sharing</p>
+            <div class="footer-list">
+                <a href="">Share Stories</a>
+                <a href="">Add Your Company Listing</a>
+                <a href="">Feature Your Destination</a>
+            </div>  
+        </div>
+        <div class="footer-sec">
+            <p class="footer-heading">Adventure.Travel</p>
+            <div class="footer-list">
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">© 2024 All rights reserved</p>
+</footer>
+
+    <script src="../js/booking.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
