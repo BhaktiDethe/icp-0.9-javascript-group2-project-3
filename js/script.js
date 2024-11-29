@@ -79,3 +79,46 @@ document.getElementById('prev').addEventListener('click', prevImage);
 
 changeBackgroundImage(currentIndex);
 startAutoSlide();
+
+const purposeContent = [
+    {
+        image: "./images/index_page/purpose1.webp",
+        title: "How ConservationVIP is Preserving Torres Del Paine",
+        description: "ConservationVIP connects volunteers with local efforts worldwide, including Torres Del Paine, to preserve natural and social treasures through hands-on work."
+    },
+    {
+        image: "./images/index_page/purpose2.jpg",
+        title: "How Mountain Lodges of Peru is Helping Children",
+        description: "Discover how Mountain Lodges of Peru and Trekking for Kids are building a ceramics workshop to empower local children with trade skills and preserve traditional crafts in Huacahuasi."
+    },
+    {
+        image: "./images/index_page/purpose3.webp",
+        title: "How to Protect Indigenous Culture in Panama",
+        description: "Explore authentic community tourism with Vapues Travel, where you can immerse yourself in the rich cultures of indigenous tribes and rural villages, creating unforgettable memories."
+    },
+    {
+        image: "./images/index_page/purpose4.webp",
+        title: "How Slow Travel Can Build Global Communities",
+        description: "Experience tourism like never before with slow travel, which fosters deep connections with local communities and nature while supporting sustainable practices."
+    },
+    {
+        image: "./images/index_page/purpose5.webp",
+        title: "How One Bike Shop is Transforming Tanzania",
+        description: "Discover One Bike Shop, Tanzania’s top spot for bike lovers, offering premium cycling services and exceptional coffee. See how they're empowering the community and promoting sustainable tourism through innovative initiatives."
+    },
+    {
+        image: "./images/index_page/purpose6.webp",
+        title: "How Local Initiatives Give Back to Host Communities",
+        description: "Discover Volcanoes Safaris' latest initiatives: a tree nursery to restore local ecosystems and a vibrant Women's Day celebration promoting health and empowerment in Uganda."
+    },
+    {
+        image: "./images/index_page/purpose7.jpg",
+        title: "How Zegrahm Expeditions Trips Protect Gorillas",
+        description: "Join Zegrahm Expeditions to not only explore new destinations but also support local communities and wildlife conservation, like their recent donation to the Sepilok Orangutan Rehabilitation Center."
+    },
+    {
+        image: "./images/index_page/purpose8.jpg",
+        title: "How ConservationVIP is Supporting the Yosemite Valley",
+        description: "With 100 trips and 50,000 volunteer hours, ConservationVIP enhances stunning landscapes and cultural sites worldwide. Join their legacy of volunteerism with a special Yosemite trip offer."
+    }
+];

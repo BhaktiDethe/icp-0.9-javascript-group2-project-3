@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --bg-main: rgb(253, 245, 234);
+    --bg-primary: rgb(32, 32, 32);
+}
+body{
+    background-color: var(--bg-main);
+    color: var(--bg-primary);
+}
 .main {
     width: 100%;
     height: 100vh;
@@ -53,14 +61,48 @@
     color: #fff;
     font-size: 18px;
     background-color: transparent;
+    cursor: pointer;
 }
 .nav-list .nav-item:hover{
     color: rgb(207, 92, 92);
 }
+
 /* theam button css */
-.white-theam{
+.toggle-btn{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+#checkbox{
+    visibility: hidden;
+}
+.toggle-label{
+    width: 70px;
+    height: 36px;
+    background-color: rgba(116, 120, 172, 0.8);
+    display: inline-block;
+    position: relative;
+    border-radius: 60px;
+}
+.toggle-ball{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: linear-gradient(to left,rgba(215, 178, 59, 0.842),rgb(103, 196, 233));
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    transition: all .2s linear;
+}
+#checkbox:checked + .toggle-label .toggle-ball{
+    transform: translateX(30px);
+    background: linear-gradient(to right,rgb(3, 142, 248),rgb(31, 31, 31));
+}
+/* .white-theam{
     background-color: #f5f5f5;
     color: black;
+    main = #ECF2FF
   }
   
   .black-theam{
@@ -115,14 +157,13 @@
     content: url(../images/moon.svg);
   }
   
-  /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
   }
   
   .slider.round:before {
     border-radius: 50%;
-  }  
+  }   */
 
 .arrow{
     display: flex;
@@ -318,14 +359,26 @@
     gap: 30px;
 }
 .feature-card{
-    height: 400px;
-    width: 350px;
+    height: 380px;
+    width: 370px;
+}
+.feature-card:hover{
+    padding: 10px;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    border-radius: 10px;
 }
 .feature-card img{
-    width: 350px;
+    width: 370px;
     height: 150px;
     object-fit: cover; 
     border-radius: 5px;
+}
+.feature-card img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
 }
 .feature-card h2{
     margin: 12px 0;
@@ -335,20 +388,6 @@
 .feature-info{
     line-height: 1.4;
     font-size: 17px;
-}
-
-.region{
-    width: 80%;
-    margin: 60px auto;
-    height: auto;
-}
-ul{
-    padding-left: 20px;
-}
-li{
-    list-style: none;
-    line-height: 1.7;
-    font-size: 18px;
 }
 
 .adventure-sec{
@@ -365,6 +404,11 @@ li{
     height: 450px;
     width: 450px;
     border-radius: 10px;
+}
+.adventure-container img:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
 }
 .adventure-container .heading{
     margin-bottom: 10px;
@@ -405,6 +449,11 @@ li{
     object-fit: cover; 
     border-radius: 10px;
 }
+.purpose-card img:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
 .purpose-card h2{
     margin: 10px 0;
     font-size: 21px;
@@ -439,6 +488,11 @@ li{
     height: 180px;
     width: 400px;
     border-radius: 10px;
+}
+.stories-card img:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
 }
 .stories-card img:hover{
     opacity: 0.8;
