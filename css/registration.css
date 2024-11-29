@@ -14,7 +14,36 @@
     height: 500px;
     width: 410px;
     border-radius: 15px 0 0 15px;
-    background-color: tomato;
+    background-color: #e67300;
+    position: relative;
+}
+.logo{
+    height: 40px;
+    width: 40px;
+    margin-top: -90px;
+    margin-left: 20px;
+    position:fixed;
+}
+.slide-img{
+    height: 500px;
+    width: 410px;
+    object-fit: cover;
+}
+.nextprevious-img{
+    height: 40px;
+    width: 40px;
+}
+.next{
+    position:absolute;
+    right: 10px;
+    bottom: 230px;
+    cursor: pointer;
+}
+.prev{
+    position:absolute;
+    left: 10px;
+    bottom: 230px;
+    cursor: pointer;
 }
 .form-container{
     height: 500px;
