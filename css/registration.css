@@ -24,14 +24,14 @@ body{
     margin-left: 1%;
 }
 .box{
-    background-color:#ffb380;
+    background-color:rgb(207, 92, 92);;
     position: relative;
     height:2300px;
     width:900px;
     margin-left:23%;
     position:sticky;
     border-radius: 50px;
-    opacity: 90%;
+    opacity: 85%;
     margin-bottom: 100px;
 }
 .heading{
@@ -78,10 +78,10 @@ body{
     margin-top: 5%;
 }
 .subline{
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 10px;
     margin-left: 14%;
-    color: grey;
+    color:black;
 }
 .fix-2{
     margin-left:10%;
@@ -113,8 +113,8 @@ body{
     text-align: center;
     border-radius: 7px;
     padding: 10px;
-    background-color:#b34700;
-    color: white;
+    background-color:#ffcc80;
+    color:black;
     cursor: pointer;
 }
 .add-box-number{
