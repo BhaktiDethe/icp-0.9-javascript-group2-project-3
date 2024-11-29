@@ -104,21 +104,21 @@ body{
     width: 500px;
     height: 70px;
 }
-.addtext{
-    font-size: 15px;
-    margin-left: 11%;
-    margin-top: 3%;
-}
 .add-box{
     height:19px;
     width: 100px;
     margin:20px 40px;
-    margin-left:95px;
+    margin-left:125px;
     text-align: center;
     border-radius: 7px;
     padding: 10px;
     background-color:#b34700;
     color: white;
+    cursor: pointer;
+}
+.add-box-number{
+    margin-top:-60px;
+    margin-left: 260px;
 }
 .submit{
     height: 40px;
@@ -134,5 +134,48 @@ body{
 .submit:hover{
     box-shadow: 5px 5px 6px 3px  black;
 }
-
-
+.takename{
+    width:200px;
+    height:15px;
+    margin-left:30px;
+    border: none;
+    padding: 10px;
+    font-size:15px;
+    border-radius: 8px;
+    background-color: white;
+}
+.add-name{
+   height:15px;
+   width: 200px;
+   border: none;
+   margin-left: 84px;
+   margin-top: 20px;
+   padding: 10px;
+   font-size:15px;
+   border-radius: 8px;
+   background-color: white;
+}
+.add-number{
+    height:15px;
+    width: 200px;
+    border: none;
+    margin-left: 339px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size:15px;
+    border-radius: 8px;
+    background-color: white;
+ }
+.addcontainer{
+    background-color: blue;
+    height: 200px;
+}
+.fix-6{
+    margin-left: 95px;
+}
+.addcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    margin: auto 40px;
+}

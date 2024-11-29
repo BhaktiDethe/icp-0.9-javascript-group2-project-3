@@ -136,22 +136,31 @@
      <div class="checktext"><input type="radio"/>With others</div>  
      </div>
 
-     <p class="fontsize fix"><u>Travelers:</u></p>
-     <div class="nameflexbox">
-      <div class="addtext">Name<br>
-        <input type="date" placeholder="Your name"  class="ip-box">
+     <p class="fontsize fix"><u>Travelers:</u> 
+      <div class="add-box" onclick="addrow()">+  Add Name</div>
+      <div class="add-box add-box-number" onclick="addrownumber()">+  Add Number</div></p>
+     <div class="nameflexbox fix-6">
+     <div>
+      <input type="text" class="takename" id="name" placeholder="type name">
+     </div>
+     <div>
+      <input type="text" class="takename" id="number" placeholder="type your number">
+     </div>
+     </div>
+
+     <div class=" addcontainer" id="nameflexbox">
+
       </div>
+ 
+      
 
-      <div class="addtext">Age<br>
-        <input list="Age" class="ip-box " placeholder="Age">
-      </div><br>
 
-      <div class="add-box" onclick="">+  Add row</div>
 
      
     
-     <button class="submit">Submit</button>
+     <button class="submit" onclick="addrow()">Submit</button>
      </div>
    </div>
+   <script src="./../js/registration.js"></script>
 </body>
 </html>
