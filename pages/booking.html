@@ -54,4 +54,76 @@
             </diV>
             <i class="fa-solid fa-xmark close-mark" id="close1" onclick="closetripplan()"></i>
         </div>
+    
+    <div class="search-container">
+        <div class="labels">
+            <label for="destination">Destination:</label>
+            <select id="destination-input" class="input-box">
+                <option value="" disabled selected>Select Your Destination</option>
+                <option value="Goa">Goa</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Agra">Agra</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Manali">Mathura</option>
+                <option value="Shimla">Shimla</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Delhi">Delhi</option>
+            </select>
+        </div>        
+
+        <div class="labels">
+            <label>Adventure Begins :</label>
+            <input type="date" id="check-in-date" class="input-box">
+        </div>
+        
+        <div class="labels">
+            <label>Adventure Ends :</label>
+            <input type="date" id="check-out-date" class="input-box">
+        </div>
+
+        <div class="guest-dropdown-container">
+            <div class="labels">
+                <label>Members :</label>
+                <button id="guest-dropdown-btn" class="input-box">1 adult · 1 child · 1 room</button>
+            </div>
+            <div id="guest-dropdown" class="guest-dropdown">
+                <div class="guest-item">
+                    <span>Adults</span>
+                    <div class="guest-control">
+                        <button onclick="updateGuestCount('adults', -1)">-</button>
+                        <span id="adults-count">1</span>
+                        <button onclick="updateGuestCount('adults', 1)">+</button>
+                    </div>
+                </div>
+                <div class="guest-item">
+                    <span>Children</span>
+                    <div class="guest-control">
+                        <button onclick="updateGuestCount('children', -1)">-</button>
+                        <span id="children-count">1</span>
+                        <button onclick="updateGuestCount('children', 1)">+</button>
+                    </div>
+                </div>
+                <div class="guest-item">
+                    <span>Rooms</span>
+                    <div class="guest-control">
+                        <button onclick="updateGuestCount('rooms', -1)">-</button>
+                        <span id="rooms-count">1</span>
+                        <button onclick="updateGuestCount('rooms', 1)">+</button>
+                    </div>
+                </div>
+                <button onclick="closeGuestDropdown()" class="done-btn">Done</button>
+            </div>
+        </div>
+
+        <button id="search-btn" class="search-btn">Search</button>
+    </div>
+    <section class="best-offer-section">
+        <h1>Best Selling India Holiday Packages</h1>
+        <div class="best-offer-container" id="best-offer-container">
+            
+        </div>
+    </section>
+
 </section>
