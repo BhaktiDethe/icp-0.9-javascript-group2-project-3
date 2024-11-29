@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./../css/style.css">
     <link rel="stylesheet" href="./../css/about.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     
 </head>
 <body>
@@ -97,8 +96,11 @@
       <div class="mission">
         <h2 class="heading-font">Our Mission</h2>
         <button class="missionbtn" id="button" onclick="buttonShow()"> Show Mission</button>
-
+      
         <span class="hidden" id="missionInfo">
+          <span class="close-menu" onclick="closeMission()">
+            <i class="fa-solid fa-xmark close"></i>
+          </span>
           <div class="mission-font">
             <p>Our mission is to inspire and empower travelers to explore the world, create unforgettable memories, and discover the beauty of different cultures.</p>
             <p>At <b>Travel Explorer</b>, our mission is to inspire and empower travelers to explore the world and create unforgettable memories. We believe that travel enriches lives, broadens perspectives, and fosters a deeper understanding of diverse cultures. Our commitment is to provide personalized travel experiences that cater to the unique preferences of each traveler.</p>
@@ -121,6 +123,9 @@
       <h2 class="heading-font">Meet Our Team</h2>
     <button id="teamBtn" class="team-button" onclick="teamShow()">Show Team</button>
     <span id="teamInfo" class="hidden" >
+      <span class="close-menu" onclick="closeTeam()">
+        <i class="fa-solid fa-xmark close"></i>
+      </span>
         <div class="team-member-container">
        <div class="team-member-card">
             <img src="./../images/aboutpage/person-icon.png"  class="btn">
@@ -232,6 +237,9 @@
     <h2 class="heading-font"> Travel History</h2>
             <button id="historyBtn" class="history-button" onclick="showHistory()">Show History</button>
             <div id="historyInfo" class="hidden">
+              <span class="close-menu" onclick="closehistory()">
+                <i class="fa-solid fa-xmark close"></i>
+              </span>
                 <ul>
                     <li class="ul-container"><b>2010:Foundation of Travel Explorer</b></br><span class="history-information">Description:</span>Travel Explorer was founded with a mission to make travel accessible to everyone. The founders recognized the need for a travel service that catered to diverse needs and budgets, aiming to inspire and empower travelers to explore the world.</li>
                     <li class="ul-container"><b>2012:Launch of the First Website</b></br><span class="history-information">Description:</span>The company launched its first website, marking a significant step in its digital presence. This platform allowed customers to browse and book customized travel packages tailored to their preferences, making the travel planning process more convenient.</li>

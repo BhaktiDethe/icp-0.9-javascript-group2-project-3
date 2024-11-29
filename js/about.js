@@ -11,7 +11,20 @@ function buttonShow(){
     missionInfo.classList.add('hidden');
     button.textContent ='Show Mission';
     }
-   }
+}
+function closeMission() {
+   const missionInfo = document.getElementById('missionInfo');
+   missionInfo.classList.add('hidden');
+}
+function closeTeam() {
+   const teamInfo = document.getElementById('teamInfo');
+   teamInfo.classList.add('hidden');
+}
+function closehistory() {
+   const historyInfo = document.getElementById('historyInfo');
+   historyInfo.classList.add('hidden');
+}
+ 
 function teamShow(){
  const teamInfo = document.getElementById('teamInfo');
  const teamBtn = document.getElementById('teamBtn');

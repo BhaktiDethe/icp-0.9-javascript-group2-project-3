@@ -235,6 +235,12 @@ input[type="number"] {
     margin-top: 15px;
     color:black;
 }
+.close-menu i{
+    margin-left:95%;
+    color: black;
+    font-size:20px;
+    margin-bottom: 10px;
+}
 
 /* Media Queries */
 @media screen and (max-width: 1000px){
