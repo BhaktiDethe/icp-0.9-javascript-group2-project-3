@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./../css/style.css">
     <link rel="stylesheet" href="./../css/about.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     
 </head>
 <body>
@@ -34,7 +35,7 @@
                 </div>
             </div>
         </navbar>
-        <div class="destination-click" id="destination-click">
+        <div class="destination-click  margin-space" id="destination-click">
             <div class="area">
                 <div class="featured-destination">
                     <p>Featured Destinations</p>
@@ -53,7 +54,7 @@
                 <i class="fa-solid fa-xmark close" id="close"></i>
             </div>
         </div>
-        <div class="trip-click" id="trip-click">
+        <div class="trip-click margin-space" id="trip-click">
             <diV class="trip-plan-div">
                 <a href="" class="trip-item">Adventure Activities</a>
                 <a href="" class="trip-item">Tour Operators</a>
@@ -61,12 +62,12 @@
             </diV>
             <i class="fa-solid fa-xmark close-mark" id="close1" onclick="closetripplan()"></i>
         </div>
-        
-        <div class="aboutus-img">
-          <div class="aboutus">
-           <p>About Us</p>
-        </div>
-        </div>
+
+      <div class="aboutus-img">
+        <div class="aboutus">
+         <p>About Us</p>
+      </div>
+      </div>
 </section>
       <div class="about-information">
       <div>
@@ -222,15 +223,11 @@
             <a href=""><i class="fa-brands fa-github"></i></a>
             <a href=""><i class="fa-regular fa-envelope"></i></a>
             </div>
-        </div>
-
-
-
-
-
+          </div>
         </div>
       </span>
     </div>
+    
     <div class="history">
     <h2 class="heading-font"> Travel History</h2>
             <button id="historyBtn" class="history-button" onclick="showHistory()">Show History</button>
@@ -245,6 +242,31 @@
                 </ul>
       </div>
       </div>
+      <div class="input-section">
+        <p>Welcome to our travel agency! </p>
+        
+      <div class="input-booking">
+        <h2 class="heading-font">Book Your Trip</h2>
+        <form id="booking-form">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="check-in">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" required>
+
+            <label for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" required>
+
+            <label for="guests">Number of Member:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <button  class="input-button"  type="submit">Book Now</button>
+        </form>
+        <div id="confirmation-message" class="hidden-message"></div>
+    </div>
+</div>
+
+      
       <footer>
         <div class="footer-container">
             <div class="footer-sec">
