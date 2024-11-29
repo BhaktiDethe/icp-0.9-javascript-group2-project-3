@@ -1,4 +1,4 @@
-
+/* General Reset */
 body {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 
 .header {
     height: 100vh; 
-    background: url('/imges.png') no-repeat center center;
+    background: url('/mahdia.webp') no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -129,33 +129,55 @@ iframe {
     }
 }
 
-/* Regions */
-.region .content {
+
+
+
+/* Main Section */
+main {
+    padding: 2rem;
+}
+
+.region {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
+    margin-top: 2rem;
     align-items: center;
+}
+
+/* Text Content */
+.region .content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.region .content h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.region .content h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+.region .content p {
+    margin-top: 1rem;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Image Styling */
+.region .image {
+    flex: 1;
 }
 
 .region .image img {
     width: 100%;
-    max-width: 300px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.region .text {
-    flex: 1;
-}
-.media-gallery {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 .media-row {
     display: flex;
@@ -197,17 +219,146 @@ h2 {
     background-color: #2980b9;
 }
 
-/* Map Section */
+/* Locate Yourself Section */
 .map-section {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.map-item {
+    text-align: center;
+    flex: 1;
+    max-width: 200px;
+}
+
+.map-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-item p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+/* General Reset */
+img {
+    max-width: 100%;   /* Ensures images scale within their containers */
+    height: auto;      /* Maintains the aspect ratio of images */
+    display: block;    /* Removes unwanted space below images */
+    border-radius: 8px; /* Round the corners of the images */
+}
+
+/* Header Section */
+.header {
+    height: 100vh;
+    background: url('/images.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 0 1rem;
+    position: relative;
+}
+
+.header img {
+    width: 100%;  /* Ensures header image fills the space properly */
+    object-fit: cover; /* Maintains the aspect ratio and covers the area */
+    height: 100%;
+    border-radius: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .header img {
+        object-fit: cover; /* Ensures proper image scaling on smaller screens */
+    }
+
+    /* Image in video-container */
+    .video-container img {
+        width: 100%; /* Make sure images in video section are responsive */
+        height: auto;
+    }
+
+    .media-item img {
+        width: 100%;  /* Makes sure images in media items are properly sized */
+        max-height: 300px;  /* Constrains height to maintain aspect ratio */
+    }
+
+    .map-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery img {
+        max-width: 45%;   /* Adjust the gallery image width for responsiveness */
+        margin-bottom: 10px;
+        height: auto;     /* Ensure the aspect ratio is preserved */
+    }
+}
+
+/* For Media Row Gallery Section */
+.media-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.media-item {
+    flex: 0 0 auto;
+    width: 30%;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.media-item img {
+    width: 100%;   
+    height: auto;
+    object-fit: cover;  /* Make images cover the area proportionally */
+}
+
+/* Gallery Section */
+.gallery {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.map-section img {
-    max-width: 200px;
+.gallery img {
+    max-width: 30%;   
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;  
+}
+
+/* Cycling Benefits Section */
+.cycling-benefits .image img {
+    width: 100%;   
+    height: auto;  
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Map Section */
+.map-item img {
+    width: 100%;    
+    height: auto;   
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Gallery */
@@ -220,6 +371,52 @@ h2 {
 .gallery img {
     max-width: 200px;
     border-radius: 8px;
+}
+/* Cycling Benefits Section */
+.cycling-benefits {
+    margin: 2rem 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.cycling-benefits .content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem; /* Consistent spacing */
+    flex-wrap: wrap;
+}
+
+.cycling-benefits .image {
+    flex: 0 0 250px; /* Increased fixed width for a larger image */
+}
+
+.cycling-benefits .image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cycling-benefits .text {
+    flex: 1;
+    text-align: justify;
+}
+
+.cycling-benefits .text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.cycling-benefits .text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
 }
 
 /* Discover Section */
@@ -238,10 +435,202 @@ h2 {
     background: #0056b3;
 }
 
+
+/* Main container styles */
+main {
+    padding: 30px;
+    background-color: #fdfdfd;
+    font-family: Arial, sans-serif;
+}
+
+/* Section heading */
+.content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Articles container */
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Individual article styles */
+article {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Article image */
+article img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Text content inside articles */
+.text-content {
+    flex: 1;
+}
+
+/* Article title */
+.text-content h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #222;
+}
+
+/* Article description */
+.text-content p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* "Read More" button */
+.read-more {
+    text-decoration: none;
+    color: #ff4500;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #ff4500;
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #ff4500;
+    color: #fff;
+}
+/* Updated New Section without the red top border */
+.new-section {
+    background-color: #e9f7f2;
+    padding: 60px 20px; /* Added more padding for better spacing */
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow around the section */
+    margin-top: 30px; /* Added top margin to separate from any section above */
+}
+
+.new-section h2 {
+    font-size: 36px; /* Increased font size for better emphasis */
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px; /* More space below the heading */
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Slight letter-spacing for a more refined look */
+}
+
+.destination-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px; /* Slightly reduced gap for more compact appearance */
+    padding: 0 15px;
+}
+
+.destination-item {
+    background-color: #fff;
+    width: 300px;
+    margin: 15px 0;
+    border-radius: 12px; /* Rounded corners for a softer feel */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer; /* Adds pointer cursor on hover */
+    overflow: hidden; /* Prevents content overflow */
+}
+
+.destination-item:hover {
+    transform: translateY(-8px); /* Less dramatic hover effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow effect on hover */
+    background-color: #f5f5f5; /* Subtle background color change on hover */
+}
+
+.destination-item img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    height: 180px; /* Fixed height for consistency in images */
+}
+
+.destination-item h3 {
+    font-size: 24px; /* Increased font size for better readability */
+    margin-top: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.destination-item p {
+    font-size: 15px;
+    color: #777;
+    margin-top: 12px;
+    line-height: 1.5; /* Added line height for better readability */
+}
+
+/* Media Queries for responsive behavior */
+@media (max-width: 1024px) {
+    .destination-container {
+        justify-content: center; /* Center items on medium screens */
+    }
+
+    .destination-item {
+        width: 80%; /* Items become a bit larger on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .destination-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center;
+    }
+
+    .destination-item {
+        width: 90%; /* Full width with margin for smaller screens */
+    }
+
+    .new-section h2 {
+        font-size: 30px; /* Adjust the title size for smaller screens */
+    }
+}
+
 /* Footer */
 footer {
     text-align: center;
     background: #333;
     color: white;
     padding: 1rem 0;
+}
+/* Gallery Section on Tablets */
+@media (max-width: 992px) {
+    .gallery img {
+        max-width: 40%;  
+    }
+}
+
+/* Gallery Section on Mobile */
+@media (max-width: 576px) {
+    .gallery img {
+        max-width: 80%; 
+    }
 }
