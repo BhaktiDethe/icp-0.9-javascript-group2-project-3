@@ -32,6 +32,7 @@ body{
     position:sticky;
     border-radius: 50px;
     opacity: 90%;
+    margin-bottom: 100px;
 }
 .heading{
     text-align: center;
@@ -124,8 +125,8 @@ body{
     height: 40px;
     width: 150px;
     border-radius: 10px;
-    margin-left: 70px;
-    margin-top:30%;
+    margin-left: 370px;
+    margin-top: 40px;
     background-color: white;
     border: none;
     font-size: 15px;
@@ -137,7 +138,7 @@ body{
 .takename{
     width:200px;
     height:15px;
-    margin-left:30px;
+    margin-left:123px;
     border: none;
     padding: 10px;
     font-size:15px;
@@ -148,27 +149,12 @@ body{
    height:15px;
    width: 200px;
    border: none;
-   margin-left: 84px;
+   margin-left:27%;
    margin-top: 20px;
    padding: 10px;
    font-size:15px;
    border-radius: 8px;
    background-color: white;
-}
-.add-number{
-    height:15px;
-    width: 200px;
-    border: none;
-    margin-left: 339px;
-    margin-top: 20px;
-    padding: 10px;
-    font-size:15px;
-    border-radius: 8px;
-    background-color: white;
- }
-.addcontainer{
-    background-color: blue;
-    height: 200px;
 }
 .fix-6{
     margin-left: 95px;
@@ -178,4 +164,5 @@ body{
     flex-wrap: wrap;
     flex-direction:column;
     margin: auto 40px;
+    width: 300px;
 }
