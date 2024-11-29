@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adventure_activities</title>
+</head>
+<body>
+    <navbar class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="" class="logo"><img src="./images/index_page/logo.png" alt=""></a>
+            <i class="fa-solid fa-bars menubar" id="menu" onclick="openSidebar()"></i>
+            <div class="nav-list" id="nav-list">
+                <i class="fa-solid fa-xmark" id="close-nav" onclick="closeSidebar()"></i>
+                <div class="nav-list-container">
+                    <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
+                    <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
+                    <a href="./pages/about.html" class="nav-item">About</a>
+                    <a href="./pages/contact.html" class="nav-item">Contact</a>
+                    <a href="" class="nav-item">Login</a>
+                    <div id="theam-btn-container">
+                        <label class="switch">
+                            <input type="checkbox" id="checkValue">
+                            <span class="slider round"></span>
+                          </label>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </navbar>
+</body>
+</html>
