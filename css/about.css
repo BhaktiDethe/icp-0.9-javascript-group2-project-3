@@ -184,6 +184,63 @@ ul {
  color: black;
  
 }
+.margin-space{
+    margin-left: 140px;
+}
+.input-section {
+    width: 100%;
+    margin:0px;
+    padding: 0%;
+}
+.input-booking {
+    background-color:rgb(253, 245, 234);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin: 30px; 
+}
+label {
+    margin: 10px  ;
+    display: block;
+    font-weight: 800;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color:rgb(249, 236, 222) ;  
+}
+
+.input-button {
+    background-color:black;
+    color:#fff;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 30px;
+}
+.hidden-message {
+    display: none;
+}
+#confirmation-message {
+    margin-top: 15px;
+    color:black;
+}
+.close-menu i{
+    margin-left:95%;
+    color: black;
+    font-size:20px;
+    margin-bottom: 10px;
+}
 
 /* Media Queries */
 @media screen and (max-width: 1000px){
