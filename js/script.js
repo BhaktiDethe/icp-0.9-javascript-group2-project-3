@@ -122,3 +122,22 @@ const purposeContent = [
         description: "With 100 trips and 50,000 volunteer hours, ConservationVIP enhances stunning landscapes and cultural sites worldwide. Join their legacy of volunteerism with a special Yosemite trip offer."
     }
 ];
+
+function generatePurposeCards() {
+    const container = document.getElementById('purpose-container');
+
+    purposeContent.forEach(item => {
+        const card = document.createElement('div');
+        card.classList.add('purpose-card');
+
+        card.innerHTML = `
+            <img src="${item.image}" alt="">
+            <h2>${item.title}</h2>
+            <p>${item.description}</p>
+        `;
+
+        container.appendChild(card);
+    });
+}
+
+window.onload = generatePurposeCards;
