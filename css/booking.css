@@ -99,3 +99,73 @@ body.dark-mode .search-main{
 .guest-control button:hover {
     background-color: #ddd;
 }
+
+.guest-control span {
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.done-btn {
+    background-color: #fff;
+    color: rgb(207, 92, 92);
+    border: 1px solid rgb(207, 92, 92);
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.done-btn:hover {
+    background-color: rgb(207, 92, 92);
+    color: #fff;
+}
+
+.search-btn {
+    margin-top: 21px;
+    background-color: #fff;
+    color: rgb(207, 92, 92);
+    border: 1px solid rgb(207, 92, 92);
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-btn:hover {
+    background-color: rgb(207, 92, 92);
+    color: #fff;
+}
+
+.best-offer-section{
+    margin-top: 150px;
+    width: 85%;
+    height: auto;
+    padding-bottom: 50px;
+}
+body.dark-mode .best-offer-section h1{
+    color: rgb(253, 245, 234);
+}
+.best-offer-section h1{
+    font-size: 45px;
+    color: rgb(32, 32, 32);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.best-offer-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.best-offer-card{
+    width: 400px;
+    height: 440px;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
