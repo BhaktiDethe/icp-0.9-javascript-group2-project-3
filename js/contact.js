@@ -12,5 +12,5 @@ const userName = localStorage.getItem('userName');
 const userInput = document.getElementById('userName');
 
 if(userName){
-    
+    greetinText.innerText = `Hello ${userName}.....🖐`;
 }
