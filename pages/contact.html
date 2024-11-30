@@ -12,7 +12,56 @@
     <div class="contact-bg">
         <p class="contact-text">Contact Us</p>
     </div>
-    
+    <section class="search-main">
+        <navbar class="navbar" id="navbar">
+            <div class="navbar-container">
+                <a href="../index.html" class="logo"><img src="../images/index_page/logo.png" alt=""></a>
+                <i class="fa-solid fa-bars menubar" id="menu" onclick="openSidebar()"></i>
+                <div class="nav-list" id="nav-list">
+                    <i class="fa-solid fa-xmark" id="close-nav" onclick="closeSidebar()"></i>
+                    <div class="nav-list-container">
+                        <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
+                        <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
+                        <a href="../pages/about.html" class="nav-item">About</a>
+                        <a href="../pages/contact.html" class="nav-item">Contact</a>
+                        <a href="../pages/login.html" class="nav-item">Login</a>
+                        <div id="theam-btn-container" class="toggle-btn">
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox" class="toggle-label">
+                                <span class="toggle-ball"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </navbar>
+        <div class="destination-click" id="destination-click">
+            <div class="area">
+                <div class="featured-destination">
+                    <p>Featured Destinations</p>
+                    <ul>
+                        <li>Korea</li>
+                        <li>Hokkaido</li>    
+                        <li>Tunisia</li>    
+                        <li>Japan</li>    
+                    </ul>
+                </div>
+                <div class="next-adrenaline">
+                    <p>Find Your Next Adventure</p>
+                </div>
+            </div>
+            <div onclick="closeDesblock()">
+                <i class="fa-solid fa-xmark close" id="close"></i>
+            </div>
+        </div>
+        <div class="trip-click" id="trip-click">
+            <diV class="trip-plan-div">
+                <a href="" class="trip-item">Adventure Activities</a>
+                <a href="" class="trip-item">Tour Operators</a>
+                <a href="" class="trip-item">Travel Advisors</a>
+            </diV>
+            <i class="fa-solid fa-xmark close-mark" id="close1" onclick="closetripplan()"></i>
+        </div>
     <button type="button" class="btn" onclick="openModel()">Add</button>
     <div class="overlay" id="overlay">
         <div class="model">
