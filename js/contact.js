@@ -17,5 +17,6 @@ if(userName){
 
 function greetUser(){
     const userName = userInput.value;
+    localStorage.setItem('userName',userName);
 
 }
