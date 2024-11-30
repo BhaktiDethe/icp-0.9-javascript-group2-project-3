@@ -9,3 +9,4 @@ function closeModel(){
 }
 const greetinText = document.getElementById('greetinText');
 const userName = localStorage.getItem('userName');
+const userInput = document.getElementById('userName');
