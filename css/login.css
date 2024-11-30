@@ -22,7 +22,7 @@ section{
 }
 .signup-img img{
     height:500px;
-    width:250px;
+    width:300px;
 }
 .form-container{
     background-color: #faddcf;
@@ -31,6 +31,7 @@ section{
     align-items: center;
     height: 500px;
     text-align: center;
+    width: 300px;
 }
 .form-container h1{
     padding: 20px 10px;
