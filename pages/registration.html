@@ -8,8 +8,8 @@
 </head>
 <body>
    <div>
-    <img src="./../images/registrationpage/homelogo-removebg-preview.png" alt="" class="homelogo">
-     <img src="./../images/registrationpage/logo1-removebg-preview.png" alt="" class="logo">
+    <img src="./../images/registrationpage/reg_homelogo.png" alt="" class="homelogo">
+     <img src="./../images/registrationpage/reg_travellogo.png" alt="" class="logo">
 
      <div class="box">
      <p class="heading">Travel Registration Form</p>
@@ -136,22 +136,14 @@
      <div class="checktext"><input type="radio"/>With others</div>  
      </div>
 
-     <p class="fontsize fix"><u>Travelers:</u></p>
-     <div class="nameflexbox">
-      <div class="addtext">Name<br>
-        <input type="date" placeholder="Your name"  class="ip-box">
-      </div>
-
-      <div class="addtext">Age<br>
-        <input list="Age" class="ip-box " placeholder="Age">
-      </div><br>
-
-      <div class="add-box" onclick="">+  Add row</div>
-
-     
+     <p class="fontsize fix"><u>Travelers:</u> </p>
+      <div class="add-box" onclick="addrow()">+  Add Name</div>
+      <div><input type="text" class="takename" id="name" placeholder="type name"></div>
+      <div class=" addcontainer" id="nameflexbox"></div>
     
-     <button class="submit">Submit</button>
-     </div>
-   </div>
+          <button class="submit">Submit</button>
+      </div>
+      </div>
+   <script src="./../js/registration.js"></script>
 </body>
 </html>
