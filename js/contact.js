@@ -14,3 +14,8 @@ const userInput = document.getElementById('userName');
 if(userName){
     greetinText.innerText = `Hello ${userName}.....🖐`;
 }
+
+function greetUser(){
+
+    
+}
