@@ -169,3 +169,39 @@ body.dark-mode .best-offer-section h1{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+.best-offer-card:hover{
+    transform: scale(1.05);
+}
+.des-img{
+    width: 400px;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.package-name{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.package-city{
+    padding-left: 10px;
+    font-size: 18px;
+    color: rgb(99, 98, 98);
+}
+.start-rate{
+    margin-top: 15px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.rate{
+    font-size: 22px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.person{
+    margin-top: 5px;
+    font-size: 15px;
+    padding-left: 60px;
+    color: rgb(99, 98, 98);
+}
