@@ -8,3 +8,4 @@ function closeModel(){
     overlayElement.style.display= 'none';
 }
 const greetinText = document.getElementById('greetinText');
+const userName = localStorage.getItem('userName');
