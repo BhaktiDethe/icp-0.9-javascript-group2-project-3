@@ -1,12 +1,23 @@
 body{
     background-color: rgb(253, 245, 234);
 }
+:root .dark-mode{
+    --bg-main: rgb(32, 32, 32);
+    --bg-primary: rgb(253, 245, 234);
+}
+body .dark-mode{
+    background-color: var(--bg-main);
+    color: var(--bg-primary);
+}
 .booking-bg{
     background-image: url("../images/booking/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 330px;
+}
+body.dark-mode .search-main{
+    background-color: rgb(32, 32, 32);
 }
 .search-main{
     width: 100%;
