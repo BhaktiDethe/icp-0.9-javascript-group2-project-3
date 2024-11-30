@@ -28,7 +28,8 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 600px;
+    height: 400px;
+    text-align: center;
 }
 .form-container h1{
     padding: 20px 10px;
