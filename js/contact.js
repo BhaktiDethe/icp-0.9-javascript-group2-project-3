@@ -19,5 +19,5 @@ function greetUser(){
     const userName = userInput.value;
     localStorage.setItem('userName',userName);
     greetinText.innerText = `Hello ${userName}.....🖐`;
-
+    userInput.value ='';
 }
