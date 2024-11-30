@@ -57,7 +57,7 @@
             <diV class="trip-plan-div">
                 <a href="" class="trip-item">Adventure Activities</a>
                 <a href="" class="trip-item">Tour Operators</a>
-                <a href="" class="trip-item">Travel Advisors</a>
+                <a href="./../pages/travel_advisors.html" class="trip-item">Travel Advisors</a>
             </diV>
             <i class="fa-solid fa-xmark close-mark" id="close1" onclick="closetripplan()"></i>
         </div>
@@ -246,29 +246,34 @@
                     <li class="ul-container"><b>2015:Introduction of Eco-Friendly Travel Options</b></br><span class="history-information">Description:</span>In response to growing environmental concerns, Travel Explorer expanded its services to include eco-friendly travel options. This initiative aimed to promote sustainable tourism practices, encouraging travelers to make environmentally conscious choices while exploring new destinations.
                     </li>
                     <li class="ul-container"><b>2018: <span>Partnership with Local Guides</span> </b></br><span class="history-information">Description:</span>Travel Explorer partnered with local guides in over 30 countries to enhance travel experiences. This collaboration allowed travelers to gain authentic insights into local cultures, traditions, and hidden gems, enriching their journeys and supporting local economies.</li>
-                    <li class="ul-container"><b>2020:Virtual Travel Experiences</b> <span class="history-information">Description:</span>During the COVID-19 pandemic, Travel Explorer adapted to the changing landscape of travel by introducing virtual travel experiences. These online offerings allowed customers to explore destinations from the comfort of their homes, providing a unique way to experience travel during challenging times.</li>
+                    <li class="ul-container"><b>2020:Virtual Travel Experiences</b></br> <span class="history-information">Description:</span>During the COVID-19 pandemic, Travel Explorer adapted to the changing landscape of travel by introducing virtual travel experiences. These online offerings allowed customers to explore destinations from the comfort of their homes, providing a unique way to experience travel during challenging times.</li>
                 </ul>
       </div>
       </div>
       <div class="input-section">
-        <p class="about-paragraph">Welcome to our travel agency! </p>
+        <p class="heading-name">Welcome to our travel agency! </p>
         
       <div class="input-booking">
-        <h2 class="heading-font">Book Your Trip</h2>
         <form id="booking-form">
-            <label for="destination">Destination:</label>
-            <input type="text" id="destination" name="destination" required>
+          <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
 
-            <label for="check-in">Check-in Date:</label>
-            <input type="date" id="check-in" name="check-in" required>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
 
-            <label for="check-out">Check-out Date:</label>
-            <input type="date" id="check-out" name="check-out" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
 
             <label for="guests">Number of Member:</label>
             <input type="number" id="member" name="guests" min="1" required>
 
-            <button  class="input-button"  type="submit">Book Now</button>
+            <label for="budget">What is your budget for this trip (per person)?</label>
+            <input type="number" id="budget" name="budget" required>
+
+            <button  class="input-button"  type="submit">Submit</button>
         </form>
         <div id="confirmation-message" class="hidden-message"></div>
     </div>

@@ -185,12 +185,16 @@ ul {
  
 }
 .margin-space{
-    margin-left: 140px;
+    margin-left: 125px;
 }
 .input-section {
     width: 100%;
-    margin:0px;
-    padding: 0%;
+    margin:0%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 .input-booking {
     background-color:rgb(253, 245, 234);
@@ -198,21 +202,23 @@ ul {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-    margin-left: 20px;
-    margin: 30px; 
+    width: 500px;
+    
 }
-label {
-    margin: 10px  ;
+label{
     display: block;
-    font-weight: 800;
+    font-weight: 900px;
+    padding: 5px;
 }
 
 input[type="text"],
 input[type="date"],
-input[type="number"] {
-    width: 100%;
+input[type="number"],
+input[type="email"],
+input[type="tel"] {
+    width: 90%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 15px;
     background-color:rgb(249, 236, 222) ;  
