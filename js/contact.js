@@ -16,6 +16,6 @@ if(userName){
 }
 
 function greetUser(){
+    const userName = userInput.value;
 
-    
 }
