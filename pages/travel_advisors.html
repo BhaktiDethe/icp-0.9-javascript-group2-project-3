@@ -104,15 +104,24 @@
           border-radius: 20px;
          cursor: pointer;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
         }
+        .card img:hover {
+            transform: scale(1.05); 
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 16px; /* Stronger shadow effect on hover */
+}
         .card h3 {
             margin-top: 10px;
             text-align: left;
             font-size: 30px;
             cursor: pointer;
             color: rgb(51, 51, 51);
+            transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+
           
-        }
+        
         .card p {
             text-align: left;
             font-size: 18px;
@@ -195,6 +204,8 @@
     <section class="advisors-section">
         
         <h1 class="advisors-heading">Travel Advisors</h1>
+
+        
         <p class="advisors-para">Adventure.Travel's network of travel advisors book all aspects of your trip, from start to finish. Seek assistance when booking airline tickets, making accommodations and arranging tours. Most agents are members of the travel industry's leading consortia groups, like Virtuoso, Signature, Ensemble, American Express, and the Travel Leaders Network.</p>
     
         <div class="card-container" id="card-container">
@@ -261,6 +272,9 @@
             </section>
 
             <script>
+                
+
+
                 // Array of image objects with title, description, and image URL
                 const images = [
                     {
