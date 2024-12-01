@@ -46,6 +46,40 @@
             padding: 0px 150px;
             font-family: "Montserrat", sans-serif;
 }
+
+/* Media Queries for heading and para */
+
+/* For tablets and smaller devices */
+@media screen and (max-width: 768px) {
+    .advisors-heading {
+        padding: 0px 30px; /* Reduce padding for tablets */
+        margin-top: 150px; /* Reduce top margin for tablets */
+        font-size: 40px; /* Reduce font size for better fit on tablets */
+    }
+
+    .advisors-para {
+        padding: 0px 30px; /* Reduce padding for tablets */
+        font-size: 18px; /* Slightly smaller font size for paragraph */
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 480px) {
+    .advisors-heading {
+        padding: 0px 20px; /* Further reduce padding for mobile */
+        margin-top: 100px; /* Adjust margin to avoid too much space */
+        font-size: 30px; /* Reduce font size for mobile */
+        text-align: center; /* Center align the heading for mobile */
+    }
+
+    .advisors-para {
+        padding: 0px 20px; /* Further reduce padding for mobile */
+        font-size: 16px; /* Further reduce font size for mobile */
+        text-align: center; /* Center align the paragraph for mobile */
+    }
+}
+
+
     /*card using java script*/         
       
        .card-container {
@@ -68,8 +102,7 @@
             height: 350px;
            width: 350px;
           border-radius: 20px;
-         
-          cursor: pointer;
+         cursor: pointer;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
         .card h3 {
@@ -87,6 +120,51 @@
             cursor: pointer;
             
         }
+        /*card finish */
+        
+
+        /* Media Queries */
+
+/* For tablets and smaller devices */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 300px; /* Reduce card width for tablet-sized screens */
+        height: 400px; /* Reduce card height */
+        margin-right: 10px; /* Less margin between cards */
+    }
+    .card img {
+        width: 300px; /* Reduce image size */
+        height: 250px; /* Adjust image height */
+    }
+    .card h3 {
+        font-size: 24px; /* Slightly smaller title */
+    }
+    .card p {
+        font-size: 16px; /* Slightly smaller description */
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%; /* Cards take full width of the container */
+        height: auto; /* Let height adjust automatically */
+        margin-right: 0; /* No margin between stacked cards */
+        margin-bottom: 20px; /* Add some space between stacked cards */
+    }
+    .card img {
+        width: 100%; /* Make image responsive, full width of the card */
+        height: auto; /* Let height adjust based on image aspect ratio */
+        border-radius: 10px; /* Optional: reduce border radius for mobile */
+    }
+    .card h3 {
+        font-size: 20px; /* Smaller title for mobile */
+    }
+    .card p {
+        font-size: 14px; /* Smaller description for mobile */
+    }
+}
+
         
         
     </style>
@@ -112,6 +190,8 @@
         </div>
     </navbar>
 
+   
+   
     <section class="advisors-section">
         
         <h1 class="advisors-heading">Travel Advisors</h1>
