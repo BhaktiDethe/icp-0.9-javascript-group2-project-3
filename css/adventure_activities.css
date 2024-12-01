@@ -40,45 +40,45 @@ body{
 
 
 
-.purpose{
+.card{
     width: 80%;
     margin: 10px auto;
     height: auto;
     
 }
-.purpose .heading{
+.card .heading{
     margin-top: 60px;
     margin-bottom: 100px;
     text-align: center;
     font-size:50px;
 }
 
-.purpose-container{
+.card-container{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
 
 }
-.purpose-card{
+.card-card{
     height: 300px;
     width: 280px;
    
 }
-.purpose-card img{
+.card-card img{
     width: 280px;
     height: 170px;
     object-fit: cover; 
     border-radius: 10px;
 }
-.purpose-card h2{
+.card-card h2{
     margin: 5px 0;
     font-size: 21px;
     color: red;
 
 }
 
-.purpose-card h2:hover{
+.card-card h2:hover{
 text-decoration: underline;  
 font-size: 22px;
 }
