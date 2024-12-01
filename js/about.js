@@ -11,7 +11,20 @@ function buttonShow(){
     missionInfo.classList.add('hidden');
     button.textContent ='Show Mission';
     }
-   }
+}
+function closeMission() {
+   const missionInfo = document.getElementById('missionInfo');
+   missionInfo.classList.add('hidden');
+}
+function closeTeam() {
+   const teamInfo = document.getElementById('teamInfo');
+   teamInfo.classList.add('hidden');
+}
+function closehistory() {
+   const historyInfo = document.getElementById('historyInfo');
+   historyInfo.classList.add('hidden');
+}
+ 
 function teamShow(){
  const teamInfo = document.getElementById('teamInfo');
  const teamBtn = document.getElementById('teamBtn');
@@ -41,4 +54,17 @@ function teamShow(){
  
  }
 
- 
+ document.getElementById('booking-form').addEventListener('submit', function(event) {
+   event.preventDefault(); 
+
+   
+   const firstName = document.getElementById('first-name').value;
+   const lastName = document.getElementById('last-name').value;
+   
+   const confirmationMessage = `
+       <p>Thank you, ${firstName} ${lastName}!</p> `;
+   
+   const confirmationDiv = document.getElementById('confirmation-message');
+   confirmationDiv.innerHTML = confirmationMessage;
+   confirmationDiv.classList.remove('hidden-message');
+});

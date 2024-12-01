@@ -7,20 +7,25 @@
     <title>Travel And tourisam</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body id="body">
-    <section class="main">
+<body class="font-style">
+    <div class="main">
+        <div class="text-container font-style">
+            <p>Your Adventure Awaits. Where Will Your Curiosity Take You?</p>
+            <a href="./pages/booking.html" class="book-now" id="book-now">Book Now</a>
+        </div>
+    </div>
         <navbar class="navbar" id="navbar">
             <div class="navbar-container">
                 <a href="" class="logo"><img src="./images/index_page/logo.png" alt=""></a>
                 <i class="fa-solid fa-bars menubar" id="menu" onclick="openSidebar()"></i>
                 <div class="nav-list" id="nav-list">
                     <i class="fa-solid fa-xmark" id="close-nav" onclick="closeSidebar()"></i>
-                    <div class="nav-list-container">
+                    <div class="nav-list-container font-style">
                         <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
                         <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
                         <a href="./pages/about.html" class="nav-item">About</a>
                         <a href="./pages/contact.html" class="nav-item">Contact</a>
-                        <a href="" class="nav-item">Login</a>
+                        <a href="./pages/login.html" class="nav-item">Login</a>
                         <div id="theam-btn-container" class="toggle-btn">
                             <input type="checkbox" id="checkbox">
                             <label for="checkbox" class="toggle-label">
@@ -31,15 +36,15 @@
                 </div>
             </div>
         </navbar>
-        <div class="destination-click" id="destination-click">
+        <div class="destination-click font-style" id="destination-click">
             <div class="area">
                 <div class="featured-destination">
                     <p>Featured Destinations</p>
-                    <ul>
-                        <li>Kerala</li>
-                        <li>Rajasthan</li>    
-                        <li>Goa</li>    
-                        <li>Kashmir</li>     
+                    <ul class="ul">
+                        <li class="li"><a href="">Kerala</a></li>
+                        <li class="li"><a href="">Rajasthan</a></li>    
+                        <li class="li"><a href="./pages/destination/tunisia.html">Tunisia</a></li>    
+                        <li class="li"><a href="./pages/destination/japan.html">Japan</a></li>     
                     </ul>
                 </div>
                 <div class="next-adrenaline">
@@ -52,22 +57,17 @@
         </div>
         <div class="trip-click" id="trip-click">
             <diV class="trip-plan-div">
-                <a href="" class="trip-item">Adventure Activities</a>
+                <a href="./pages/adventure_activities.html" class="trip-item">Adventure Activities</a>
                 <a href="" class="trip-item">Tour Operators</a>
                 <a href="./pages/travel_advisors.html" class="trip-item">Travel Advisors</a>
             </diV>
             <i class="fa-solid fa-xmark close-mark" id="close1" onclick="closetripplan()"></i>
         </div>
-        <div class="text-container">
-            <p>Your Adventure Awaits. Where Will Your Curiosity Take You?</p>
-            <a href="./pages/booking.html" class="book-now" id="book-now">Book Now</a>
-        </div>
+        
         <div class="controls">
             <i id="prev" class="fas fa-chevron-left"></i>
             <i id="next" class="fas fa-chevron-right"></i>
         </div>
-    </section>
-    <div class="main-container" id="pages">
         <a href="" class="top-arrow"><i class="fa-solid fa-arrow-up"></i></a>
         <section class="featured-des">
             <h1 class="heading">Explore Our Featured Destinations</h1>
@@ -188,7 +188,7 @@
                     </div>  
                 </div>
                 <div class="footer-sec">
-                    <p class="footer-heading">Adventure.Travel</p>
+                    <p class="footer-heading">Airbnb</p>
                     <div class="footer-list">
                         <a href="">About Us</a>
                         <a href="">Contact Us</a>
@@ -197,9 +197,7 @@
             </div>
             <hr>
             <p class="copyright">© 2024 All rights reserved</p>
-        </footer>
-    </div>
-    
+        </footer> 
     <script src="js/script.js"></script>
 </body>
 </html>

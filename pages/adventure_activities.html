@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <title>adventure_activities</title>
+    <link rel="stylesheet" href="./../css/adventure_activities.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+<body>
+    
+
+    <navbar class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="logo"><img src="../images/index_page/logo.png" alt=""></a>
+            <i class="fa-solid fa-bars menubar" id="menu" onclick="openSidebar()"></i>
+            <div class="nav-list" id="nav-list">
+                <i class="fa-solid fa-xmark" id="close-nav" onclick="closeSidebar()"></i>
+                <div class="nav-list-container">
+                    <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
+                    <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
+                    <a href="../pages/about.html" class="nav-item">About</a>
+                    <a href="../pages/contact.html" class="nav-item">Contact</a>
+                    <a href="../pages/login.html" class="nav-item">Login</a>
+                    <div id="theam-btn-container" class="toggle-btn">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox" class="toggle-label">
+                            <span class="toggle-ball"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </navbar>
+    <div class="destination-click" id="destination-click">
+        <div class="area">
+            <div class="featured-destination">
+                <p>Featured Destinations</p>
+                <ul class="ul">
+                    <li class="li">Korea</li>
+                    <li class="li">Hokkaido</li>    
+                    <li class="li">Tunisia</li>    
+                    <li class="li">Japan</li>    
+                </ul>
+            </div>
+            <div class="next-adrenaline">
+                <p>Find Your Next Adventure</p>
+            </div>
+        </div>
+        <div onclick="closeDesblock()">
+            <i class="fa-solid fa-xmark close" id="close"></i>
+        </div>
+    </div>
+    <div class="trip-click" id="trip-click">
+        <diV class="trip-plan-div">
+            <a href="" class="trip-item">Adventure Activities</a>
+            <a href="" class="trip-item">Tour Operators</a>
+            <a href="" class="trip-item">Travel Advisors</a>
+        </diV>
+        <i class="fa-solid fa-xmark close-mark" id="close1" onclick="closetripplan()"></i>
+    </div>
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="basic_info">
+
+    <p class="basic_info_para">
+        Adventure travel isn't just about adrenaline, distance, or physical challenge. Adventure travelers are seeking to learn about history and culture, to immerse themselves in nature, and to engage deeply during travels. We're looking for connection, insight, history, and depth. And we understand the value of it.
+    </p>
+
+    <p class="basic_info_para" >
+        Adventure travel covers a diverse array of activities ranging from birdwatching to surfing to culinary and language exploration. It can mean outdoor travel, nature travel, ecotourism, active adventure, and so much more. It's sustainable form of tourism that supports conservation of nature and historical resources while supporting locally-owned businesses.
+    </p>
+
+    <p class="basic_info_para">
+        Our adventure travel activity guides help your learn tips about traveling on adventure and offer advice on planning, safety, sustainability, and inspiration to help you find and plan adventure travel trips around the world.
+    </p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+    <section class="purpose">
+        <h1 class="heading">Top Adventure Activities</h1>
+        
+        <div class="purpose-container">
+         
+        <div class="purpose-card">
+                <img src="./../images/adventure_activities/card1-img-canoeing.webp" alt="card1-img-canoeing">
+                <h2>Canoeing</h2>
+            </div>    
+            
+            <div class="purpose-card">
+                <img src="./../images/adventure_activities/card2-img-canyoneering.jpg" alt="canyoneering">
+                <h2>Canyoneering</h2>
+            </div>    
+            
+            <div class="purpose-card">
+                <img src="./../images/adventure_activities/card3-img-diving.webp" alt="diving">
+                <h2>Diving</h2>
+            </div>    
+            <div class="purpose-card">
+                <img src="./../images/adventure_activities/card4-img-kayaking.webp" alt="kayaking">
+                <h2>Kayaking</h2>
+            </div>   
+
+
+            <div class="purpose-card">
+                <img src="./../images/adventure_activities/card5-img-dog-sledding.jpg" alt="dog-sledding">
+                <h2>Dog sledding</h2>
+            </div>    
+            
+            <div class="purpose-card">
+                <img src="./../images/adventure_activities/card6-img-mountain-biking.jpg" alt="mountain-biking">
+                <h2>Mountain biking</h2>
+            </div>    
+            
+            <div class="purpose-card">
+                <img src="./../images/adventure_activities/card7-img-mountaineering.jpg" alt="mountaineering">
+                <h2>Mountaineering</h2>
+            </div>    
+            
+            <div class="purpose-card">
+                <img src="./../images/adventure_activities/card8-img-paddle-boarding.jpg" alt="paddle-boarding">
+                <h2>Paddle boarding"</h2>
+            </div>    
+            
+
+
+            <div class="purpose-card">
+                <img src="./../images/adventure_activities/card9-img-rock-climbing.jpg" alt="rock-climbing">
+                <h2>Rock climbing</h2>
+            </div>    
+            
+            <div class="purpose-card">
+                <img src="./../images/adventure_activities/card10-img-skiing-.jpg" alt="skiing">
+                <h2>Skiing</h2>
+            </div>    
+            
+            <div class="purpose-card">
+                <img src="./../images/adventure_activities/card11-img-snow-mobliling.jpg" alt="snow-mobliling">
+                <h2>Snow mobliling</h2>
+            </div>    
+            
+            <div class="purpose-card">
+                <img src="./../images/adventure_activities/card12-img-surfing.jpg" alt="surfing">
+                <h2>Surfing</h2>
+            </div>    
+            
+
+
+            <div class="purpose-card">
+                <img src="./../images/adventure_activities/card13-img-trekking.jpg" alt="trekking">
+                <h2>Trekking</h2>
+            </div>    
+            <div class="purpose-card">
+                <img src="./../images/adventure_activities/card14-img-via-ferrata.jpg" alt="via-ferrata">
+                <h2>Via ferrata</h2>
+            </div>    
+            <div class="purpose-card">
+                <img src="./../images/adventure_activities/card15-img-safari.webp" alt="safari">
+                <h2>Safari</h2>
+            </div>    
+            <div class="purpose-card">
+                <img src="./../images/adventure_activities/card16-img-white-water-rafting.webp" alt="white-water-rafting">
+                <h2>White water rafting</h2>
+            </div>    
+            
+        </div>  
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-sec">
+                <a href=""><img src="../images/index_page/logo.png" alt="logo"></a>
+                <p class="footer-info">The Global Sustainable Adventure Travel Storytelling Ecosystem</p>
+                <div class="icon-container">
+                    <a href=""><img src="" alt=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><img src="" alt=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><img src="" alt=""><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-sec">
+                <p class="footer-heading">Destinations</p>
+                <div class="footer-list">
+                    <a href="">Hokkaido</a>
+                    <a href="">Tunisia</a>
+                    <a href="">Korea</a>
+                    <a href="">Spain</a>
+                </div>
+            </div>
+            <div class="footer-sec">
+                <p class="footer-heading">Planning</p>
+                <div class="footer-list">
+                    <a href="">Find Your Adventure</a>
+                    <a href="">Tour Operators</a>
+                    <a href="">Travel Advisors</a>
+                </div>
+            </div>
+            <div class="footer-sec">
+                <p class="footer-heading">Sharing</p>
+                <div class="footer-list">
+                    <a href="">Share Stories</a>
+                    <a href="">Add Your Company Listing</a>
+                    <a href="">Feature Your Destination</a>
+                </div>  
+            </div>
+            <div class="footer-sec">
+                <p class="footer-heading">Adventure.Travel</p>
+                <div class="footer-list">
+                    <a href="">About Us</a>
+                    <a href="">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2024 All rights reserved</p>
+    </footer>
+
+
+
+
+
+
+    <script src="./../js/adventure_activities.js"></script>
+
+
+</body>
+</html>

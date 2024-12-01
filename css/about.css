@@ -8,31 +8,24 @@ body{
     background-color: rgb(253, 245, 234);
     width: 100%;
 }
-.aboutus-img{
-        background-image: url('./../images/aboutpage/aboutpage-img.jpeg');
-        background-size: cover;  
-        width: 100%;
-        height:500px;
-        display: flex;
-        justify-content: center;
-        
+.about-bg{
+    background-image: url("../images/aboutpage/about-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.aboutus{
-    height: 150px;
-    width: 500px;
-    background-color:rgba(226, 222, 222, 0.7);
-    border-radius: 15px;
-    text-align: center;
-    padding: 40px;
-    margin-top:150px;
-    
-}
-.aboutus p{
-    font-size: 85px;
-    font-weight: 600;
+.about-text{
+    margin-top: 50px;
+    padding: 30px;
+    font-size: 50px;
     color: rgb(32, 32, 32);
-    background-color: transparent;
-
+    background-color: rgba(226, 222, 222, 0.7);
+    border-radius: 10px;
+    font-weight: 700;
 }
 .heading-font{
   padding-left: 40px;
@@ -57,15 +50,15 @@ h2{
     padding-left: 40px;
     font-family: "Merriweather", serif;
     margin: 20px 0px 10px 0px;
-    font-size: 30px;
-    padding-top: 0px;
+    font-size: 40px;
+    padding-bottom: 10px;
 }
 .mission,.team,.history{
     background: rgb(251, 245, 238);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 2px 5px  7px 5px rgba(0, 0, 0, 0.1);
-    margin: 30px;
+    margin: 30px 80px;
 }
 .hidden{
     display: none;
@@ -106,6 +99,9 @@ h2{
 .about-main{
     width: 100%;
     height: 400px;
+}
+.about-paragraph{
+    text-align: justify;
 }
 .red-color{
     color: rgb(196, 60, 60);
@@ -174,8 +170,9 @@ ul {
 }
 
 .about-information{
-    width: 100%;
-    padding-top: 150px;
+    margin: 0px auto;
+    width: 90%;
+    padding-top: 50px;
 }
 .sizeicon i{
  margin-left: 7px;
@@ -183,6 +180,69 @@ ul {
  margin-top: 10px;
  color: black;
  
+}
+.margin-space{
+    margin-left: 125px;
+}
+.input-section {
+    width: 100%;
+    margin:0%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.input-booking {
+    background-color:rgb(253, 245, 234);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 500px;
+    
+}
+.label{
+    display: block;
+    font-weight: 900px;
+    padding: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="email"],
+input[type="tel"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color:rgb(249, 236, 222) ;  
+}
+
+.input-button {
+    background-color:black;
+    color:#fff;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 30px;
+}
+.hidden-message {
+    display: none;
+}
+#confirmation-message {
+    margin-top: 15px;
+    color:black;
+}
+.close-menu i{
+    margin-left:95%;
+    color: black;
+    font-size:20px;
+    margin-bottom: 10px;
 }
 
 /* Media Queries */

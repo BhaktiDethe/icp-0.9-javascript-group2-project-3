@@ -17,25 +17,31 @@
                 <i class="fa-solid fa-bars menubar" id="menu" onclick="openSidebar()"></i>
                 <div class="nav-list" id="nav-list">
                     <i class="fa-solid fa-xmark" id="close-nav" onclick="closeSidebar()"></i>
-                    <div class="nav-list-container">
+                    <div class="nav-list-container font-style">
                         <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
                         <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
                         <a href="./pages/about.html" class="nav-item">About</a>
                         <a href="./pages/contact.html" class="nav-item">Contact</a>
                         <a href="" class="nav-item">Login</a>
+                        <div id="theam-btn-container" class="toggle-btn">
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox" class="toggle-label">
+                                <span class="toggle-ball"></span>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
         </navbar>
-        <div class="destination-click" id="destination-click">
+        <div class="destination-click font-style" id="destination-click">
             <div class="area">
                 <div class="featured-destination">
                     <p>Featured Destinations</p>
                     <ul>
-                        <li>Korea</li>
-                        <li>Hokkaido</li>    
-                        <li>Tunisia</li>    
-                        <li>Japan</li>    
+                        <li><a href="">Kerala</a></li>
+                        <li><a href="">Rajasthan</a></li>    
+                        <li><a href="">Goa</a></li>    
+                        <li><a href="">Kashmir</a></li>     
                     </ul>
                 </div>
                 <div class="next-adrenaline">
@@ -50,7 +56,7 @@
             <diV class="trip-plan-div">
                 <a href="" class="trip-item">Adventure Activities</a>
                 <a href="" class="trip-item">Tour Operators</a>
-                <a href="" class="trip-item">Travel Advisors</a>
+                <a href="./pages/travel_advisors.html" class="trip-item">Travel Advisors</a>
             </diV>
             <i class="fa-solid fa-xmark close-mark" id="close1" onclick="closetripplan()"></i>
         </div>

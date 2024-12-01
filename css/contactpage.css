@@ -3,6 +3,32 @@ body{
     background-size: 30px 30px;
     background-position: 0 0;
 }
+
+.contact-bg{
+    background-image: url("../images/contactPage/contact-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-text{
+    margin-top: 50px;
+    padding: 30px;
+    font-size: 50px;
+    color: rgb(32, 32, 32);
+    background-color: rgba(226, 222, 222, 0.7);
+    border-radius: 10px;
+    font-weight: 700;
+}
+.destination-click{
+    left: 152px;
+}
+.trip-click{
+    left: 152px;
+}
 .container{
     display:flex;
     justify-content: space-evenly;
@@ -96,4 +122,8 @@ padding: 5px 20px;
     padding: 30px 30px 30px 30px;
     padding-top: 39px;
     padding-left: 57px;
+}
+.h2{
+    margin: 9px;
+    
 }
