@@ -7,8 +7,12 @@
     width: 820px;
     display: flex;
     flex-direction: row;
-    margin-top: 4%;
+    margin-top: 150px;
     margin-left:25%;
+}
+
+.container:hover{
+    box-shadow: 0px 0px 10px 3px #cbcbcb;
 }
 .travel-reg{
     margin-top: 40px;
@@ -21,13 +25,7 @@
     background-color: #e67300;
     position: relative;
 }
-.logo{
-    height: 40px;
-    width: 40px;
-    margin-top: -20px;
-    margin-left: 20px;
-    position:fixed;
-}
+
 .slide-img{
     height: 500px;
     width: 410px;
@@ -50,12 +48,14 @@
     cursor: pointer;
 }
 .form-container{
-    height: 500px;
+    max-height: 500px;
     width: 410px;
     background-color:#ffbf80;
     opacity: 70%;
     border-radius: 0 15px 15px 0;
-    overflow: scroll;
+    padding-bottom: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .text-center{
     text-align: center;
@@ -68,6 +68,8 @@
 }
 .reg-heading{
     margin-top: 20px;
+    font-size: 32px;
+    color: #232323;
 }  
 .input-box{
     width: 310px;
@@ -80,6 +82,10 @@
     display: block;
     margin: 10px auto;
     margin-top: 30px;
+}
+
+.input-box:hover{
+    border: solid 1px #f45d48;
 }
 .flexbox{
     display: flex;
@@ -140,12 +146,15 @@
     display:inline-block;
 }
 .submit-btn{
-    width: 150px;
-    height: 30px;
-    padding:10px auto;
-    margin: 20px 28%;
-    background-color:#ff8c1a; 
-    color: white;
+    width: 91%;
+    margin: 10px 20px;
+    padding: 10px;
+    background-color: rgb(208, 79, 79); 
+    color: #232323; 
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
 }
 .submit-btn:hover{
     background-color: white;
