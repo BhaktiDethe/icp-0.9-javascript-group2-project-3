@@ -120,3 +120,43 @@ document.addEventListener('DOMContentLoaded', function () {
             nights: 3
         }
     ];
+
+    const container = document.getElementById('best-offer-container');
+
+    function displayPackages(filteredPackages) {
+        container.innerHTML = '';
+        filteredPackages.forEach(packageInfo => {
+            const packageCard = document.createElement('div');
+            packageCard.classList.add('best-offer-card');
+            packageCard.innerHTML = `
+                <img src="${packageInfo.image}" alt="${packageInfo.city}" class="des-img">
+                <p class="package-name">${packageInfo.packageName} - ${packageInfo.days} Day(s) & ${packageInfo.nights} Night(s)</p>
+                <p class="package-city">${packageInfo.city}</p>
+                <p class="start-rate">Starting From</p>
+                <p class="rate">${packageInfo.rate}</p>
+                <p class="person"><del>${packageInfo.originalRate}</del> ${packageInfo.description}</p>
+            `;
+            container.appendChild(packageCard);
+        });
+    }
+
+    displayPackages(packages);
+
+    document.getElementById('search-btn').addEventListener('click', function () {
+        const searchInput = document.getElementById('destination-input').value.trim().toUpperCase();
+
+        if (searchInput === '') {
+            displayPackages(packages);
+        } else {
+            const filteredPackages = packages.filter(packageInfo => {
+                return packageInfo.city.toUpperCase().includes(searchInput); 
+            });
+
+            if (filteredPackages.length === 0) {
+                alert("No travel packages found for your search destination.");
+            } else {
+                displayPackages(filteredPackages);
+            }
+        }
+    });
+});
