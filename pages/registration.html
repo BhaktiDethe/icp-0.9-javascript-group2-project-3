@@ -4,146 +4,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../css/registration.css">
-    <title>Registration page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Registration Page</title>
 </head>
 <body>
-   <div>
-    <img src="./../images/registrationpage/reg_homelogo.png" alt="" class="homelogo">
-     <img src="./../images/registrationpage/reg_travellogo.png" alt="" class="logo">
-
-     <div class="box">
-     <p class="heading">Travel Registration Form</p>
-     
-     <p class="text2">Please fill out the form below to register for the upcoming travel event.</p>
-     <div>
-
-      <div class="nameflexbox">
-        <div class="name-font">Full Name<br>
-          <input type="text" placeholder="Your name"  class="ip-box">
+        <navbar class="navbar" id="navbar">
+            <div class="navbar-container">
+                <a href="../index.html" class="logo"><img src="../images/index_page/logo.png" alt=""></a>
+                <i class="fa-solid fa-bars menubar" id="menu" onclick="openSidebar()"></i>
+                <div class="nav-list" id="nav-list">
+                    <i class="fa-solid fa-xmark" id="close-nav" onclick="closeSidebar()"></i>
+                    <div class="nav-list-container">
+                        <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
+                        <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
+                        <a href="../pages/about.html" class="nav-item">About</a>
+                        <a href="../pages/contact.html" class="nav-item">Contact</a>
+                        <a href="../pages/login.html" class="nav-item">Login</a>
+                        <div id="theam-btn-container" class="toggle-btn">
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox" class="toggle-label">
+                                <span class="toggle-ball"></span>
+                           </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </navbar>
+        <div class="destination-click" id="destination-click">
+            <div class="area">
+                <div class="featured-destination">
+                    <p>Featured Destinations</p>
+                    <ul>
+                        <li>Korea</li>
+                        <li>Hokkaido</li>    
+                        <li>Tunisia</li>    
+                        <li>Japan</li>    
+                    </ul>
+                </div>
+                <div class="next-adrenaline">
+                    <p>Find Your Next Adventure</p>
+                </div>
+            </div>
+            <div onclick="closeDesblock()">
+                <i class="fa-solid fa-xmark close" id="close"></i>
+            </div>
         </div>
-
-        <div class="name-font">Email<br>
-          <input type="text" placeholder="Your Email"  class="ip-box">
-        </div><br><br>
-
-        <div class="name-font">Phone Number<br>
-          <input type="text" placeholder="Your Phone Number"  class="ip-box">
+        <div class="trip-click" id="trip-click">
+            <diV class="trip-plan-div">
+                <a href="" class="trip-item">Adventure Activities</a>
+                <a href="" class="trip-item">Tour Operators</a>
+                <a href="" class="trip-item">Travel Advisors</a>
+            </diV>
+            <i class="fa-solid fa-xmark close-mark" id="close1" onclick="closetripplan()"></i>
         </div>
-
-        <div class="name-font">Address<br>
-          <input type="text" placeholder="Address"  class="ip-box">
+    <div class="container">
+        <div class="slideimg-container">
+            <img src="./../images/registrationpage/img-1.jpg" alt="" id="slide" class="slide-img">
+            <img src="./../images/registrationpage/next.png" alt="" onclick="next()" class="nextprevious-img next">
+            <img src="./../images/registrationpage/previous.png" alt="" onclick="prev()" class="nextprevious-img prev">
         </div>
+        <div class="form-container">
+            <h1 class="text-center font-style font-size reg-heading">Register Now</h1>
 
-        <div class="name-font">City<br>
-        <input list="Cities" class="ip-box" placeholder="City">
-        <datalist id="Cities">
-         <option>Kolkata</option>
-         <option>Mumbai</option>
-         <option>Manali</option>
-         <option>Lonavala</option>
-         <option>Kashmir</option>
-         <option>Bankok</option>
-         <option>Shrinagar</option>
-         <option>Delhi</option>
-         <option>Mahabaleshwar</option>
-         <option>Kanyakumari</option>
-         <option>Varanasi</option>
-         <option>Mount.Abu</option>
-         <option>Kachha</option>
-         <option>Somnath</option></datalist></div>
+            <input type="text" class="input-box" placeholder="Enter Your Name">
+            <input type="text" class="input-box" placeholder="Enter Your Email">
+            <input type="text" class="input-box" placeholder="Enter Your Phone Number">
+            <input type="text" class="input-box" placeholder="Enter Your Address">
 
-      <div class="name-font">State<br>
-          <input list="Cities" class="ip-box" placeholder="State">
-          <datalist id="Cities">
-         <option>Maharastra</option>
-         <option>Gujarat</option>
-         <option>Tamil Nadu</option>
-         <option>Madhya Pradesh</option>
-         <option>Uttar Pradesh</option>
-         <option>Telangana</option>
-         <option>Rajasthan</option>
-         <option>Bihar</option>
-         <option>Karnataka</option>
-         <option>Kerala</option>
-         <option>Assam</option>
-         <option>Arunachal Pradesh</option>
-         <option>Chhattisgarh</option>
-         <option>Andhra Pradesh</option></datalist></div>
-      </div>
+            <div class="flexbox">
+                <div>
+                    <input list="Cities" class="input-box ip-box-citystate" placeholder="City">
+                    <datalist id="Cities">
+                     <option>Kolkata</option>
+                     <option>Mumbai</option>
+                     <option>Manali</option>
+                     <option>Lonavala</option>
+                     <option>Kashmir</option>
+                     <option>Bankok</option>
+                     <option>Shrinagar</option>
+                     <option>Mahabaleshwar</option>
+                     <option>Kanyakumari</option>
+                     <option>Varanasi</option>
+                     <option>Mount.Abu</option>
+                     <option>Kachha</option>
+                     <option>Somnath</option></datalist>
+                </div>
+
+                <div>
+                    <input list="State" class="input-box ip-box-citystate" placeholder="State">
+                    <datalist id="State">
+                   <option>Maharastra</option>
+                   <option>Gujarat</option>
+                   <option>Tamil Nadu</option>
+                   <option>Madhya Pradesh</option>
+                   <option>Uttar Pradesh</option>
+                   <option>Telangana</option>
+                   <option>Rajasthan</option>
+                   <option>Bihar</option>
+                   <option>Karnataka</option>
+                   <option>Kerala</option>
+                   <option>Assam</option>
+                   <option>Arunachal Pradesh</option>
+                   <option>Chhattisgarh</option>
+                   <option>Andhra Pradesh</option></datalist>
+                </div>
+            </div>
+
+            <input type="text" class="input-box" placeholder="Emergency contact name">
+            <input type="text" class="input-box" placeholder="Emergency contact number">
+            <input type="text" class="input-box" placeholder="Preferred travel destination">
+            
+            <div class="flexbox">
+                <div>
+                    <div class="fromto-text">From:</div><input type="date" class="input-box ip-box-citystate marginfromto" placeholder="From">
+                </div>
+                <div>
+                    <div class="fromto-text">To:</div><input type="date" class="input-box ip-box-citystate marginfromto" placeholder="To">
+                </div>
+            </div>
+  
+            <div class="que-margin">
+                Do you have any medical condition or allergy?<br>
+                <div class="flexbox space">
+
+                <div class="condition-margin"><input type="radio" id="yes" value="Yes" name="condition">
+                <label for="yes" >Yes</label></div>
+
+                <div class="condition-margin"><input type="radio" id="no" value="No" name="condition" class="condition-margin">
+                <label for="no" >No</label></div>
+                </div>
+            </div><br>
+
+            <div class="que-margin">
+                Are you travelling alone or with others?<br>
+                <div class="flexbox space">
+
+                <div class="condition-margin"><input type="radio" id="yes" value="Yes" name="condition">
+                <label for="yes" >Yes</label></div>
+
+                <div class="condition-margin"><input type="radio" id="no" value="No" name="condition" class="condition-margin">
+                <label for="no" >No</label></div>
+                </div>
+            </div>
+
+           <p class="travellers que-margin">Travellers:</p>
+           <button type="button" class="add-btn que-margin" onclick="addrow()">+ Add name</button><br>
+
+           <input type="text" class="add-btn takename que-margin" id="name" placeholder="type name">
+           <div class="flexbox-addname que-margin" id="nameflexbox"></div><br>
+                   
+            <button type="button" class="submit-btn">Submit</button>
+        </div>
     </div>
-    
-    <p class="fontsize fix"><u>Emergency Contact Information</u></p>
-    <p class="subline">(Please provide the name and phone number of an emergency contact person.)</p>
-    <div class="nameflexbox">
-    <input type="text" placeholder="Your Name"  class="ip-box fix-2 ">
-    <input type="text" placeholder="Your Number"  class="ip-box fix-2">
-    </div>
 
-    <p class="fontsize fix"><u>Travel preferences</u></p>
-     <p class="subline">(Please indicate your travel preferences below.)</p>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-sec">
+                <a href=""><img src="../images/index_page/logo.png" alt=""></a>
+                <p class="footer-info">The Global Sustainable Adventure Travel Storytelling Ecosystem</p>
+                <div class="icon-container">
+                    <a href=""><img src="" alt=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><img src="" alt=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><img src="" alt=""><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-sec">
+                <p class="footer-heading">Destinations</p>
+                <div class="footer-list">
+                    <a href="">Hokkaido</a>
+                    <a href="">Tunisia</a>
+                    <a href="">Korea</a>
+                    <a href="">Spain</a>
+                </div>
+            </div>
+            <div class="footer-sec">
+                <p class="footer-heading">Planning</p>
+                <div class="footer-list">
+                    <a href="">Find Your Adventure</a>
+                    <a href="">Tour Operators</a>
+                    <a href="">Travel Advisors</a>
+                </div>
+            </div>
+            <div class="footer-sec">
+                <p class="footer-heading">Sharing</p>
+                <div class="footer-list">
+                    <a href="">Share Stories</a>
+                    <a href="">Add Your Company Listing</a>
+                    <a href="">Feature Your Destination</a>
+                </div>  
+            </div>
+            <div class="footer-sec">
+                <p class="footer-heading">Airbnb</p>
+                <div class="footer-list">
+                    <a href="">About Us</a>
+                    <a href="">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2024 All rights reserved</p>
+    </footer>
 
-     <p class="fontsize fix">Preferred Travel Destination</p>
-     <div>
-      <input list="Cities" class="ip-box fix-3" placeholder="Destination">
-      <datalist id="Cities">
-     <option>Maharastra</option>
-     <option>Gujarat</option>
-     <option>Tamil Nadu</option>
-     <option>Madhya Pradesh</option>
-     <option>Uttar Pradesh</option>
-     <option>Telangana</option>
-     <option>Rajasthan</option>
-     <option>Bihar</option>
-     <option>Karnataka</option>
-     <option>Kerala</option>
-     <option>Assam</option>
-     <option>Arunachal Pradesh</option>
-     <option>Chhattisgarh</option>
-     <option>Andhra Pradesh</option></datalist></div>
-
-     <div class="nameflexbox fix-4">
-      <div class="name-font">From:<br>
-        <input type="date" placeholder="from"  class="ip-box">
-      </div><br><br>
-
-      <div class="name-font">To:<br>
-        <input type="date" placeholder="to"  class="ip-box">
-      </div><br><br>
-     </div>
-      
-     <p class="fontsize fix"><u>Health and Safety</u></p>
-     <p class="subline">(Please answer the following health and safety question.)</p>
-
-     <p class="fontsize fix">Do you have any medical conditions or allergies?</p>
-     <div class="nameflexbox">
-     <div class="checktext"><input type="radio"/>Yes</div>
-     <div class="checktext"><input type="radio"/>No</div> 
-     </div>
-
-     <p class="fontsize fix">Please Specify</p>
-     <input type="text" placeholder="Type your issue here"  class="ip-box specify-box">
-
-     <p class="fontsize fix">Are you fully vaccinated against COVID-19?</p>
-     <div class="nameflexbox">
-     <div class="checktext"><input type="radio"/>Yes</div>
-     <div class="checktext"><input type="radio"/>No</div> 
-     <div class="checktext"><input type="radio"/>Partially Vaccinated</div> 
-     </div>
-
-     <p class="fontsize fix">Are you travelling alone or with others?</p>
-     <div class="nameflexbox">
-     <div class="checktext"><input type="radio"/>Alone</div>
-     <div class="checktext"><input type="radio"/>With others</div>  
-     </div>
-
-     <p class="fontsize fix"><u>Travelers:</u> </p>
-      <div class="add-box" onclick="addrow()">+  Add Name</div>
-      <div><input type="text" class="takename" id="name" placeholder="type name"></div>
-      <div class=" addcontainer" id="nameflexbox"></div>
-    
-          <button class="submit">Submit</button>
-      </div>
-      </div>
-   <script src="./../js/registration.js"></script>
+    <script src="./../js/registration.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

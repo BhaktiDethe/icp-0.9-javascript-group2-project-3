@@ -29,7 +29,7 @@
                             <input type="checkbox" id="checkbox">
                             <label for="checkbox" class="toggle-label">
                                 <span class="toggle-ball"></span>
-                            </label>
+                           </label>
                         </div>
                     </div>
                 </div>
@@ -67,14 +67,17 @@
         <div class="model">
             <img src="./../images/contactPage/cross.png" class="close-icon" alt="Close" onclick="closeModel()"/>
             <form class="form">
-                <h1 class="form-header">Please Provided Your Contact Information</h1>First Name*
-                <input type="text" placeholder="Smith" class="form-input"/> Last Name*  
+                <h1 class="form-header">Please Provided Your Contact Information
+                    <h2 id="greetinText" class="h2">Hello Guest.....🖐</h2>
+                </h1>First Name*
+                <input type="text" placeholder="Smith" class="form-input" id="userName"
+                /> Last Name*  
                 <input type="text" placeholder="Jain" class="form-input"/> Phone Number*  
                 <input type="text" placeholder="+91-" class="form-input"/>Email*
                 <input type="email" placeholder="name@example.com" class="form-input"/>Company *
                 <input type="text" placeholder="Acme Corportion" class="form-input"/>
             </form>
-            <button type="button" class="btn">Submit</button>
+            <button type="button" class="btn" onclick="greetUser()">Submit</button>
         </div>
     </div>
 
@@ -115,7 +118,7 @@
                 </div>  
             </div>
             <div class="footer-sec">
-                <p class="footer-heading">Adventure.Travel</p>
+                <p class="footer-heading">Airbnb</p>
                 <div class="footer-list">
                     <a href="">About Us</a>
                     <a href="">Contact Us</a>

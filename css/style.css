@@ -35,6 +35,9 @@ body .dark-mode{
     transition: background-image 1s ease-in-out;
     position: relative;
 }
+body.dark-mode .navbar{
+    background-color: rgb(253, 245, 234);
+}
 .navbar {
     position: fixed;
     top: 20px; 
@@ -69,12 +72,16 @@ body .dark-mode{
     gap: 30px;
     background-color: transparent;
 }
+body.dark-mode .nav-list .nav-item{
+    color: rgb(32, 32, 32);
+}
 .nav-list .nav-item{
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     background-color: transparent;
     cursor: pointer;
+    font-weight: 700;
 }
 .nav-list .nav-item:hover{
     color: rgb(207, 92, 92);
@@ -85,6 +92,9 @@ body .dark-mode{
     height: 50px;
     display: flex;
     align-items: center;
+}
+.toggle-btn:hover{
+    cursor: pointer;
 }
 #checkbox{
     visibility: hidden;
@@ -107,6 +117,9 @@ body .dark-mode{
     top: 2px;
     left: 6px;
     transition: all .2s linear;
+}
+.toggle-ball:hover{
+    cursor: pointer;
 }
 #checkbox:checked + .toggle-label .toggle-ball{
     transform: translateX(30px);
@@ -149,16 +162,19 @@ body .dark-mode{
     font-weight: 700;
     color: #fff;
 }
-.featured-destination ul{
+.ul{
     margin-top: 30px;
     line-height: 1.7;
     list-style-type: none; 
 }
-.featured-destination li a{
+.li a{
     text-decoration: none;
     line-height: 2.5;
     color: #fff;
     font-size: 18px;
+}
+.li a:hover{
+    color: rgb(207, 92, 92);
 }
 .next-adrenaline{
     margin-right: 100px;
@@ -288,7 +304,7 @@ body.dark-mode .main-container {
     position: relative;
 }
 .top-arrow i{
-    position: absolute;
+    position: fixed;
     right: 10px;
     bottom: 10px;
     color: rgb(207, 92, 92);
@@ -298,7 +314,7 @@ body.dark-mode .main-container {
 }
 .featured-des{
     width: 80%;
-    margin: 0px auto;
+    margin: 60px auto;
     height: auto;
 }
 body.dark-mode .heading {
