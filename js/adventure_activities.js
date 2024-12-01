@@ -18,11 +18,11 @@ const activities = [
 ];
 
 const purposeContainer = document.createElement("div");
-purposeContainer.classList.add("purpose-container");
+purposeContainer.classList.add("card-container");
 
 activities.forEach(activity => {
     const card = document.createElement("div");
-    card.classList.add("purpose-card");
+    card.classList.add("card-card");
 
     const img = document.createElement("img");
     img.src = activity.imgSrc;
