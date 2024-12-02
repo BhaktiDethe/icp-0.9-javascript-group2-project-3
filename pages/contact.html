@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/contactpage.css" />
 </head>
-<body>
+<body class="font-style">
     <div class="contact-bg">
         <p class="contact-text">Contact Us</p>
     </div>
@@ -39,11 +39,11 @@
             <div class="area">
                 <div class="featured-destination">
                     <p>Featured Destinations</p>
-                    <ul>
-                        <li>Korea</li>
-                        <li>Hokkaido</li>    
-                        <li>Tunisia</li>    
-                        <li>Japan</li>    
+                    <ul class="ul">
+                        <li class="li"><a href="">Korea</a></li>
+                        <li class="li"><a href="">Hokkaido</a></li>    
+                        <li class="li"><a href="./pages/destination/tunisia.html">Tunisia</a></li>    
+                        <li class="li"><a href="./pages/destination/japan.html">Japan</a></li>     
                     </ul>
                 </div>
                 <div class="next-adrenaline">
@@ -65,17 +65,21 @@
     <button type="button" class="btn" onclick="openModel()">Add</button>
     <div class="overlay" id="overlay">
         <div class="model">
-            <img src="./../images/contactPage/cross.png" class="close-icon" alt="Close" onclick="closeModel()"/>
-            <form class="form">
-                <h1 class="form-header">Please Provided Your Contact Information
-                    <h2 id="greetinText" class="h2">Hello Guest.....🖐</h2>
-                </h1>First Name*
-                <input type="text" placeholder="Smith" class="form-input" id="userName"
-                /> Last Name*  
-                <input type="text" placeholder="Jain" class="form-input"/> Phone Number*  
-                <input type="text" placeholder="+91-" class="form-input"/>Email*
-                <input type="email" placeholder="name@example.com" class="form-input"/>Company *
-                <input type="text" placeholder="Acme Corportion" class="form-input"/>
+            <img src="./../images/contactPage/cross.png" class="close-icon" alt="Close" onclick="closeModel()" />
+            <form class="form" onsubmit="return false;">
+                <h1 class="form-header">Please Provide Your Contact Information</h1>
+                <h2 id="greetinText" class="h2">Hello Guest.....🖐</h2>
+        
+                First Name*
+                <input type="text" placeholder="Smith" class="form-input" id="firstName" />
+                Last Name*
+                <input type="text" placeholder="Jain" class="form-input" id="lastName" />
+                Phone Number*
+                <input type="text" placeholder="+91-" class="form-input" id="phoneNumber" />
+                Email*
+                <input type="email" placeholder="name@example.com" class="form-input" id="email" />
+                Company*
+                <input type="text" placeholder="Acme Corporation" class="form-input" id="company" />
             </form>
             <button type="button" class="btn" onclick="greetUser()">Submit</button>
         </div>
@@ -87,9 +91,9 @@
                 <a href=""><img src="../images/index_page/logo.png" alt=""></a>
                 <p class="footer-info">The Global Sustainable Adventure Travel Storytelling Ecosystem</p>
                 <div class="icon-container">
-                    <a href=""><img src="" alt=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><img src="" alt=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><img src="" alt=""><i class="fa-regular fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/airbnb/"><img src="" alt=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/airbnb/"><img src="" alt=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:airbnb.com"><img src="" alt=""><i class="fa-regular fa-envelope"></i></a>
                 </div>
             </div>
             <div class="footer-sec">

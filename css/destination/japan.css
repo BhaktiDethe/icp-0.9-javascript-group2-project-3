@@ -4,12 +4,6 @@ body {
     padding: 0;
   }
 
-  .tunii {
-    margin: 20px;
-    font-size: 1.3rem;
-    padding: 0 10% 0 10%;
-  }
-
   .tuni {
     display: flex;
     flex-wrap: wrap;
@@ -43,8 +37,13 @@ body {
     max-width: 663px;
     max-height: 373px;
   }
-
+  .ad-heading{
+    margin-top: 80px;
+    font-size: 50px;
+    color: black;
+  }
   .h1 {
+
     color: black;
   }
   .main-content {
@@ -115,10 +114,9 @@ body {
     /* margin-top: 10%; */
     margin: 13% 2% 0 2%;
   }
-
-  img {
-    width: 100%;
-    height: auto;
+  .article-item img{
+    width: 250px;
+    height: 250px;
     border-radius: 5px;
   }
 
@@ -212,7 +210,7 @@ body {
 
   .article-item {
     height: 40%;
-    width: 30%;
+    width: 20%;
   }
 
   .article-text {

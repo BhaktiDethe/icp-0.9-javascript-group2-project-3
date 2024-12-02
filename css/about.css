@@ -4,10 +4,6 @@
    padding: 0px;
    margin: 0%;
 }
-body{
-    background-color: rgb(253, 245, 234);
-    width: 100%;
-}
 .about-bg{
     background-image: url("../images/aboutpage/about-bg.jpg");
     background-repeat: no-repeat;
@@ -30,7 +26,6 @@ body{
 .heading-font{
   padding-left: 40px;
   font-size: 30px;
-  font-family: "Merriweather", serif;
   font-weight: bolder;
 }
 
@@ -40,7 +35,6 @@ body{
     padding-right: 40px;
     font-size: 19px;
     margin-bottom: 20px;
-    font-family: "Montserrat", sans-serif;
     
 }
 h2{
@@ -48,7 +42,6 @@ h2{
 }
 .heading-name{
     padding-left: 40px;
-    font-family: "Merriweather", serif;
     margin: 20px 0px 10px 0px;
     font-size: 40px;
     padding-bottom: 10px;
@@ -111,7 +104,6 @@ h2{
 }
 .mission-font,.team-member{
     font-size:19px;
-    font-family: "Montserrat", sans-serif;
     padding:0 40px 0 40px;
     
 }
@@ -121,7 +113,6 @@ h2{
     margin: 10px;
     border-radius: 20px;
     padding: 10px;
-    font-family: "Montserrat", sans-serif; 
     text-align: center;
     align-items: center;
 
@@ -147,9 +138,6 @@ justify-content: space-around;
     border: none;
     color: #fff;
 }
-.history ul{
-    font-family: "Montserrat", sans-serif;
-} 
 ul {
     list-style-type: none;
     padding: 0;
