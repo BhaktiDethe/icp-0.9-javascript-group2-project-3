@@ -4,6 +4,24 @@
    padding: 0px;
    margin: 0%;
 }
+:root{
+    --bg-main: rgb(253, 245, 234);
+    --bg-primary: rgb(32, 32, 32);
+}
+body{
+    background-color: var(--bg-main);
+    color: var(--bg-primary);
+    width: 100%;
+}
+
+:root .dark-mode{
+    --bg-main: rgb(32, 32, 32);
+    --bg-primary: rgb(253, 245, 234);
+}
+body.dark-mode{
+    background-color: var(--bg-main);
+    color: var(--bg-primary);
+}
 .about-bg{
     background-image: url("../images/aboutpage/about-bg.jpg");
     background-repeat: no-repeat;
