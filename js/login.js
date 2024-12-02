@@ -23,3 +23,15 @@ function loginUser() {
         showDialog("Invalid email or password. Please try again.");
     }
 }
+function showDialog(message) {
+    const dialog = document.getElementById("dialog");
+    const dialogMessage = document.getElementById("dialogMessage");
+
+    dialogMessage.innerText = message;
+    dialog.style.display = "block";
+}
+
+function closeDialog() {
+    const dialog = document.getElementById("dialog");
+    dialog.style.display = "none";
+}
