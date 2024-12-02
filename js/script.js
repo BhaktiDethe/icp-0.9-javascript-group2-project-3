@@ -167,3 +167,16 @@ function closeLoginDialog() {
 }
 
 setTimeout(openLoginDialog, 10000); 
+
+function loginUser() {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    if (email && password) {
+        localStorage.setItem('userEmail', email);
+        alert('Login successful!');
+        closeLoginDialog();
+    } else {
+        alert('Please enter valid email and password.');
+    }
+}
