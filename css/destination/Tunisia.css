@@ -12,6 +12,30 @@ body {
     font-size: 1.3rem;
     padding: 0 10% 0 10%;
   }
+  .contact-bg{
+    background-image: url("../../images/destinationpage/Tunisia.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-text{
+    margin-top: 50px;
+    padding: 30px;
+    font-size: 50px;
+    color: rgb(32, 32, 32);
+    background-color: rgba(226, 222, 222, 0.7);
+    border-radius: 10px;
+    font-weight: 700;
+}
+.ad-heading{
+    font-size: 50px;
+    color: black;
+  }
+
 
   .tuni {
     display: flex;

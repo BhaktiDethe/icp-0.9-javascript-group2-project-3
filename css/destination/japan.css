@@ -3,7 +3,36 @@ body {
     margin: 0;
     padding: 0;
   }
+  .contact-bg{
+    background-image: url("../../images/destinationpage/japan.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-text{
+    margin-top: 50px;
+    padding: 30px;
+    font-size: 50px;
+    color: rgb(32, 32, 32);
+    background-color: rgba(226, 222, 222, 0.7);
+    border-radius: 10px;
+    font-weight: 700;
+}
+  .tunii {
+    width: 80%;
+    text-align: justify;
+    margin: 20px auto;
+    font-size: 1.3rem;
+  }
 
+  h3{
+    padding: 10px 0px;
+    font-size: 25px;
+  }
   .tuni {
     display: flex;
     flex-wrap: wrap;
