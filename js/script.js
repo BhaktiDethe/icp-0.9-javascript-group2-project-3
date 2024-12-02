@@ -153,3 +153,17 @@ toggle_btn.addEventListener('change', () => {
         document.body.classList.remove('dark-mode')
     }
 })
+const loginDialog = document.getElementById('loginDialog');
+const overlay = document.getElementById('overlay');
+
+function openLoginDialog() {
+    loginDialog.style.display = 'block';
+    overlay.style.display = 'block';
+}
+
+function closeLoginDialog() {
+    loginDialog.style.display = 'none';
+    overlay.style.display = 'none';
+}
+
+setTimeout(openLoginDialog, 10000); 
