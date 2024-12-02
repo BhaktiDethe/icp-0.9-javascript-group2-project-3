@@ -23,6 +23,89 @@ body .dark-mode{
     background-color: var(--bg-main);
     color: var(--bg-primary);
 }
+.login-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    margin: 0px auto;
+    background: #d5d4d4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; 
+    z-index: 1000;
+    border-radius: 10px;
+}
+.login-dialog h2{
+    font-size: 35px;
+    padding: 10px;
+    margin: 10px 0px;
+    text-align: center;
+    color: rgb(207, 92, 92);
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 999;
+}
+
+.login-dialog input {
+    width: 95%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-dialog button {
+    width: 100%;
+    padding: 10px;
+    background: rgb(207, 92, 92);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.already-account {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #232323; 
+}
+.already-account p {
+    margin: 0; 
+    margin-right: 5px; 
+    font-weight: 400;
+}
+
+.already-account a {
+    color: rgb(207, 92, 92);
+    text-decoration: none; 
+    font-weight: 600; 
+}
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #7f7d7d;
+    cursor: pointer;
+}
+
+.close-icon:hover {
+    color: #000;
+}
+
 .main {
     width: 100%;
     height: 100vh;
@@ -34,6 +117,9 @@ body .dark-mode{
     align-items: center;
     transition: background-image 1s ease-in-out;
     position: relative;
+}
+body.dark-mode .navbar{
+    background-color: rgb(253, 245, 234);
 }
 .navbar {
     position: fixed;
@@ -69,12 +155,16 @@ body .dark-mode{
     gap: 30px;
     background-color: transparent;
 }
+body.dark-mode .nav-list .nav-item{
+    color: rgb(32, 32, 32);
+}
 .nav-list .nav-item{
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     background-color: transparent;
     cursor: pointer;
+    font-weight: 700;
 }
 .nav-list .nav-item:hover{
     color: rgb(207, 92, 92);
@@ -85,6 +175,9 @@ body .dark-mode{
     height: 50px;
     display: flex;
     align-items: center;
+}
+.toggle-btn:hover{
+    cursor: pointer;
 }
 #checkbox{
     visibility: hidden;
@@ -107,6 +200,9 @@ body .dark-mode{
     top: 2px;
     left: 6px;
     transition: all .2s linear;
+}
+.toggle-ball:hover{
+    cursor: pointer;
 }
 #checkbox:checked + .toggle-label .toggle-ball{
     transform: translateX(30px);
@@ -149,16 +245,19 @@ body .dark-mode{
     font-weight: 700;
     color: #fff;
 }
-.featured-destination ul{
+.ul{
     margin-top: 30px;
     line-height: 1.7;
     list-style-type: none; 
 }
-.featured-destination li a{
+.li a{
     text-decoration: none;
     line-height: 2.5;
     color: #fff;
     font-size: 18px;
+}
+.li a:hover{
+    color: rgb(207, 92, 92);
 }
 .next-adrenaline{
     margin-right: 100px;
@@ -288,7 +387,7 @@ body.dark-mode .main-container {
     position: relative;
 }
 .top-arrow i{
-    position: absolute;
+    position: fixed;
     right: 10px;
     bottom: 10px;
     color: rgb(207, 92, 92);
@@ -298,7 +397,7 @@ body.dark-mode .main-container {
 }
 .featured-des{
     width: 80%;
-    margin: 0px auto;
+    margin: 60px auto;
     height: auto;
 }
 body.dark-mode .heading {
@@ -572,7 +671,7 @@ body.dark-mode .copyright{
         right: 0px;
         background-color: rgba(32, 32, 32, 0.8);
         width: 180px;
-        height: 300px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -896,5 +995,41 @@ body.dark-mode .copyright{
     }
     .copyright{
         padding: 10px;
+    }
+    .controls i {
+        font-size: 10px;
+    }
+    
+    .login-dialog {
+        width: 250px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .login-dialog h2{
+        font-size: 25px;
+    }
+    .login-dialog input {
+        width: 92%;
+        margin-bottom: 10px;
+    }
+
+    .login-dialog button {
+        width: 100%;
+        font-size: 17px;
+        padding: 10px 30px;
+    }
+    .already-account {
+        flex-direction: column;
+        font-size: 13px;
+    }
+
+    .close-icon {
+        font-size: 20px;
+    }
+    .book-now{
+        font-size: 20px;
     }
 }

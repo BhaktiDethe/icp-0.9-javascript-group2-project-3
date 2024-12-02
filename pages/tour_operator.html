@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <title>adventure_activities</title>
+    <link rel="stylesheet" href="./../css/adventure_activities.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+<body class="font-style">
+    
+    <div class="advanture-bg" style="background-image: url('https://www.swatiholidays.com/wp-content/uploads/2012/09/Andaman-Beach.jpg');">
+        <p class="advanture-text">Tour Operator</p>
+    </div>
+    <navbar class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="logo"><img src="../images/index_page/logo.png" alt=""></a>
+            <i class="fa-solid fa-bars menubar" id="menu" onclick="openSidebar()"></i>
+            <div class="nav-list" id="nav-list">
+                <i class="fa-solid fa-xmark" id="close-nav" onclick="closeSidebar()"></i>
+                <div class="nav-list-container">
+                    <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
+                    <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
+                    <a href="../pages/about.html" class="nav-item">About</a>
+                    <a href="../pages/contact.html" class="nav-item">Contact</a>
+                    <a href="../pages/login.html" class="nav-item">Login</a>
+                    <div id="theam-btn-container" class="toggle-btn">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox" class="toggle-label">
+                            <span class="toggle-ball"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </navbar>
+    <div class="destination-click" id="destination-click">
+        <div class="area">
+            <div class="featured-destination">
+                <p>Featured Destinations</p>
+                <ul class="ul">
+                    <li class="li"><a href="">Korea</a></li>
+                    <li class="li"><a href="">Hokkaido</a></li>    
+                    <li class="li"><a href="./destination/tunisia.html">Tunisia</a></li>    
+                    <li class="li"><a href="./destination/japan.html">Japan</a></li>     
+                </ul>
+            </div>
+            <div class="next-adrenaline">
+                <p>Find Your Next Adventure</p>
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6274280.259169465!2d72.56094225619356!3d22.351114471343387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ae1a733b8ed77%3A0x8f26e6bd3154056!2sIndia!5e0!3m2!1sen!2sin!4v1696002750156!5m2!1sen!2sin"
+                        width="580px"
+                        height="220px"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                    ></iframe>
+            </div>
+        </div>
+        <div onclick="closeDesblock()">
+            <i class="fa-solid fa-xmark close" id="close"></i>
+        </div>
+    </div>
+    <div class="trip-click" id="trip-click">
+        <diV class="trip-plan-div">
+            <a href="./adventure_activities.html" class="trip-item">Adventure Activities</a>
+            <a href="./tour_operator.html" class="trip-item">Tour Operators</a>
+            <a href="./travel_advisors.html" class="trip-item">Travel Advisors</a>
+        </diV>
+        <i class="fa-solid fa-xmark close-mark" id="close1" onclick="closetripplan()"></i>
+    </div>
+    <div class="basic_info">
+        <h1 style="font-size: 50px; padding: 10px; margin-left: 15px;">Tour Operators</h1>
+        <p class="basic_info_para">
+            Airbnb features the best inbound destination specialists and outbound tour operators that package some of the world's greatest adventure tours. Explore like a local when you travel with independently owned companies that utilize local contacts, guides, and hotels for the most experiential itineraries on the market.
+        </p>
+    
+    </div>
+    
+    <h1 class="advanture-heading" style="font-size: 35px;">Global Operators</h1>
+        <div class="card-container" id="card-container">
+    
+        </div>
+    
+    
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-sec">
+                    <a href=""><img src="../images/index_page/logo.png" alt="logo"></a>
+                    <p class="footer-info">The Global Sustainable Adventure Travel Storytelling Ecosystem</p>
+                    <div class="icon-container">
+                        <a href="https://www.facebook.com/airbnb/"><img src="" alt=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/airbnb/"><img src="" alt=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="mailto:airbnb.com"><img src="" alt=""><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-sec">
+                    <p class="footer-heading">Destinations</p>
+                    <div class="footer-list">
+                        <a href="">Korea</a>
+                        <a href="">Hokkaido</a>
+                        <a href="./destination/tunisia.html">Tunisia</a>
+                        <a href="./destination/japan.html">Japan</a>
+                    </div>
+                </div>
+                <div class="footer-sec">
+                    <p class="footer-heading">Planning</p>
+                    <div class="footer-list">
+                        <a href="./adventure_activities.html">Find Your Adventure</a>
+                        <a href="./tour_operator.html">Tour Operators</a>
+                        <a href="./travel_advisors.html">Travel Advisors</a>
+                    </div>
+                </div>
+                <div class="footer-sec">
+                    <p class="footer-heading">Sharing</p>
+                    <div class="footer-list">
+                        <a href="">Share Stories</a>
+                        <a href="">Add Your Company Listing</a>
+                        <a href="">Feature Your Destination</a>
+                    </div>  
+                </div>
+                <div class="footer-sec">
+                    <p class="footer-heading">Adventure.Travel</p>
+                    <div class="footer-list">
+                        <a href="./about.html">About Us</a>
+                        <a href="./contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">© 2024 All rights reserved</p>
+        </footer>
+
+    <script src="./../js/adventure_activities.js"></script>
+</body>
+</html>

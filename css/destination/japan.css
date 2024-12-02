@@ -3,13 +3,36 @@ body {
     margin: 0;
     padding: 0;
   }
-
+  .contact-bg{
+    background-image: url("../../images/destinationpage/japan.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-text{
+    margin-top: 50px;
+    padding: 30px;
+    font-size: 50px;
+    color: rgb(32, 32, 32);
+    background-color: rgba(226, 222, 222, 0.7);
+    border-radius: 10px;
+    font-weight: 700;
+}
   .tunii {
-    margin: 20px;
+    width: 80%;
+    text-align: justify;
+    margin: 20px auto;
     font-size: 1.3rem;
-    padding: 0 10% 0 10%;
   }
 
+  h3{
+    padding: 10px 0px;
+    font-size: 25px;
+  }
   .tuni {
     display: flex;
     flex-wrap: wrap;
@@ -43,8 +66,13 @@ body {
     max-width: 663px;
     max-height: 373px;
   }
-
+  .ad-heading{
+    margin-top: 80px;
+    font-size: 50px;
+    color: black;
+  }
   .h1 {
+
     color: black;
   }
   .main-content {
@@ -115,10 +143,9 @@ body {
     /* margin-top: 10%; */
     margin: 13% 2% 0 2%;
   }
-
-  img {
-    width: 100%;
-    height: auto;
+  .article-item img{
+    width: 250px;
+    height: 250px;
     border-radius: 5px;
   }
 
@@ -212,7 +239,7 @@ body {
 
   .article-item {
     height: 40%;
-    width: 30%;
+    width: 20%;
   }
 
   .article-text {

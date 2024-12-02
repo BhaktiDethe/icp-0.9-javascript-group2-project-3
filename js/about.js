@@ -55,19 +55,16 @@ function teamShow(){
  }
 
  document.getElementById('booking-form').addEventListener('submit', function(event) {
-   event.preventDefault();
+   event.preventDefault(); 
 
    
-   const destination = document.getElementById('destination').value;
-   const checkIn = document.getElementById('check-in').value;
-   const checkOut = document.getElementById('check-out').value;
-   const member = document.getElementById('member').value;
-
+   const firstName = document.getElementById('first-name').value;
+   const lastName = document.getElementById('last-name').value;
    
-   const confirmationMessage = document.getElementById('confirmation-message');
-   confirmationMessage.classList.remove('hidden-message');
-   confirmationMessage.innerHTML = `Thank you for booking your trip to ${destination}!<br>Check-in: ${checkIn}<br>Check-out: ${checkOut}<br>Member: ${member}`;
+   const confirmationMessage = `
+       <p>Thank you, ${firstName} ${lastName}!</p> `;
    
-   
-   document.getElementById('booking-form').reset();
+   const confirmationDiv = document.getElementById('confirmation-message');
+   confirmationDiv.innerHTML = confirmationMessage;
+   confirmationDiv.classList.remove('hidden-message');
 });

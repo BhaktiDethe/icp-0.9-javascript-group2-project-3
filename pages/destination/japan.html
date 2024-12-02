@@ -3,12 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <title>japan</title>
     <link rel="stylesheet" href="./../../css/destination/japan.css">
+    <link rel="stylesheet" href="../../css/style.css">
   </head>
-  <body>
+  <body class="font-style">
+    <div class="contact-bg">
+      <p class="contact-text">Japan</p>
+    </div>
+    <navbar class="navbar" id="navbar">
+      <div class="navbar-container">
+          <a href="../../index.html" class="logo"><img src="../../images/index_page/logo.png" alt=""></a>
+          <i class="fa-solid fa-bars menubar" id="menu" onclick="openSidebar()"></i>
+          <div class="nav-list" id="nav-list">
+              <i class="fa-solid fa-xmark" id="close-nav" onclick="closeSidebar()"></i>
+              <div class="nav-list-container">
+                  <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
+                  <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
+                  <a href="../../pages/about.html" class="nav-item">About</a>
+                  <a href="../../pages/contact.html" class="nav-item">Contact</a>
+                  <a href="../../pages/login.html" class="nav-item">Login</a>
+                  <div id="theam-btn-container" class="toggle-btn">
+                      <input type="checkbox" id="checkbox">
+                      <label for="checkbox" class="toggle-label">
+                          <span class="toggle-ball"></span>
+                      </label>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </navbar>
+  <div class="destination-click" id="destination-click">
+      <div class="area">
+          <div class="featured-destination">
+              <p>Featured Destinations</p>
+              <ul class="ul">
+                <li class="li"><a href="">Korea</a></li>
+                <li class="li"><a href="">Hokkaido</a></li>    
+                <li class="li"><a href="./tunisia.html">Tunisia</a></li>    
+                <li class="li"><a href="./japan.html">Japan</a></li>     
+              </ul>
+          </div>
+          <div class="next-adrenaline">
+              <p>Find Your Next Adventure</p>
+              <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6274280.259169465!2d72.56094225619356!3d22.351114471343387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ae1a733b8ed77%3A0x8f26e6bd3154056!2sIndia!5e0!3m2!1sen!2sin!4v1696002750156!5m2!1sen!2sin"
+                        width="580px"
+                        height="220px"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                    ></iframe>
+          </div>
+      </div>
+      <div onclick="closeDesblock()">
+          <i class="fa-solid fa-xmark close" id="close"></i>
+      </div>
+  </div>
+  <div class="trip-click" id="trip-click">
+      <diV class="trip-plan-div">
+          <a href="../adventure_activities.html" class="trip-item">Adventure Activities</a>
+          <a href="../tour_operator.html" class="trip-item">Tour Operators</a>
+          <a href="../travel_advisors.html" class="trip-item">Travel Advisors</a>
+      </diV>
+      <i class="fa-solid fa-xmark close-mark" id="close1" onclick="closetripplan()"></i>
+  </div>
+
+  <div class="japan-container">
     <div class="tunii">
-      <h1 style="color: black;">More Than Adventure</h1>
+      <h1 class="ad-heading">More Than Adventure</h1>
       <p>
         Welcome to this destination series featuring untold stories from Japan.
         Here, we spotlight the exquisite and unmatched harmony of nature and
@@ -21,72 +85,49 @@
       </p>
     </div>
 
-    <div class="photo" style="text-align: start; margin: 0;">
-      <div class="photo4">
-        <div class="photo3">
-          <img
-            src="https://cdn-content.adventuretravel.biz/2024/10/91526717b73e9d93e.png"
-            alt="Mahdia Beach"
-          />
+    <section class="adventure-sec">
+      <div class="adventure-container" id="adventure-container">
+          <img src="https://cdn-content.adventuretravel.biz/2024/10/91526717b73e9d93e.png" alt="">
+          <div class="adventure-card">
+              <h1 class="heading">The Heartbeat</h1>
+              <h3>THE COMMUNITY & CULTURE OF JAPAN</h3>
+              <p class="adventure-info">GO BEYOND SURFACE OBSERVATIONS...and find where the landscapes
+                whisper stories of resilience and innovation, where life on the edge
+                of a volcano reveals unique ways of life, and the warmth of genuine
+                Japanese hospitality echoes across every tale. Delve into the
+                essence of rural Japan with the stories of the vibrant culture and
+                local communities, where rich history, cultural expressions, age-old
+                traditions, and passionate entrepreneurs become living testaments to
+                the coexistence, where community life intertwines with the
+                breathtaking beauty of the natural surroundings.</p>
+          </div>
+      </div>    
+  </section>
+  <section class="adventure-sec">
+    <div class="adventure-container">
+        <div class="adventure-card">
+            <h1 class="heading">Wilderness Wonders</h1>
+            <h3>DISCOVER JAPAN'S NATURE</h3>
+            <p class="adventure-info">JAPAN'S UNSPOILED NATURAL WONDERS...offer incredible experiences,
+              from waterfall meditations to fishing lines cast on clear streams
+              and endangered owl encounters to technically challenging hikes on
+              active volcanoes with unforgettable panoramic vistas. Japan's
+              diverse and stunning scenery is unveiled as travel journalists take
+              on the rugged terrains, ancient forests, and coastal havens that
+              define the country's natural allure. Discover a place where it's not
+              just about scenery; it's about connecting with nature in its purest
+              form.</p>
         </div>
-        <div class="photo2">
-          <h1 class="h1">The Heartbeat</h1>
-          <h3>THE COMMUNITY & CULTURE OF JAPAN</h3>
-          <p>
-            GO BEYOND SURFACE OBSERVATIONS...and find where the landscapes
-            whisper stories of resilience and innovation, where life on the edge
-            of a volcano reveals unique ways of life, and the warmth of genuine
-            Japanese hospitality echoes across every tale. Delve into the
-            essence of rural Japan with the stories of the vibrant culture and
-            local communities, where rich history, cultural expressions, age-old
-            traditions, and passionate entrepreneurs become living testaments to
-            the coexistence, where community life intertwines with the
-            breathtaking beauty of the natural surroundings.
-          </p>
-        </div>
-        <!-- <div class="photo3">
-                <img src="https://cdn-content.adventuretravel.biz/2024/10/91526717b73e9d93e.png" alt="Mahdia Beach" />
-            </div> -->
-      </div>
-
-      <!-- Kef Region -->
-      <div class="photo1">
-        <div class="photo2">
-          <h1 class="h1">Wilderness Wonders</h1>
-          <h3>DISCOVER JAPAN'S NATURE</h3>
-          <p>
-            JAPAN'S UNSPOILED NATURAL WONDERS...offer incredible experiences,
-            from waterfall meditations to fishing lines cast on clear streams
-            and endangered owl encounters to technically challenging hikes on
-            active volcanoes with unforgettable panoramic vistas. Japan's
-            diverse and stunning scenery is unveiled as travel journalists take
-            on the rugged terrains, ancient forests, and coastal havens that
-            define the country's natural allure. Discover a place where it's not
-            just about scenery; it's about connecting with nature in its purest
-            form.
-          </p>
-        </div>
-        <div class="photo3">
-          <img
-            src="https://cdn-content.adventuretravel.biz/2024/10/2716717b77e63fa8.png"
-            alt="KEF Region View"
-          />
-        </div>
-      </div>
-
-      <!-- Zaghouan -->
-      <div class="photo4">
-        <div class="photo3">
-          <img
-            src="https://cdn-content.adventuretravel.biz/2024/10/36106717b7e620469.png"
-            alt="Zaghouan Region"
-          />
-        </div>
-        <div class="photo2">
-          <h1 class="h1">Guiding Excellence</h1>
+        <img src="https://cdn-content.adventuretravel.biz/2024/10/2716717b77e63fa8.png" alt="">
+    </div>    
+</section>
+<section class="adventure-sec">
+  <div class="adventure-container" id="adventure-container">
+      <img src="https://cdn-content.adventuretravel.biz/2024/10/36106717b7e620469.png" alt="">
+      <div class="adventure-card">
+          <h1 class="heading">Guiding Excellence</h1>
           <h3>INTRODUCING THE TOUR GUIDES OF JAPAN</h3>
-          <p>
-            AN EXCELLENT TOUR GUIDE CAN BRIDGE A DEEPER CONNECTION... to a
+          <p class="adventure-info">AN EXCELLENT TOUR GUIDE CAN BRIDGE A DEEPER CONNECTION... to a
             destination through their unique stories and perspectives -
             illuminating the soul of the destination by sharing valuable
             insights travelers might otherwise miss. Beyond technical abilities,
@@ -95,18 +136,16 @@
             the intricate harmony between humans and nature. These guides are
             more than storytellers; they are champions of responsible travel,
             ensuring that what travelers witness today endures for ears to come
-            and embracing adventure.
-          </p>
-        </div>
+            and embracing adventure.</p>
       </div>
-
-      <!-- Mahdia -->
-      <div class="photo1">
-        <div class="photo2">
-          <h1 class="h1">Beyond the Plate</h1>
+  </div>    
+</section>
+<section class="adventure-sec">
+  <div class="adventure-container">
+      <div class="adventure-card">
+          <h1 class="heading">Beyond the Plate</h1>
           <h3>GASTRONOMIC WONDERS OF JAPAN</h3>
-          <p>
-            IN JAPANESE CULTURE, EVERY DISH TELLS A STORY...Meet the Japanese
+          <p class="adventure-info">IN JAPANESE CULTURE, EVERY DISH TELLS A STORY...Meet the Japanese
             entrepreneurs pioneering a sustainable culinary future while
             embracing traditional farming methods. Their commitment extends
             beyond the plate, shaping a sustainable ecosystem that honors local
@@ -115,17 +154,11 @@
             ingredients but a sustainable legacy, showcasing how gastronomy can
             intertwine tradition, innovation, and a commitment to a thriving
             future. Japan's gastronomy is a celebration of ingenuity, tradition,
-            and a sustainable future.
-          </p>
-        </div>
-        <div class="photo3">
-          <img
-            src="https://cdn-content.adventuretravel.biz/2024/10/95066717b83403727.png"
-            alt="Mahdia Beach"
-          />
-        </div>
+            and a sustainable future.</p>
       </div>
-    </div>
+      <img src="https://cdn-content.adventuretravel.biz/2024/10/95066717b83403727.png" alt="">
+  </div>    
+</section>
 
     <!-- Transparent overlay -->
     <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
@@ -369,7 +402,55 @@
         </div>
       </div>
     </div>
-
+  </div>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-sec">
+            <a href="../../index.html"><img src="../../images/index_page/logo.png" alt=""></a>
+            <p class="footer-info">The Global Sustainable Adventure Travel Storytelling Ecosystem</p>
+            <div class="icon-container">
+              <a href="https://www.facebook.com/airbnb/"><img src="" alt=""><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/airbnb/"><img src="" alt=""><i class="fa-brands fa-instagram"></i></a>
+              <a href="mailto:airbnb.com"><img src="" alt=""><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-sec">
+            <p class="footer-heading">Destinations</p>
+            <div class="footer-list">
+                <a href="">Korea</a>
+                <a href="">Hokkaido</a>
+                <a href="./tunisia.html">Tunisia</a>
+                <a href="./japan.html">Japan</a>
+            </div>
+        </div>
+        <div class="footer-sec">
+            <p class="footer-heading">Planning</p>
+            <div class="footer-list">
+                <a href="../adventure_activities.html">Find Your Adventure</a>
+                <a href="../tour_operator.html">Tour Operators</a>
+                <a href="../travel_advisors.html">Travel Advisors</a>
+            </div>
+        </div>
+        <div class="footer-sec">
+            <p class="footer-heading">Sharing</p>
+            <div class="footer-list">
+                <a href="">Share Stories</a>
+                <a href="">Add Your Company Listing</a>
+                <a href="">Feature Your Destination</a>
+            </div>  
+        </div>
+        <div class="footer-sec">
+            <p class="footer-heading">Airbnb</p>
+            <div class="footer-list">
+                <a href="../about.html">About Us</a>
+                <a href="../contact.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">© 2024 All rights reserved</p>
+</footer>
     <script src="./../../js/destination/japan.js"></script>
+    <script src="./../../js/script.js"></script>
   </body>
 </html>
