@@ -1,0 +1,19 @@
+.advanture-heading{
+    font-size: 35px;
+}
+@media screen and (max-width: 450px){
+    .advanture-text{
+        font-size: 30px;
+    }
+    .basic_info_para{
+        font-size: 18px;
+    }
+    .advanture-heading{
+        font-size: 25px;
+        margin: 0;
+    }
+    .footer{
+        position: absolute;
+        margin-top: 3600px;
+    }
+}

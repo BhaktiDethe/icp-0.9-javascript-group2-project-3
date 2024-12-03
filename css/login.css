@@ -215,6 +215,7 @@ section{
     }
     .form-container{
         height: 350px;
+        border-radius: 15px;
     }
     .input{
         width: 80%;

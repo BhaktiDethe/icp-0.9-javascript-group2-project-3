@@ -150,7 +150,13 @@ body {
         font-weight: 700;
         margin-bottom: 20px;
     }
-
+    .article-text{
+        text-align: start; 
+        font-size: 2.5rem;
+    }
+    .article-text p{
+        text-align: start;
+    }
     
     .locations {
         margin-top: 10px;
@@ -465,6 +471,46 @@ body {
   }
 
   @media (max-width: 480px) {
+        .ad-heading{
+            margin-top: 30px;
+            font-size: 30px;
+        }
+        .contact-text{
+            font-size: 30px;
+        }
+        .tunii p{
+            font-size: 18px;
+            text-align: justify;
+        }
+        .h1{
+            font-size: 27px;
+        }
+        .tuni2 p{
+            font-size: 18px;
+            text-align: justify;
+        }
+        .article-title{
+            font-size: 25px;
+            color: black;
+        }
+        .article-text h2{
+            font-size: 25px;
+        }
+        .article-text p{
+            font-size: 18px;
+            text-align: justify;
+        }
+        .read-more{
+            font-size: 17px;
+        }
+        .media-title{
+            font-size: 25px;
+            color: black;
+        }
+        .container1 h1{
+            font-size: 25px;
+            color: black;
+        }
         .location-item {
             flex: 1 1 100%; 
         }

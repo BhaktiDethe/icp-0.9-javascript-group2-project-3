@@ -57,8 +57,9 @@ body{
     justify-content:space-between;
 }
 .card-card{
-    height: 300px;
+    height: 220px;
     width: 280px;
+    margin: 0;
 }
 .card-card img{
     width: 280px;
@@ -80,4 +81,21 @@ font-size: 22px;
 .footer{
     position: absolute;
     margin-top: 1200px;
+}
+
+@media screen and (max-width: 450px){
+    .advanture-text{
+        font-size: 30px;
+    }
+    .basic_info_para{
+        font-size: 18px;
+    }
+    .advanture-heading{
+        font-size: 25px;
+        margin: 0;
+    }
+    .footer{
+        position: absolute;
+        margin-top: 3600px;
+    }
 }

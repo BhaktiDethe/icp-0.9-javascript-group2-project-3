@@ -253,53 +253,6 @@ input[type="tel"] {
 
 /* Media Queries */
 @media screen and (max-width: 1000px){
-    .navbar {
-        width: 100%;
-        background-color:transparent;
-    }
-    .logo img{
-        height: 40px;
-    }
-    .menubar{
-        color: rgb(207, 92, 92);
-        font-size: 25px;
-        display: block;
-    }
-    .nav-list{
-        position: fixed;
-        top: 0;
-        gap: 5px;
-        right: 0px;
-        background-color: rgba(32, 32, 32, 0.8);
-        width: 180px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        visibility: hidden;
-    }
-    .nav-list-container{
-        margin-top: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-    }
-    #close-nav{
-        display: block;
-        position: fixed;
-        right: 5px;
-        padding: 10px;
-        font-size: 18px;
-        color: #fff;
-    }
-    .nav-item{
-        margin-top: 10px;
-        padding: 10px;
-    }
     .team-member-card{
         width: 220px;
     
@@ -500,5 +453,11 @@ input[type="tel"] {
     font-size:20px;
     padding:0 40px 0 40px;
     
+}
+.mission,.team,.history{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 30px 60px;
 }
  }
