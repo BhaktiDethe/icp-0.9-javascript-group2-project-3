@@ -72,8 +72,6 @@ body{
     background-color: #faddcf;
     border-radius: 0 15px 15px 0;
     padding-bottom: 20px;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 .text-center{
     text-align: center;
@@ -90,7 +88,7 @@ body{
     color: #232323;
 }  
 .input-box{
-    width: 90%;
+    width: 85%;
     height: 20px;
     padding: 10px;
     align-items: center;
