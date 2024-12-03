@@ -687,6 +687,54 @@ body.dark-mode .copyright{
         align-items: center;
         gap: 5px;
     }
+    .next-adrenaline{
+        display: none;
+    }
+    .featured-destination p{
+        display: none;
+    }
+    .destination-click{
+        position:fixed;
+        top: 50px;
+        left: 472px;
+        right: 180px;
+        width: 150px;
+        height: auto;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 0px;
+    }
+    .featured-destination{
+        margin-left: 20px;
+        width: 130px;
+        height: auto;
+    }
+    .close{
+        position: absolute;
+        right: 10px;
+    }
+    .trip-click{
+        position: fixed;
+        top: 100px;
+        left: 372px;
+        width: 250px;
+        height: 200px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 0px;
+    }
+    .trip-plan-div{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        gap: 5px; 
+    }
+    body.dark-mode .nav-list .nav-item{
+        color: rgb(253, 245, 234);
+    }
     /* theam button css */
     .toggle-btn{
         align-items: center;
@@ -882,7 +930,7 @@ body.dark-mode .copyright{
 }
 @media screen and (max-width: 450px){
     .text-container p{
-        font-size: 35px;
+        font-size: 30px;
     }
     .heading{
         font-size: 35px;
@@ -890,11 +938,11 @@ body.dark-mode .copyright{
     }
     .feature-card{
         height: auto;
-        width: 350px;
+        width: 330px;
         margin-bottom: 10px;
     }
     .feature-card img{
-        width: 350px;
+        width: 330px;
         height: 100px;
     }
     .feature-card h2{
@@ -902,6 +950,7 @@ body.dark-mode .copyright{
     }
     .feature-info{
         font-size: 16px;
+        text-align: justify;
     }
     
     .adventure-sec{
@@ -961,6 +1010,7 @@ body.dark-mode .copyright{
         height: auto;
     }
     .stories-card{
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -973,7 +1023,7 @@ body.dark-mode .copyright{
         width: 300px;
     }
     .stories-card h2{
-        font-size: 20px;
+        display: none;
     }
     .stories-card p{
         display: none;
