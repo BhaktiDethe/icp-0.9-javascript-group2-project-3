@@ -221,9 +221,9 @@ body .dark-mode{
 @media screen and (max-width: 600px){
     .container1{
         height: 450px;
-        width: 350px;
-        margin-left: 20%;
-        margin-top: 200px;
+        width: 420px;
+        margin: 0px 60px;
+        margin-top: 150px;
     }       
 .reg-heading{
     font-size: 20px;
@@ -236,9 +236,11 @@ body .dark-mode{
 }
 .form-container{
     width: 420px;
+    height: 450px;
+    border-radius: 15px;
 }
 .input-box{
-    width: 250px;
+    width: 90%;
     height: 20px;
 }
 .ip-box-citystate{
@@ -264,7 +266,8 @@ body .dark-mode{
         height: 400px;
         width: 310px;
         margin-left: 12%;
-        margin-top: 200px;
+        padding-right: 12%;
+        margin-top: 150px;
 }
 .reg-heading{
     font-size: 20px;
@@ -279,7 +282,7 @@ body .dark-mode{
     width: 420px;
 }
 .input-box{
-    width: 210px;
+    width: 90%;
     height: 15px;
 }
 .ip-box-citystate{
@@ -302,5 +305,8 @@ body .dark-mode{
 }
 .add-name{
     margin-left:0px;
+}
+.submit-btn{
+    width: 92%;
 }
 }

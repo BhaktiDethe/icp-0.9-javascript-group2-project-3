@@ -626,7 +626,7 @@ body.dark-mode .copyright{
         padding: 15px;
     }
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 550px){
     .text-container p{
         font-size: 30px;
     }
@@ -990,12 +990,18 @@ ul{
         display: none;
     }  
 }
-@media screen and (max-width:340px){
+@media screen and (max-width:450px){
     .container{
         margin-inline: 1rem;
     }
     .nav_link{
         padding-inline: 1rem;
+    }
+    .nav_logo img{
+        height: 30px;
+    }
+    .nav_list{
+        margin-right: 0px;
     }
 }
 @media screen and (min-width:1118px) {
