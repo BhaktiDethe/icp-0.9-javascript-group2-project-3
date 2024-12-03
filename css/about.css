@@ -307,6 +307,9 @@ input[type="tel"] {
     .footer-container{
         flex-wrap: wrap;
     }
+    .mission,.team,.history{
+        text-align:justify;
+    }
 }
 @media screen and (max-width: 800px){
     .about-main{
@@ -348,6 +351,10 @@ input[type="tel"] {
     .heading-name{
         font-size: 40px;
         
+    }
+    .mission,.team,.history{
+        font-size: 20px;
+        text-align:justify;
     }
     .missionbtn ,.team-button,.history-button
 {   font-size: 20px;
