@@ -5,33 +5,22 @@ if (storedEmail) {
     greetinText.innerText = `Welcome back, ${storedEmail}!`;
 }
 
-function loginUser() {
-    const emailInput = document.getElementById("email").value;
-    const passwordInput = document.getElementById("password").value;
+function login() {
+    const loginEmail = document.getElementById('login-email').value;
+    const loginPassword = document.getElementById('login-password').value;
 
-    const savedEmail = localStorage.getItem("email");
-    const savedPassword = localStorage.getItem("password");
-
-    if (!savedEmail || !savedPassword) {
-        alert("No account found. Please register first.");
+    const storedData = localStorage.getItem('user');
+    if (!storedData) {
+        alert('No user found. Please register first.');
         return;
     }
 
-    if (emailInput === savedEmail && passwordInput === savedPassword) {
-        showDialog("Login successful! Welcome!");
+    const user = JSON.parse(storedData);
+
+    if (loginEmail === user.email && loginPassword === user.password) {
+        alert('Login successful!');
+        window.location.href = '../index.html'; 
     } else {
-        showDialog("Invalid email or password. Please try again.");
+        alert('Invalid email or password. Please try again.');
     }
-}
-function showDialog(message) {
-    const dialog = document.getElementById("dialog");
-    const dialogMessage = document.getElementById("dialogMessage");
-
-    dialogMessage.innerText = message;
-    dialog.style.display = "block";
-}
-
-function closeDialog() {
-    const dialog = document.getElementById("dialog");
-    dialog.style.display = "none";
 }

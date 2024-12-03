@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./../css/registration.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Registration Page</title>
@@ -17,9 +18,9 @@
                     <div class="nav-list-container">
                         <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
                         <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
-                        <a href="../pages/about.html" class="nav-item">About</a>
-                        <a href="../pages/contact.html" class="nav-item">Contact</a>
-                        <a href="../pages/login.html" class="nav-item">Login</a>
+                        <a href="./about.html" class="nav-item">About</a>
+                        <a href="./contact.html" class="nav-item">Contact</a>
+                        <a href="./login.html" class="nav-item">Login</a>
                         <div id="theam-btn-container" class="toggle-btn">
                             <input type="checkbox" id="checkbox">
                             <label for="checkbox" class="toggle-label">
@@ -59,9 +60,9 @@
         </div>
         <div class="trip-click" id="trip-click">
             <diV class="trip-plan-div">
-                <a href="" class="trip-item">Adventure Activities</a>
-                <a href="" class="trip-item">Tour Operators</a>
-                <a href="" class="trip-item">Travel Advisors</a>
+                <a href="./adventure_activities.html" class="trip-item">Adventure Activities</a>
+                <a href="./tour_operator.html" class="trip-item">Tour Operators</a>
+                <a href="./travel_advisors.html" class="trip-item">Travel Advisors</a>
             </diV>
             <i class="fa-solid fa-xmark close-mark" id="close1" onclick="closetripplan()"></i>
         </div>
@@ -74,94 +75,16 @@
         <div class="form-container">
             <h1 class="text-center font-style font-size reg-heading">Register Now</h1>
 
-            <input type="text" class="input-box" placeholder="Enter Your Name">
-            <input type="text" class="input-box" placeholder="Enter Your Email">
-            <input type="text" class="input-box" placeholder="Enter Your Phone Number">
-            <input type="text" class="input-box" placeholder="Enter Your Address">
+            <input type="text" class="input-box" id="name" placeholder="Enter Your Name">
+            <input type="text" class="input-box" id="email" placeholder="Enter Your Email">
+            <input type="text" class="input-box" id="phone" placeholder="Enter Your Phone Number">
+            <input type="password" class="input-box" id="password" placeholder="Create New Password">
 
-            <div class="flexbox">
-                <div>
-                    <input list="Cities" class="input-box ip-box-citystate" placeholder="City">
-                    <datalist id="Cities">
-                     <option>Kolkata</option>
-                     <option>Mumbai</option>
-                     <option>Manali</option>
-                     <option>Lonavala</option>
-                     <option>Kashmir</option>
-                     <option>Bankok</option>
-                     <option>Shrinagar</option>
-                     <option>Mahabaleshwar</option>
-                     <option>Kanyakumari</option>
-                     <option>Varanasi</option>
-                     <option>Mount.Abu</option>
-                     <option>Kachha</option>
-                     <option>Somnath</option></datalist>
-                </div>
-
-                <div>
-                    <input list="State" class="input-box ip-box-citystate" placeholder="State">
-                    <datalist id="State">
-                   <option>Maharastra</option>
-                   <option>Gujarat</option>
-                   <option>Tamil Nadu</option>
-                   <option>Madhya Pradesh</option>
-                   <option>Uttar Pradesh</option>
-                   <option>Telangana</option>
-                   <option>Rajasthan</option>
-                   <option>Bihar</option>
-                   <option>Karnataka</option>
-                   <option>Kerala</option>
-                   <option>Assam</option>
-                   <option>Arunachal Pradesh</option>
-                   <option>Chhattisgarh</option>
-                   <option>Andhra Pradesh</option></datalist>
-                </div>
+            <button type="button" class="submit-btn" onclick="storeData()">Register</button>
+            <div class="already-account">
+                <p>Already have an Account?</p>
+                <a href="./login.html">Login</a>
             </div>
-
-            <input type="text" class="input-box" placeholder="Emergency contact name">
-            <input type="text" class="input-box" placeholder="Emergency contact number">
-            <input type="text" class="input-box" placeholder="Preferred travel destination">
-            
-            <div class="flexbox">
-                <div>
-                    <div class="fromto-text">From:</div><input type="date" class="input-box ip-box-citystate marginfromto" placeholder="From">
-                </div>
-                <div>
-                    <div class="fromto-text">To:</div><input type="date" class="input-box ip-box-citystate marginfromto" placeholder="To">
-                </div>
-            </div>
-  
-            <div class="que-margin">
-                Do you have any medical condition or allergy?<br>
-                <div class="flexbox space">
-
-                <div class="condition-margin"><input type="radio" id="yes" value="Yes" name="condition">
-                <label for="yes" >Yes</label></div>
-
-                <div class="condition-margin"><input type="radio" id="no" value="No" name="condition" class="condition-margin">
-                <label for="no" >No</label></div>
-                </div>
-            </div><br>
-
-            <div class="que-margin">
-                Are you travelling alone or with others?<br>
-                <div class="flexbox space">
-
-                <div class="condition-margin"><input type="radio" id="yes" value="Yes" name="condition">
-                <label for="yes" >Yes</label></div>
-
-                <div class="condition-margin"><input type="radio" id="no" value="No" name="condition" class="condition-margin">
-                <label for="no" >No</label></div>
-                </div>
-            </div>
-
-           <p class="travellers que-margin">Travellers:</p>
-           <button type="button" class="add-btn que-margin" onclick="addrow()">+ Add name</button><br>
-
-           <input type="text" class="add-btn takename que-margin" id="name" placeholder="type name">
-           <div class="flexbox-addname que-margin" id="nameflexbox"></div><br>
-                   
-            <button type="button" class="submit-btn">Submit</button>
         </div>
     </div>
 
