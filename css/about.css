@@ -431,4 +431,44 @@ footer{
     font-size:16px;
     
 }
+.input-section {
+    width: 400px;
+    margin-left: 40px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.input-booking {
+    background-color:rgb(253, 245, 234);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 500px;
+    
+}
+.label{
+    display: block;
+    font-weight: 900px;
+    padding: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="email"],
+input[type="tel"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color:rgb(249, 236, 222) ;  
+}
+.input-button {
+   margin-top: 0px;
+}
+
  }
