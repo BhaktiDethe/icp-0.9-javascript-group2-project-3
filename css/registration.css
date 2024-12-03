@@ -78,8 +78,6 @@ body .dark-mode{
     background-color: #faddcf;
     border-radius: 0 15px 15px 0;
     padding-bottom: 20px;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 .text-center{
     text-align: center;
@@ -96,7 +94,7 @@ body .dark-mode{
     color: #232323;
 }  
 .input-box{
-    width: 90%;
+    width: 85%;
     height: 20px;
     padding: 20px;
     align-items: center;
