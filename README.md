@@ -31,3 +31,11 @@ This project is a **Travel and Tourism Website** designed to help users explore 
 
 - **Additional Libraries**:
   - Font Awesome (for icons)
+---
+
+## Live Demo
+Visit the [Travel and Tourism Website](tour-and-tourisam.netlify.app/) to explore the project.
+
+## Homepage Preview
+![Travel and Tourism Website Homepage](./images/homepage.png)
+
