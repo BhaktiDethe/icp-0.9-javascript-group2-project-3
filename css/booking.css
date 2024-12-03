@@ -49,6 +49,9 @@ body.dark-mode .search-main{
     width: 200px;
     outline: none;
 }
+body.dark-mode .labels label{
+    color: rgb(32, 32, 32);
+}
 .labels{
     display: flex;
     gap: 5px;
@@ -138,7 +141,9 @@ body.dark-mode .search-main{
     background-color: rgb(207, 92, 92);
     color: #fff;
 }
-
+.color{
+    color: rgb(32, 32, 32);
+}
 .best-offer-section{
     margin-top: 150px;
     width: 85%;
@@ -164,10 +169,9 @@ body.dark-mode .best-offer-section h1{
 }
 .best-offer-card{
     width: 400px;
-    height: 440px;
+    height: 450px;
     background-color: #fff;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
 }
 .best-offer-card:hover{
     transform: scale(1.05);

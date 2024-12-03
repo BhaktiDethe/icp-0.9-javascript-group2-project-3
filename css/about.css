@@ -20,7 +20,6 @@ body{
 }
 body.dark-mode{
     background-color: var(--bg-main);
-    color: var(--bg-primary);
 }
 .about-bg{
     background-image: url("../images/aboutpage/about-bg.jpg");
@@ -41,12 +40,18 @@ body.dark-mode{
     border-radius: 10px;
     font-weight: 700;
 }
+.body.dark-mode .heading-font{
+    color: rgb(32, 32, 32);
+}
 .heading-font{
   padding-left: 40px;
   font-size: 30px;
   font-weight: bolder;
+  color: rgb(32, 32, 32);
 }
-
+.color{
+    color: rgb(32, 32, 32);
+}
 .about-paragraph{
     padding-left: 40px;
     margin: 0%;
@@ -365,6 +370,9 @@ footer{
     height: 80px;
     width: 300px;
     
+}
+.body.dark-mode .heading-font{
+    color: rgb(32, 32, 32);
 }
 .heading-font{
     font-size: 20px;

@@ -66,6 +66,9 @@ body {
     max-width: 663px;
     max-height: 373px;
   }
+  body.dark-mode .ad-heading{
+    color: rgb(253, 245, 234);
+  }
   .ad-heading{
     margin-top: 80px;
     font-size: 50px;

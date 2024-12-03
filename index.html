@@ -27,64 +27,72 @@
             <a href="./pages/booking.html" class="book-now" id="book-now">Book Now</a>
         </div>
     </div>
-        <navbar class="navbar" id="navbar">
-            <div class="navbar-container">
-                <a href="" class="logo"><img src="./images/index_page/logo.png" alt=""></a>
-                <i class="fa-solid fa-bars menubar" id="menu" onclick="openSidebar()"></i>
-                <div class="nav-list" id="nav-list">
-                    <i class="fa-solid fa-xmark" id="close-nav" onclick="closeSidebar()"></i>
-                    <div class="nav-list-container font-style">
-                        <p class="arrow nav-item" id="des-arrow" onclick="displayOption()">Destination<i class="fa-solid fa-angle-down"></i></p>
-                        <p class="arrow nav-item" id="plan-arrow" onclick="displayPlanTrip()">Plan A Trip<i class="fa-solid fa-angle-down"></i></p>
-                        <a href="./pages/about.html" class="nav-item">About</a>
-                        <a href="./pages/contact.html" class="nav-item">Contact</a>
-                        <a href="./pages/login.html" class="nav-item">Login</a>
-                        <div id="theam-btn-container" class="toggle-btn">
-                            <input type="checkbox" id="checkbox">
-                            <label for="checkbox" class="toggle-label">
-                                <span class="toggle-ball"></span>
-                            </label>
+    <navbar class="header">
+        <nav class="nav container">
+            <div class="nav_data">
+                <a href="./index.html" class="nav_logo">
+                    <img src="./images/index_page/logo.png" alt="">
+                </a>
+                <div class="nav_toggle" id="nav_toggle">
+                    <i class="fa-solid fa-bars menubar nav_burger"></i>
+                    <i class="fa-solid fa-xmark nav_close"></i>
+                </div>
+            </div>
+            <div class="nav_menu" id="nav_menu">
+                <ul class="nav_list">
+                    <li class="dropdown_item">
+                        <div class="nav_link">
+                            Destination <i class="fa-solid fa-angle-down dropdown_arrow"></i>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </navbar>
-        <div class="destination-click font-style" id="destination-click">
-            <div class="area">
-                <div class="featured-destination">
-                    <p>Featured Destinations</p>
-                    <ul class="ul">
-                        <li class="li"><a href="">Korea</a></li>
-                        <li class="li"><a href="">Hokkaido</a></li>    
-                        <li class="li"><a href="./pages/destination/tunisia.html">Tunisia</a></li>    
-                        <li class="li"><a href="./pages/destination/japan.html">Japan</a></li>     
-                    </ul>
-                </div>
-                <div class="next-adrenaline">
-                    <p>Find Your Next Adventure</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6274280.259169465!2d72.56094225619356!3d22.351114471343387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ae1a733b8ed77%3A0x8f26e6bd3154056!2sIndia!5e0!3m2!1sen!2sin!4v1696002750156!5m2!1sen!2sin"
-                        width="580px"
-                        height="220px"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy"
-                    ></iframe>
+                        <ul class="dropdown_menu">
+                            <li>
+                                <a href="" class="dropdown_link">Korea</a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown_link">Hokkaido</a>
+                            </li>
+                            <li>
+                                <a href="./pages/destination/tunisia.html" class="dropdown_link">Tunisia</a>
+                            </li>
+                            <li>
+                                <a href="./pages/destination/japan.html" class="dropdown_link">Japan</a>
+                            </li>
+                        </ul>
+                    </li>
 
-                </div>
+                    <li class="dropdown_item">
+                        <div class="nav_link">
+                            Plan A Trip<i class="fa-solid fa-angle-down dropdown_arrow"></i>
+                        </div>
+                        <ul class="dropdown_menu">
+                            <li>
+                                <a href="./pages/adventure_activities.html" class="dropdown_link">Adventure Activities</a>
+                            </li>
+                            <li>
+                                <a href="./pages/tour_operator.html" class="dropdown_link">Tour Operators</a>
+                            </li>
+                            <li>
+                                <a href="./pages/travel_advisors.html" class="dropdown_link">Travel Advisors</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="./pages/about.html" class="nav_link">About</a></li>
+
+                    <li><a href="./pages/contact.html" class="nav_link">Contact</a></li>
+
+                    <li><a href="./pages/login.html" class="nav_link">Login</a></li>
+
+                    <li id="theam-btn-container" class="toggle-btn">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox" class="toggle-label">
+                            <span class="toggle-ball"></span>
+                        </label>
+                    </li>
+                </ul>
             </div>
-            <div onclick="closeDesblock()">
-                <i class="fa-solid fa-xmark close" id="close"></i>
-            </div>
-        </div>
-        <div class="trip-click" id="trip-click">
-            <diV class="trip-plan-div">
-                <a href="./pages/adventure_activities.html" class="trip-item">Adventure Activities</a>
-                <a href="./pages/tour_operator.html" class="trip-item">Tour Operators</a>
-                <a href="./pages/travel_advisors.html" class="trip-item">Travel Advisors</a>
-            </diV>
-            <i class="fa-solid fa-xmark close-mark" id="close1" onclick="closetripplan()"></i>
-        </div>
+        </nav>
+    </navbar>
         
         <div class="controls">
             <i id="prev" class="fas fa-chevron-left"></i>
