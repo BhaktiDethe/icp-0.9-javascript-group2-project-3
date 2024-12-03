@@ -58,7 +58,7 @@ body .dark-mode{
 }
 
 .login-dialog input {
-    width: 95%;
+    width: 99%;
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -118,200 +118,6 @@ body .dark-mode{
     align-items: center;
     transition: background-image 1s ease-in-out;
     position: relative;
-}
-body.dark-mode .navbar{
-    background-color: rgb(253, 245, 234);
-}
-.navbar {
-    position: fixed;
-    top: 20px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    margin: 0 auto;
-    width: 80%;
-    height: 70px;
-    border-radius: 20px;
-    background-color: rgb(32, 32, 32);
-    transition: border-radius 0.3s ease-in-out;
-    z-index: 1000;
-}
-.navbar-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 40px 0px 30px;
-}
-.logo img{
-    height: 45px;
-}
-.menubar{
-    display: none;
-}
-#close-nav{
-    display: none;
-}
-.nav-list-container{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 30px;
-    background-color: transparent;
-}
-body.dark-mode .nav-list .nav-item{
-    color: rgb(32, 32, 32);
-}
-.nav-list .nav-item{
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    background-color: transparent;
-    cursor: pointer;
-    font-weight: 700;
-}
-.nav-list .nav-item:hover{
-    color: rgb(207, 92, 92);
-}
-
-/* theam button css */
-.toggle-btn{
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-.toggle-btn:hover{
-    cursor: pointer;
-}
-#checkbox{
-    visibility: hidden;
-}
-.toggle-label{
-    width: 70px;
-    height: 36px;
-    background-color: rgba(116, 120, 172, 0.8);
-    display: inline-block;
-    position: relative;
-    border-radius: 60px;
-}
-.toggle-ball{
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    background: linear-gradient(to left,rgba(215, 178, 59, 0.842),rgb(103, 196, 233));
-    display: inline-block;
-    position: absolute;
-    top: 2px;
-    left: 6px;
-    transition: all .2s linear;
-}
-.toggle-ball:hover{
-    cursor: pointer;
-}
-#checkbox:checked + .toggle-label .toggle-ball{
-    transform: translateX(30px);
-    background: linear-gradient(to right,rgb(3, 142, 248),rgb(31, 31, 31));
-}
-
-.arrow{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-}
-.arrow i{
-    font-size: 15px;
-}
-.destination-click{
-    display: flex;
-    position: fixed;
-    top: 90px;
-    left: 152px;
-    width: 80%;
-    height: 300px;
-    background-color: rgba(32, 32, 32,0.8);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    visibility: hidden;
-}
-.area{
-    width: 98%;
-    display: flex;
-}
-.featured-destination{
-    box-sizing: border-box;
-    width: 500px;
-    padding: 10px;
-    margin-left: 70px;
-}
-.featured-destination p{
-    font-size: 30px;
-    font-weight: 700;
-    color: #fff;
-}
-.ul{
-    margin-top: 30px;
-    line-height: 1.7;
-    list-style-type: none; 
-}
-.li a{
-    text-decoration: none;
-    line-height: 2.5;
-    color: #fff;
-    font-size: 18px;
-}
-.li a:hover{
-    color: rgb(207, 92, 92);
-}
-.next-adrenaline{
-    margin-right: 100px;
-    padding: 10px;
-}
-.next-adrenaline p{
-    margin-right: 20px;
-    font-size: 30px;
-    font-weight: 700;
-    color: #fff;
-}
-.close{
-    padding: 10px;
-    color: #fff;
-    font-size: 18px;
-    text-align: right;
-}
-.trip-click {
-    position: fixed;
-    top: 90px;
-    left: 152px;
-    width: 80%;
-    height: 80px;
-    background-color: rgba(32, 32, 32, 0.8);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    visibility: hidden;         
-}
-.trip-plan-div{
-    width: 95%;
-    height: 80px;
-    display: flex;
-    justify-content: center; 
-    align-items: center;  
-    gap: 150px; 
-}
-.trip-item {
-    padding: 10px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-}
-.trip-item:hover{
-    background-color: rgb(207, 92, 92);
-    border-radius: 5px;
-}
-.close-mark{
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    color: white;
-    font-size: 18px;
 }
 .controls {
     position: absolute;
@@ -654,116 +460,6 @@ body.dark-mode .copyright{
 
 /* Media Queries */
 @media screen and (max-width: 1000px){
-    .navbar {
-        width: 100%;
-        background-color:transparent;
-    }
-    .logo img{
-        height: 40px;
-    }
-    .menubar{
-        color: rgb(207, 92, 92);
-        font-size: 25px;
-        display: block;
-    }
-    .nav-list{
-        position: fixed;
-        top: 0;
-        gap: 5px;
-        right: 0px;
-        background-color: rgba(32, 32, 32, 0.8);
-        width: 180px;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        visibility: hidden;
-    }
-    .nav-list-container{
-        margin-top: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-    }
-    .next-adrenaline{
-        display: none;
-    }
-    .featured-destination p{
-        display: none;
-    }
-    .destination-click{
-        position:fixed;
-        top: 50px;
-        left: 472px;
-        right: 180px;
-        width: 150px;
-        height: auto;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 0px;
-    }
-    .featured-destination{
-        margin-left: 20px;
-        width: 130px;
-        height: auto;
-    }
-    .close{
-        position: absolute;
-        right: 10px;
-    }
-    .trip-click{
-        position: fixed;
-        top: 100px;
-        left: 372px;
-        width: 250px;
-        height: 200px;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 0px;
-    }
-    .trip-plan-div{
-        display: flex;
-        flex-direction: column;
-        height: 200px;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0;
-        gap: 5px; 
-    }
-    body.dark-mode .nav-list .nav-item{
-        color: rgb(253, 245, 234);
-    }
-    /* theam button css */
-    .toggle-btn{
-        align-items: center;
-        flex-direction: column;
-        height: 40px;
-    }
-    .toggle-label{
-        width: 50px;
-        height: 25px;
-    }
-    .toggle-ball{
-        width: 22px;
-        height: 22px;
-        left: 2px;
-    }
-    #close-nav{
-        display: block;
-        position: fixed;
-        right: 5px;
-        padding: 10px;
-        font-size: 18px;
-        color: #fff;
-    }
-    .nav-item{
-        margin-top: 10px;
-        padding: 10px;
-    }
     .heading{
         font-size: 48px;
     }
@@ -1098,5 +794,275 @@ body.dark-mode .copyright{
     }
     .book-now{
         font-size: 20px;
+    }
+}
+body.dark-mode .header{
+    background-color: rgb(253, 245, 234);
+    color: rgb(31, 31, 31);
+}
+.header{
+    position: fixed;
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    margin: 0 auto;
+    width: 80%;
+    height: 70px;
+    border-radius: 20px;
+    background-color: rgb(32, 32, 32);
+    transition: border-radius 0.3s ease-in-out;
+    z-index: 1000;
+}
+.nav{
+    height: 70px;
+    margin-left: 30px;
+}
+.nav_logo img{
+    height: 45px;
+}
+.nav_burger,
+.nav_close{
+    color: rgb(207, 92, 92);
+}
+.nav_data{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+.nav_link{
+    text-decoration: none;
+}
+body.dark-mode .nav_link{
+    color: rgb(32, 32, 32);
+    background-color: rgb(253, 245, 234);
+}
+.nav_list{
+    list-style-type: none;
+}
+.nav_toggle{
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+.nav_burger,
+.nav_close{
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    inset: 0;
+    margin: auto;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: opacity .1s transform .4s;
+}
+.nav_close{
+    opacity: 0;
+}
+.nav_link{
+    color: white;
+    background-color: rgb(32, 32, 32);
+    font-weight: 700;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: backgound-color .3s;
+}
+ul{
+    padding-inline-start: 0px;
+}
+.nav_link:hover{
+    background-color: rgba(0, 0, 0, 0.621);
+}
+.nav_link{
+    background-color: rgb(32, 32, 32);
+    padding-top: 1rem;
+}
+.nav_menu.show-menu {
+    display: block; /* Show when class is toggled */
+    opacity: 1;
+    pointer-events: auto;
+}
+.show-icon .nav_burger{
+    opacity: 0;
+    transform: rotate(deg);
+}
+.show-icon .nav_close{
+    opacity: 1;
+    transform: rotate(deg);
+}
+.dropdown_item{
+    cursor: pointer;
+    background-color: rgb(32, 32, 32);
+}
+.dropdown_arrow{
+    font-size: 1.20rem;
+    transition: transform .4s;
+}
+.dropdown_link{
+    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.621);
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    font-weight: 500;
+    transition: background-color .3s;
+}
+.dropdown_menu a{
+    font-size: 17px;
+    font-weight: initial;
+    text-decoration: none;
+}
+.dropdown_link:hover{
+    background-color: rgba(0, 0, 0, 0.621);
+}
+.dropdown_menu{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease-out;
+}
+.dropdown_item:hover .dropdown_menu{
+    max-height: 1000px;
+    transition: max-height .4s ease-in;
+}
+.dropdown_item:hover .dropdown_arrow{
+    transform: rotate(180deg);
+}
+/* theam button css */
+.toggle-btn{
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.toggle-btn:hover{
+    cursor: pointer;
+}
+#checkbox{
+    visibility: hidden;
+}
+.toggle-label{
+    width: 70px;
+    height: 36px;
+    background-color: rgba(116, 120, 172, 0.8);
+    display: inline-block;
+    position: relative;
+    border-radius: 60px;
+}
+.toggle-ball{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: linear-gradient(to left,rgba(215, 178, 59, 0.842),rgb(103, 196, 233));
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    transition: all .2s linear;
+}
+.toggle-ball:hover{
+    cursor: pointer;
+}
+#checkbox:checked + .toggle-label .toggle-ball{
+    transform: translateX(30px);
+    background: linear-gradient(to right,rgb(3, 142, 248),rgb(31, 31, 31));
+}
+
+@media screen and (max-width: 1118px){
+    .nav_menu{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 3.1rem;
+        width: 100%;
+        height: calc(100vh - 3.5rem);
+        overflow: auto;
+        pointer-events: none;
+        opacity: 0;
+        transition: top .4s, opacity .3s;
+    }
+    .nav_menu::-webkit-scrollbar{
+        width: 0;
+    } 
+    .toggle-btn{
+        display: none;
+    }  
+}
+@media screen and (max-width:340px){
+    .container{
+        margin-inline: 1rem;
+    }
+    .nav_link{
+        padding-inline: 1rem;
+    }
+}
+@media screen and (min-width:1118px) {
+    .container{
+        margin-inline: auto;
+    }
+    .nav_logo{
+        margin-left: 30px;
+    }
+    .nav{
+        height: calc(var(70px) + 2rem);
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav_toggle{
+        display: none;
+    }
+    .nav_list{
+        margin-right: 30px;
+        height: 100%;
+        display: flex;
+        column-gap: 2rem;
+    }
+    .nav_link{
+        font-size: 18px;
+        height: 100%;
+        padding: 0;
+        justify-content: initial;
+        column-gap: .25rem;
+        background-color: transparent;
+    }
+    .nav_link:hover,
+    .dropdown_link:hover{
+        color:rgb(207, 92, 92);
+    }
+    .nav_link:hover{
+        background-color: transparent;
+    }
+    .dropdown_item{
+        position: relative;
+    }
+    .dropdown_menu{
+        max-height: initial;
+        overflow: initial;
+        position: absolute;
+        left: 0;
+        top: 2rem;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .3s, top .3s;
+    }
+    .dropdown_link{
+        padding-inline: 1rem 3.5rem;
+    }
+    .dropdown_item:hover .dropdown_menu{
+        opacity: 1;
+        top: 4.4rem;
+        pointer-events: initial;
+        transition: top .3s;
+    }
+    .nav_menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .dropdown_menu li{
+        list-style: none;
     }
 }

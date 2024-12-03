@@ -1,43 +1,3 @@
-const destinationEle = document.getElementById("destination-click");
-const planTripEle = document.getElementById("trip-click")                                                                                                                                           
-const navbarEle = document.getElementById("navbar")
-const navlistEle = document.getElementById("nav-list")
-const menuEle = document.getElementById("menu")
-
-function displayOption() {
-    destinationEle.style.visibility = "visible";
-    navbarEle.style.borderBottomLeftRadius = "0px";
-    navbarEle.style.borderBottomRightRadius = "0px";
-}
-
-function closeDesblock(){
-    destinationEle.style.visibility = "hidden";
-    navbarEle.style.borderBottomLeftRadius = "20px";
-    navbarEle.style.borderBottomRightRadius = "20px";
-}
-
-function displayPlanTrip(){
-    planTripEle.style.visibility = "visible";
-    navbarEle.style.borderBottomLeftRadius = "0px";
-    navbarEle.style.borderBottomRightRadius = "0px";
-}
-
-function closetripplan(){
-    planTripEle.style.visibility = "hidden";
-    navbarEle.style.borderBottomLeftRadius = "20px";
-    navbarEle.style.borderBottomRightRadius = "20px";
-}
-
-function openSidebar(){
-    navlistEle.style.visibility = "visible"
-    menuEle.style.visibility = "hidden"
-}
-
-function closeSidebar(){
-    navlistEle.style.visibility = "hidden"
-    menuEle.style.visibility = "visible"
-}
-
 let images = [
     "images/index_page/bg1.jpg",
     "images/index_page/bg2.jpg",
@@ -180,3 +140,28 @@ function loginUser() {
         alert('Please enter valid email and password.');
     }
 }
+
+const showMenu = (toggleId, navId) => {
+    const toggle = document.getElementById(toggleId),
+        nav = document.getElementById(navId),
+        navbarEle = document.querySelector('.header');
+
+    if (toggle && nav && navbarEle) {
+        toggle.addEventListener('click', () => {
+            const isMenuVisible = nav.classList.toggle('show-menu');
+            toggle.classList.toggle('show-icon');
+
+            if (isMenuVisible) {
+                navbarEle.style.borderBottomLeftRadius = "0px";
+                navbarEle.style.borderBottomRightRadius = "0px";
+            } else {
+                navbarEle.style.borderBottomLeftRadius = "20px";
+                navbarEle.style.borderBottomRightRadius = "20px";
+            }
+        });
+    } else {
+        console.error("Toggle button, navigation menu, or navbar element not found!");
+    }
+};
+
+showMenu('nav_toggle', 'nav_menu');
