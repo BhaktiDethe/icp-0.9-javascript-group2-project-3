@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .header{
+            position: fixed;
+            top: 20px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            margin: 0 auto;
+            width: 80%;
+            height: 70px;
+            border-radius: 20px;
+            background-color: rgb(32, 32, 32);
+            transition: border-radius 0.3s ease-in-out;
+        }
+        .nav{
+            height: 70px;
+            margin-left: 30px;
+        }
+        .nav_logo img{
+            height: 45px;
+        }
+        .nav_burger,
+        .nav_close{
+            color: rgb(207, 92, 92);
+        }
+        .nav_data{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 30px;
+        }
+        .nav_link{
+            text-decoration: none;
+        }
+        .nav_list{
+            list-style-type: none;
+        }
+        .nav_toggle{
+            position: relative;
+            width: 32px;
+            height: 32px;
+        }
+        .nav_burger,
+        .nav_close{
+            position: absolute;
+            width: max-content;
+            height: max-content;
+            inset: 0;
+            margin: auto;
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: opacity .1s transform .4s;
+        }
+        .nav_close{
+            opacity: 0;
+        }
+        .nav_link{
+            color: white;
+            background-color: black;
+            font-weight: 700;
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: backgound-color .3s;
+        }
+
+
+        @media screen and (max-width: 1118px){
+            .nav_menu{
+                position: absolute;
+                left: 0;
+                top: 2.9rem;
+                width: 100%;
+                height: calc(100vh - 3.5rem);
+                /* overflow: auto;
+                pointer-events: none;
+                opacity: 0; */
+                transition: top .4s, opacity .3s;
+            }
+            .nav_menu::-webkit-scrollbar{
+                width: 0;
+            }
+            .nav_link{
+                background-color: black;
+                padding-top: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <navbar class="header">
+        <nav class="nav container">
+            <div class="nav_data">
+                <a href="" class="nav_logo">
+                    <img src="./images/index_page/logo.png" alt="">
+                </a>
+                <div class="nav_toggle" id="nav_toggle">
+                    <i class="fa-solid fa-bars menubar nav_burger"></i>
+                    <i class="fa-solid fa-xmark nav_close"></i>
+                </div>
+            </div>
+            <div class="nav_menu" id="nav_menu">
+                <ul class="nav_list">
+                    <li class="dropdown_item">
+                        <div class="nav_link">
+                            Destination <i class="fa-solid fa-angle-down dropdown_arrow"></i>
+                        </div>
+                    </li>
+
+                    <li class="dropdown_item">
+                        <div class="nav_link">
+                            Plan A Trip<i class="fa-solid fa-angle-down dropdown_arrow"></i>
+                        </div>
+                    </li>
+
+                    <li><a href="" class="nav_link">About</a></li>
+
+                    <li><a href="" class="nav_link">Contact</a></li>
+
+                    <li><a href="" class="nav_link">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </navbar>
+
+
+
+
+</body>
+</html>

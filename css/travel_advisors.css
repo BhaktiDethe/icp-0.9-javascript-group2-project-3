@@ -13,7 +13,9 @@ right: 0;
 height: 40px;
 margin: 10px;
 }
-
+body.dark-mode{
+   background-color: rgb(32, 32, 32);
+}
 .advanture-bg{
 background-image: url("../images/adventure_activities/bg.jpg");
 background-repeat: no-repeat;
@@ -33,7 +35,6 @@ background-color: rgba(226, 222, 222, 0.7);
 border-radius: 10px;
 font-weight: 700;
 }
-
 .advisors-section{
    width: 100%;
   
@@ -45,10 +46,6 @@ font-weight: 700;
    font-size: 60px;
    font-family: "Merriweather", serif;
    font-weight: bolder;
-   color: rgb(71, 71, 71);
-  
-   
-   
 }
 .advisors-para{
    margin-top: 15px;
@@ -125,7 +122,6 @@ box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 16px; /* Stronger shadow effect on hover 
    text-align: left;
    font-size: 30px;
    cursor: pointer;
-   color: rgb(51, 51, 51);
    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 

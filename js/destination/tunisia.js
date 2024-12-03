@@ -12,4 +12,14 @@ const overlay = document.getElementById("overlay");
         sidebars.forEach(sidebar => sidebar.style.visibility = 'hidden');
         overlay.classList.remove('show');
     }
-    
+
+    const toggle_btn = document.querySelector('#checkbox')
+
+    toggle_btn.addEventListener('change', () => {
+        if(toggle_btn.checked){
+            document.body.classList.add('dark-mode')
+        }
+        else{
+            document.body.classList.remove('dark-mode')
+        }
+    })
