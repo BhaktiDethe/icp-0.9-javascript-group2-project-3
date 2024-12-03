@@ -307,6 +307,9 @@ input[type="tel"] {
     .footer-container{
         flex-wrap: wrap;
     }
+    .mission,.team,.history{
+        text-align:justify;
+    }
 }
 @media screen and (max-width: 800px){
     .about-main{
@@ -349,6 +352,10 @@ input[type="tel"] {
         font-size: 40px;
         
     }
+    .mission,.team,.history{
+        font-size: 20px;
+        text-align:justify;
+    }
     .missionbtn ,.team-button,.history-button
 {   font-size: 20px;
 
@@ -368,13 +375,13 @@ input[type="tel"] {
 }
 footer{
     margin-top: 100px;
-    width: 100%;
+    width: 500px;
     height: auto;
     background-color: rgb(32, 32, 32);
 }
 .footer-container{
     gap: 50px;
-    width: 90%;
+    width:90%;
     padding: 70px 0px 60px 0px;
 }
 .footer-sec img{
@@ -470,5 +477,28 @@ input[type="tel"] {
 .input-button {
    margin-top: 0px;
 }
+.about-main{
+    width:500px;
 
+}
+.about-information{
+    margin: 0%;
+    width:500px;
+    padding-top: 50px;
+}
+.about-paragraph{
+   font-size: 20px;
+    
+}
+.mission,.team,.history{
+    margin: 30px;
+    width:90%;
+    font-size: 20px;
+    text-align:justify;
+}
+.mission-font,.team-member{
+    font-size:20px;
+    padding:0 40px 0 40px;
+    
+}
  }
